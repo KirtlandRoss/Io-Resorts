@@ -64,7 +64,6 @@
 		BC37AE782635D00100E90F38 = {
 			isa = PBXGroup;
 			children = (
-				BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */,
 				BC37AFBF2637300400E90F38 /* Result+CoreDataClass.swift */,
 				BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */,
 				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
@@ -89,6 +88,7 @@
 				BC37AE842635D00100E90F38 /* AppDelegate.swift */,
 				BC37AE862635D00100E90F38 /* SceneDelegate.swift */,
 				BC37AE882635D00100E90F38 /* ViewController.swift */,
+				BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */,
 				BC37AE8A2635D00100E90F38 /* Main.storyboard */,
 				BC37AEA82635D50800E90F38 /* LoginViewController.swift */,
 				BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */,

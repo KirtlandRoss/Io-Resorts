@@ -37,11 +37,18 @@ class WelcomeViewController: UIViewController {
               self.view.layoutIfNeeded()
           }, completion: nil)
 
-//        UIView.animate(withDuration: 0.5, delay: 0.4, options: .curveEaseOut, animations: {
-//              self.nameLabel.alpha = 1
-//          }, completion: nil)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Restore the navigation bar to default
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        navigationController?.navigationBar.shadowImage = nil
+    }
 
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
         switch UIDevice.current.orientation{

@@ -24,7 +24,7 @@
             <objects>
                 <viewController id="FLm-C7-hpa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X0j-7J-fLT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunset" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-ad-ATZ">
@@ -32,7 +32,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTd-bp-tRJ">
-                                <rect key="frame" x="117" y="162" width="180" height="34"/>
+                                <rect key="frame" x="117" y="151.5" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6zo-MD-i7D"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCX-uf-gPp">
-                                <rect key="frame" x="117" y="221" width="180" height="34"/>
+                                <rect key="frame" x="117" y="210.5" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="yDC-rv-bPc"/>
                                 </constraints>
@@ -48,7 +48,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npp-qH-2pW">
-                                <rect key="frame" x="117" y="280" width="180" height="34"/>
+                                <rect key="frame" x="117" y="269.5" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6dR-R1-Cgh"/>
                                 </constraints>
@@ -56,7 +56,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-Qj-G2B">
-                                <rect key="frame" x="157" y="364" width="100" height="50"/>
+                                <rect key="frame" x="157" y="353.5" width="100" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="ZME-a4-kGX"/>
@@ -211,7 +211,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bNK-VZ-ugX" kind="show" id="NLT-nd-nky"/>
+                                    <segue destination="bNK-VZ-ugX" kind="show" id="GMy-FL-qtI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H6-1E-MJP">
@@ -229,7 +229,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-uP-7zj">
                                 <rect key="frame" x="178.5" y="315" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yry-BJ-5yy">
@@ -244,7 +244,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FLm-C7-hpa" kind="show" id="ZhU-j8-6My"/>
+                                    <segue destination="FLm-C7-hpa" kind="presentation" id="jAR-ud-Res"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-5O-Kv4">
@@ -287,10 +287,11 @@
                             <constraint firstItem="2gi-Ry-eeq" firstAttribute="centerY" secondItem="ac5-uh-rso" secondAttribute="centerY" multiplier="0.7" id="Z05-eK-ZCb"/>
                             <constraint firstItem="yry-BJ-5yy" firstAttribute="top" secondItem="wur-qM-VcH" secondAttribute="bottom" constant="21" id="ZeI-QR-bnL"/>
                             <constraint firstItem="hhL-hQ-dJq" firstAttribute="centerY" secondItem="ac5-uh-rso" secondAttribute="centerY" multiplier="0.4" id="aB0-FD-aWU"/>
+                            <constraint firstItem="7fW-uP-7zj" firstAttribute="leading" secondItem="KGV-gg-COB" secondAttribute="trailing" constant="9" id="c7u-NS-XBW"/>
                             <constraint firstItem="5H6-1E-MJP" firstAttribute="centerX" secondItem="ac5-uh-rso" secondAttribute="centerX" id="chg-tz-VMk"/>
                             <constraint firstItem="KM9-78-cYm" firstAttribute="centerX" secondItem="ac5-uh-rso" secondAttribute="centerX" id="d7S-K2-zmx"/>
                             <constraint firstItem="PDw-iX-noN" firstAttribute="trailing" secondItem="7fW-uP-7zj" secondAttribute="trailing" constant="123.5" id="dpN-7K-dwt"/>
-                            <constraint firstItem="7fW-uP-7zj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KGV-gg-COB" secondAttribute="trailing" symbolic="YES" id="dyC-6S-Gv3"/>
+                            <constraint firstItem="7fW-uP-7zj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KGV-gg-COB" secondAttribute="trailing" constant="8" symbolic="YES" id="dyC-6S-Gv3"/>
                             <constraint firstItem="KGV-gg-COB" firstAttribute="top" secondItem="KM9-78-cYm" secondAttribute="bottom" constant="30" id="hMS-La-5WU"/>
                             <constraint firstAttribute="trailing" secondItem="8qR-vK-ImD" secondAttribute="trailing" constant="-141" id="oEw-bF-JsJ"/>
                             <constraint firstItem="Hub-kT-UYC" firstAttribute="top" secondItem="ac5-uh-rso" secondAttribute="top" constant="174" id="p2Q-Ga-9HK"/>
@@ -513,11 +514,18 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="partialCurl" id="1Oh-jL-bRA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="sJg-HE-qCj" customClass="Nav"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="po3-EB-cgi" customClass="NavigationBar" customModule="ResortFeedbackApp" customModuleProvider="target">
+                    <navigationItem key="navigationItem" id="sJg-HE-qCj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="po3-EB-cgi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemGray2Color"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="34"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -543,9 +551,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
