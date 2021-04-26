@@ -14,6 +14,9 @@
         <array key="PhosphatePro-Inline.otf">
             <string>PhosphatePro-Inline</string>
         </array>
+        <array key="PhosphatePro-Solid.otf">
+            <string>PhosphatePro-Solid</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Change Password-->
@@ -23,14 +26,82 @@
                     <view key="view" contentMode="scaleToFill" id="X0j-7J-fLT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planeFlying" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-ad-ATZ">
+                                <rect key="frame" x="-750" y="-614" width="1868" height="1729"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTd-bp-tRJ">
+                                <rect key="frame" x="117" y="162" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6zo-MD-i7D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCX-uf-gPp">
+                                <rect key="frame" x="117" y="221" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="yDC-rv-bPc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npp-qH-2pW">
+                                <rect key="frame" x="117" y="280" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6dR-R1-Cgh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-Qj-G2B">
+                                <rect key="frame" x="157" y="364" width="100" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZME-a4-kGX"/>
+                                    <constraint firstAttribute="height" constant="50" id="znX-AS-hcn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
+                                <state key="normal" title="Submit" backgroundImage="fatButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Fte-23-Bq4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WTd-bp-tRJ" firstAttribute="centerY" secondItem="X0j-7J-fLT" secondAttribute="centerY" multiplier="0.4" id="2ki-zV-RmB"/>
+                            <constraint firstItem="npp-qH-2pW" firstAttribute="top" secondItem="RCX-uf-gPp" secondAttribute="bottom" constant="25" id="Fzh-Q9-Y19"/>
+                            <constraint firstItem="RCX-uf-gPp" firstAttribute="centerX" secondItem="X0j-7J-fLT" secondAttribute="centerX" id="LW2-c9-Ped"/>
+                            <constraint firstItem="RCX-uf-gPp" firstAttribute="top" secondItem="WTd-bp-tRJ" secondAttribute="bottom" constant="25" id="PB7-1q-Ne3"/>
+                            <constraint firstItem="WTd-bp-tRJ" firstAttribute="centerX" secondItem="X0j-7J-fLT" secondAttribute="centerX" id="R4v-kr-AZZ"/>
+                            <constraint firstItem="npp-qH-2pW" firstAttribute="centerX" secondItem="X0j-7J-fLT" secondAttribute="centerX" id="RvW-nT-PBs"/>
+                            <constraint firstItem="XoV-Qj-G2B" firstAttribute="centerX" secondItem="X0j-7J-fLT" secondAttribute="centerX" id="SSE-T1-swq"/>
+                            <constraint firstItem="XoV-Qj-G2B" firstAttribute="top" secondItem="npp-qH-2pW" secondAttribute="bottom" constant="50" id="ezE-jy-ffg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Change Password" id="Kmr-vg-7Nz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xX-8F-hj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3913" y="871"/>
+            <point key="canvasLocation" x="3525" y="871"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xox-qn-TBZ">
+            <objects>
+                <viewController id="bNK-VZ-ugX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s78-Xu-ybC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dx6-aM-hpt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rua-lW-nna"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRR-pr-h1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4399" y="871"/>
         </scene>
         <!--Login-->
         <scene sceneID="Zyf-9m-5EG">
@@ -46,7 +117,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVertical" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Ry-eeq">
                                 <rect key="frame" x="0.0" y="127.5" width="414" height="372"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
                                 <rect key="frame" x="117" y="162" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="ds3-ve-6mW"/>
@@ -62,22 +133,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-5O-Kv4">
-                                <rect key="frame" x="82" y="380" width="100" height="50"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="e8r-gN-dAK"/>
-                                    <constraint firstAttribute="height" constant="50" id="eEK-st-t9n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" systemColor="systemGreenColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="signIn:" destination="nZy-Po-l7G" eventType="touchUpInside" id="fw6-cb-Fjo"/>
-                                    <segue destination="yzD-Jg-aFR" kind="show" id="MWX-o1-x0t"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hub-kT-UYC">
                                 <rect key="frame" x="207" y="174" width="0.0" height="21"/>
                                 <constraints>
@@ -94,15 +149,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wur-qM-VcH">
-                                <rect key="frame" x="232" y="380" width="100" height="50"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="215" y="380" width="117" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QDt-Pf-aWH"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vKO-q5-DFK"/>
                                 </constraints>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="17"/>
+                                <state key="normal" title="Sign Up" backgroundImage="fatButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bNK-VZ-ugX" kind="show" id="2Oy-Sg-p9v"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H6-1E-MJP">
                                 <rect key="frame" x="207" y="378" width="0.0" height="21"/>
@@ -123,17 +182,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yry-BJ-5yy">
-                                <rect key="frame" x="144.5" y="451" width="125" height="50"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="127" y="451" width="160" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="XZW-Tv-3Cy"/>
+                                    <constraint firstAttribute="width" constant="160" id="XZW-Tv-3Cy"/>
                                     <constraint firstAttribute="height" constant="50" id="jCe-f1-vba"/>
                                 </constraints>
-                                <state key="normal" title="Change Password">
-                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
+                                <state key="normal" title="Change Password" backgroundImage="fatButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="FLm-C7-hpa" kind="show" id="ZhU-j8-6My"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-5O-Kv4">
+                                <rect key="frame" x="82" y="380" width="117" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="e8r-gN-dAK"/>
+                                    <constraint firstAttribute="height" constant="50" id="eEK-st-t9n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
+                                <state key="normal" title="Sign In" backgroundImage="fatButton">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIn:" destination="nZy-Po-l7G" eventType="touchUpInside" id="fw6-cb-Fjo"/>
+                                    <segue destination="yzD-Jg-aFR" kind="show" id="MWX-o1-x0t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -375,7 +451,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="po3-EB-cgi" customClass="NavigationBar" customModule="ResortFeedbackApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemGray2Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -391,22 +467,20 @@
         <segue reference="R6L-nl-weY"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="fatButton" width="393" height="109"/>
         <image name="logoVertical" width="372" height="372"/>
         <image name="planeFlying" width="5120" height="1440"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

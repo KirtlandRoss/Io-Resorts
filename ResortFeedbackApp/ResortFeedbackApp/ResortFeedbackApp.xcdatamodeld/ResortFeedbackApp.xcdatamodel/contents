@@ -5,8 +5,13 @@
         <attribute name="discount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="coupon" inverseEntity="User"/>
     </entity>
+    <entity name="Result" representedClassName="Result" syncable="YES" codeGenerationType="category">
+        <attribute name="category" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="surveyResults" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SurveyResults"/>
+    </entity>
     <entity name="SurveyResults" representedClassName="SurveyResults" syncable="YES" codeGenerationType="category">
-        <attribute name="results" optional="YES" attributeType="Transformable"/>
+        <attribute name="results" optional="YES" attributeType="Transformable" customClassName="Result"/>
         <attribute name="stayID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="surveyResults" inverseEntity="User"/>
     </entity>
@@ -19,8 +24,9 @@
         <relationship name="surveyResults" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SurveyResults" inverseName="user" inverseEntity="SurveyResults"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="Coupon" positionX="122.001708984375" positionY="175.8030395507812" width="128" height="88"/>
-        <element name="SurveyResults" positionX="295.94482421875" positionY="-44.3028564453125" width="128" height="88"/>
+        <element name="Coupon" positionX="122.001708984375" positionY="175.8030395507812" width="128" height="74"/>
+        <element name="SurveyResults" positionX="295.94482421875" positionY="-44.3028564453125" width="128" height="74"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Result" positionX="126" positionY="108" width="128" height="74"/>
     </elements>
 </model>

@@ -21,11 +21,9 @@
 		BC37AEC1263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBD263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf */; };
 		BC37AEC2263637D600E90F38 /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBE263637D600E90F38 /* PhosphatePro-Inline.otf */; };
 		BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */; };
-		BC37AEF226370A5400E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */; };
 		BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */; };
-		BC37AEF426370A5400E90F38 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */; };
 		BC37AEF526370A5400E90F38 /* Coupon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */; };
-		BC37AEF626370A5400E90F38 /* Coupon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */; };
+		BC37AFC12637300400E90F38 /* Result+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFBF2637300400E90F38 /* Result+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,11 +43,9 @@
 		BC37AEBD263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Inline Regular.otf"; sourceTree = "<group>"; };
 		BC37AEBE263637D600E90F38 /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
 		BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC37AFBF2637300400E90F38 /* Result+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +62,10 @@
 		BC37AE782635D00100E90F38 = {
 			isa = PBXGroup;
 			children = (
+				BC37AFBF2637300400E90F38 /* Result+CoreDataClass.swift */,
 				BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */,
-				BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */,
 				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
-				BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */,
 				BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */,
-				BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */,
 				BC37AE832635D00100E90F38 /* ResortFeedbackApp */,
 				BC37AE822635D00100E90F38 /* Products */,
 			);
@@ -193,12 +187,10 @@
 				BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */,
 				BC37AE892635D00100E90F38 /* ViewController.swift in Sources */,
 				BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */,
-				BC37AEF226370A5400E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */,
 				BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */,
+				BC37AFC12637300400E90F38 /* Result+CoreDataClass.swift in Sources */,
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
-				BC37AEF626370A5400E90F38 /* Coupon+CoreDataProperties.swift in Sources */,
-				BC37AEF426370A5400E90F38 /* User+CoreDataProperties.swift in Sources */,
 				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
