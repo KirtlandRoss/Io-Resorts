@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    var userDictionary : [String: User]?
+//    var userDictionary : [String: User]?
 
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
