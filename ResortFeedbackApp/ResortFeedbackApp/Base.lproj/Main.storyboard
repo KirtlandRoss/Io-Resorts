@@ -27,11 +27,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planeFlying" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-ad-ATZ">
-                                <rect key="frame" x="-750" y="-614" width="1868" height="1729"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunset" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-ad-ATZ">
+                                <rect key="frame" x="-750" y="-614" width="1868" height="1880"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTd-bp-tRJ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTd-bp-tRJ">
                                 <rect key="frame" x="117" y="162" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6zo-MD-i7D"/>
@@ -39,7 +39,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCX-uf-gPp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCX-uf-gPp">
                                 <rect key="frame" x="117" y="221" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="yDC-rv-bPc"/>
@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npp-qH-2pW">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npp-qH-2pW">
                                 <rect key="frame" x="117" y="280" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6dR-R1-Cgh"/>
@@ -85,23 +85,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xX-8F-hj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3525" y="871"/>
+            <point key="canvasLocation" x="3524.6376811594205" y="870.53571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up-->
         <scene sceneID="Xox-qn-TBZ">
             <objects>
-                <viewController id="bNK-VZ-ugX" sceneMemberID="viewController">
+                <viewController id="bNK-VZ-ugX" customClass="SignUpViewController" customModule="ResortFeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s78-Xu-ybC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planeFlying" translatesAutoresizingMaskIntoConstraints="NO" id="dj5-2e-3yh">
+                                <rect key="frame" x="-473" y="-163" width="1407" height="1148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVertical" translatesAutoresizingMaskIntoConstraints="NO" id="MOs-hz-Jvv">
+                                <rect key="frame" x="21" y="127.5" width="372" height="372"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-79-niM">
+                                <rect key="frame" x="132" y="162" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="rM6-W5-RDX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A0N-vO-xPv">
+                                <rect key="frame" x="132" y="221" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Hy3-Xy-pvz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6T-bX-u4N">
+                                <rect key="frame" x="157" y="285" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7fc-ae-otS"/>
+                                    <constraint firstAttribute="width" constant="100" id="gdz-K0-GKR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
+                                <state key="normal" title="Submit" backgroundImage="fatButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dx6-aM-hpt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g6T-bX-u4N" firstAttribute="centerX" secondItem="s78-Xu-ybC" secondAttribute="centerX" id="17i-QT-s74"/>
+                            <constraint firstItem="A0N-vO-xPv" firstAttribute="top" secondItem="ASv-79-niM" secondAttribute="bottom" constant="25" id="Aid-fQ-3EH"/>
+                            <constraint firstItem="MOs-hz-Jvv" firstAttribute="centerX" secondItem="s78-Xu-ybC" secondAttribute="centerX" id="I2u-BL-bkf"/>
+                            <constraint firstItem="g6T-bX-u4N" firstAttribute="top" secondItem="A0N-vO-xPv" secondAttribute="bottom" constant="30" id="bSX-Si-OJg"/>
+                            <constraint firstItem="ASv-79-niM" firstAttribute="centerY" secondItem="s78-Xu-ybC" secondAttribute="centerY" multiplier="0.4" id="cxV-U9-Lb3"/>
+                            <constraint firstItem="A0N-vO-xPv" firstAttribute="centerX" secondItem="s78-Xu-ybC" secondAttribute="centerX" id="ehy-Vw-KCt"/>
+                            <constraint firstItem="ASv-79-niM" firstAttribute="centerX" secondItem="s78-Xu-ybC" secondAttribute="centerX" id="lBO-cJ-nWN"/>
+                            <constraint firstItem="MOs-hz-Jvv" firstAttribute="centerY" secondItem="s78-Xu-ybC" secondAttribute="centerY" multiplier="0.7" id="oPz-C7-Ttd"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rua-lW-nna"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="rua-lW-nna"/>
+                    <connections>
+                        <outlet property="backgroundLogo" destination="MOs-hz-Jvv" id="spl-bV-Uld"/>
+                        <outlet property="logoX" destination="I2u-BL-bkf" id="Gxi-z3-gSm"/>
+                        <outlet property="logoY" destination="oPz-C7-Ttd" id="95y-zt-5Bu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRR-pr-h1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4399" y="871"/>
+            <point key="canvasLocation" x="4398.5507246376819" y="870.53571428571422"/>
         </scene>
         <!--Login-->
         <scene sceneID="Zyf-9m-5EG">
@@ -117,7 +168,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVertical" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Ry-eeq">
                                 <rect key="frame" x="0.0" y="127.5" width="414" height="372"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
                                 <rect key="frame" x="117" y="162" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="ds3-ve-6mW"/>
@@ -125,7 +176,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pass" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KM9-78-cYm">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KM9-78-cYm">
                                 <rect key="frame" x="117" y="246" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="QMf-ar-ywu"/>
@@ -149,18 +200,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wur-qM-VcH">
-                                <rect key="frame" x="215" y="380" width="117" height="50"/>
+                                <rect key="frame" x="232" y="380" width="100" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QDt-Pf-aWH"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vKO-q5-DFK"/>
+                                    <constraint firstAttribute="width" constant="100" id="vKO-q5-DFK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="17"/>
                                 <state key="normal" title="Sign Up" backgroundImage="fatButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bNK-VZ-ugX" kind="show" id="2Oy-Sg-p9v"/>
+                                    <segue destination="bNK-VZ-ugX" kind="show" id="NLT-nd-nky"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H6-1E-MJP">
@@ -197,10 +248,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-5O-Kv4">
-                                <rect key="frame" x="82" y="380" width="117" height="50"/>
+                                <rect key="frame" x="82" y="380" width="100" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="e8r-gN-dAK"/>
+                                    <constraint firstAttribute="width" constant="100" id="e8r-gN-dAK"/>
                                     <constraint firstAttribute="height" constant="50" id="eEK-st-t9n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
@@ -285,30 +336,45 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hm8-qL-DvB">
-                                <rect key="frame" x="183" y="478" width="48" height="30"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Survey">
-                                    <color key="titleColor" red="1" green="0.73663951120000004" blue="0.18780539600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="172" y="478" width="70" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="3Xl-yM-Kyn"/>
+                                    <constraint firstAttribute="height" constant="30" id="Sas-2d-vsX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
+                                <state key="normal" title="Survey" backgroundImage="fatButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Sfo-k9-eOW" kind="show" id="R6L-nl-weY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwH-nQ-SIy">
-                                <rect key="frame" x="156" y="538" width="102" height="30"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Update Survey">
-                                    <color key="titleColor" red="0.93644588510000004" green="0.68982303909999998" blue="0.17586959029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="142" y="538" width="130" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="ccE-Oc-WOh"/>
+                                    <constraint firstAttribute="height" constant="30" id="v5c-g2-OGr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
+                                <state key="normal" title="Update Survey" backgroundImage="button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Sfo-k9-eOW" kind="show" id="60D-CW-mLV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-iK-wMx">
-                                <rect key="frame" x="176" y="598" width="62" height="30"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="1" green="0.73663951120000004" blue="0.18780539600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Coupons"/>
+                                <rect key="frame" x="164.5" y="598" width="85" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CGI-zm-8Bg"/>
+                                    <constraint firstAttribute="width" constant="85" id="mZz-i2-fIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Solid" family="PhosphatePro-Solid" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Coupons" backgroundImage="fatButton"/>
                                 <connections>
                                     <segue destination="FV4-LJ-WNu" kind="show" id="fWg-m5-C5s"/>
                                 </connections>
@@ -467,9 +533,11 @@
         <segue reference="R6L-nl-weY"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="button" width="393" height="47"/>
         <image name="fatButton" width="393" height="109"/>
         <image name="logoVertical" width="372" height="372"/>
         <image name="planeFlying" width="5120" height="1440"/>
+        <image name="sunset" width="5120" height="1440"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

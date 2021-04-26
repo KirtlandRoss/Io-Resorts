@@ -24,6 +24,7 @@
 		BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */; };
 		BC37AEF526370A5400E90F38 /* Coupon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */; };
 		BC37AFC12637300400E90F38 /* Result+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFBF2637300400E90F38 /* Result+CoreDataClass.swift */; };
+		BC37AFC6263759EE00E90F38 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC37AFBF2637300400E90F38 /* Result+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		BC37AE782635D00100E90F38 = {
 			isa = PBXGroup;
 			children = (
+				BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */,
 				BC37AFBF2637300400E90F38 /* Result+CoreDataClass.swift */,
 				BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */,
 				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC37AFC6263759EE00E90F38 /* SignUpViewController.swift in Sources */,
 				BC37AEF526370A5400E90F38 /* Coupon+CoreDataClass.swift in Sources */,
 				BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */,
 				BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */,
