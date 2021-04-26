@@ -16,12 +16,12 @@ extension User {
         return NSFetchRequest<User>(entityName: "User")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var password: String?
-    @NSManaged public var surveyComplete: Bool
     @NSManaged public var userId: UUID?
-    @NSManaged public var coupon: Coupon?
+    @NSManaged public var name: String?
+    @NSManaged public var surveyComplete: Bool
+    @NSManaged public var password: String?
     @NSManaged public var surveyResults: SurveyResults?
+    @NSManaged public var coupon: Coupon?
 
 }
 

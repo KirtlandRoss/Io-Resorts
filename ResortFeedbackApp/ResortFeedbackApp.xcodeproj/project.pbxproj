@@ -20,12 +20,12 @@
 		BC37AEC0263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBC263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf */; };
 		BC37AEC1263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBD263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf */; };
 		BC37AEC2263637D600E90F38 /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBE263637D600E90F38 /* PhosphatePro-Inline.otf */; };
-		BC37AFAF2637213900E90F38 /* Coupon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFA92637213900E90F38 /* Coupon+CoreDataClass.swift */; };
-		BC37AFB02637213900E90F38 /* Coupon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFAA2637213900E90F38 /* Coupon+CoreDataProperties.swift */; };
-		BC37AFB12637213900E90F38 /* SurveyResults+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFAB2637213900E90F38 /* SurveyResults+CoreDataClass.swift */; };
-		BC37AFB22637213900E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFAC2637213900E90F38 /* SurveyResults+CoreDataProperties.swift */; };
-		BC37AFB32637213900E90F38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFAD2637213900E90F38 /* User+CoreDataClass.swift */; };
-		BC37AFB42637213900E90F38 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFAE2637213900E90F38 /* User+CoreDataProperties.swift */; };
+		BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */; };
+		BC37AEF226370A5400E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */; };
+		BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */; };
+		BC37AEF426370A5400E90F38 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */; };
+		BC37AEF526370A5400E90F38 /* Coupon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */; };
+		BC37AEF626370A5400E90F38 /* Coupon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +44,12 @@
 		BC37AEBC263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
 		BC37AEBD263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Inline Regular.otf"; sourceTree = "<group>"; };
 		BC37AEBE263637D600E90F38 /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
-		BC37AFA92637213900E90F38 /* Coupon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BC37AFAA2637213900E90F38 /* Coupon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BC37AFAB2637213900E90F38 /* SurveyResults+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BC37AFAC2637213900E90F38 /* SurveyResults+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BC37AFAD2637213900E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BC37AFAE2637213900E90F38 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +66,12 @@
 		BC37AE782635D00100E90F38 = {
 			isa = PBXGroup;
 			children = (
-				BC37AFA92637213900E90F38 /* Coupon+CoreDataClass.swift */,
-				BC37AFAA2637213900E90F38 /* Coupon+CoreDataProperties.swift */,
-				BC37AFAB2637213900E90F38 /* SurveyResults+CoreDataClass.swift */,
-				BC37AFAC2637213900E90F38 /* SurveyResults+CoreDataProperties.swift */,
-				BC37AFAD2637213900E90F38 /* User+CoreDataClass.swift */,
-				BC37AFAE2637213900E90F38 /* User+CoreDataProperties.swift */,
+				BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */,
+				BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */,
+				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
+				BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */,
+				BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */,
+				BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */,
 				BC37AE832635D00100E90F38 /* ResortFeedbackApp */,
 				BC37AE822635D00100E90F38 /* Products */,
 			);
@@ -188,17 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC37AFAF2637213900E90F38 /* Coupon+CoreDataClass.swift in Sources */,
-				BC37AFB02637213900E90F38 /* Coupon+CoreDataProperties.swift in Sources */,
-				BC37AFB42637213900E90F38 /* User+CoreDataProperties.swift in Sources */,
+				BC37AEF526370A5400E90F38 /* Coupon+CoreDataClass.swift in Sources */,
 				BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */,
-				BC37AFB12637213900E90F38 /* SurveyResults+CoreDataClass.swift in Sources */,
+				BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */,
 				BC37AE892635D00100E90F38 /* ViewController.swift in Sources */,
 				BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */,
-				BC37AFB22637213900E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */,
+				BC37AEF226370A5400E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */,
+				BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */,
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
-				BC37AFB32637213900E90F38 /* User+CoreDataClass.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
+				BC37AEF626370A5400E90F38 /* Coupon+CoreDataProperties.swift in Sources */,
+				BC37AEF426370A5400E90F38 /* User+CoreDataProperties.swift in Sources */,
 				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,11 +8,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    var userDictionary : [String: User]?
 
-    @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,20 +19,14 @@ class LoginViewController: UIViewController {
 
         case .landscapeLeft:
             self.backgroundImage.image = UIImage(named: "logo")
-            self.backgoundY.constant += 50
         case .landscapeRight:
             self.backgroundImage.image = UIImage(named: "logo")
-            self.backgoundY.constant += 50
         default:
             self.backgroundImage.image = UIImage(named: "logoVertical")
         }
 
     }
 
-    @IBAction func signIn(_ sender: Any) {
-
-      
-    }
 
 }
 

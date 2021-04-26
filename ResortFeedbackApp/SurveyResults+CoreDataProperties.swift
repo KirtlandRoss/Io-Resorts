@@ -16,8 +16,8 @@ extension SurveyResults {
         return NSFetchRequest<SurveyResults>(entityName: "SurveyResults")
     }
 
-    @NSManaged public var results: NSObject?
     @NSManaged public var stayID: UUID?
+    @NSManaged public var results: NSObject?
     @NSManaged public var user: User?
 
 }
