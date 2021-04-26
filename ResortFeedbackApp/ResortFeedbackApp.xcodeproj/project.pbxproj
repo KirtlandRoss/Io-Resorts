@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE842635D00100E90F38 /* AppDelegate.swift */; };
+		BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE862635D00100E90F38 /* SceneDelegate.swift */; };
+		BC37AE892635D00100E90F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE882635D00100E90F38 /* ViewController.swift */; };
+		BC37AE8C2635D00100E90F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE8A2635D00100E90F38 /* Main.storyboard */; };
+		BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE902635D00300E90F38 /* Assets.xcassets */; };
+		BC37AE942635D00300E90F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE922635D00300E90F38 /* LaunchScreen.storyboard */; };
+		BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */; };
+		BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */; };
+		BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA82635D50800E90F38 /* LoginViewController.swift */; };
+		BC37AEBF263637D600E90F38 /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBB263637D600E90F38 /* PhosphatePro-Solid.otf */; };
+		BC37AEC0263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBC263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf */; };
+		BC37AEC1263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBD263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf */; };
+		BC37AEC2263637D600E90F38 /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBE263637D600E90F38 /* PhosphatePro-Inline.otf */; };
+		BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */; };
+		BC37AEF226370A5400E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */; };
+		BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */; };
+		BC37AEF426370A5400E90F38 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */; };
+		BC37AEF526370A5400E90F38 /* Coupon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */; };
+		BC37AEF626370A5400E90F38 /* Coupon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC37AE812635D00100E90F38 /* ResortFeedbackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedbackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC37AE842635D00100E90F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC37AE862635D00100E90F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC37AE882635D00100E90F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC37AE8B2635D00100E90F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC37AE902635D00300E90F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC37AE932635D00300E90F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC37AE952635D00300E90F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BC37AEA72635D50800E90F38 /* ResortFeedbackApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResortFeedbackApp.xcdatamodel; sourceTree = "<group>"; };
+		BC37AEA82635D50800E90F38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC37AEBB263637D600E90F38 /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
+		BC37AEBC263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
+		BC37AEBD263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Inline Regular.otf"; sourceTree = "<group>"; };
+		BC37AEBE263637D600E90F38 /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
+		BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC37AE7E2635D00100E90F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC37AE782635D00100E90F38 = {
+			isa = PBXGroup;
+			children = (
+				BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */,
+				BC37AEEC26370A5400E90F38 /* SurveyResults+CoreDataProperties.swift */,
+				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
+				BC37AEEE26370A5400E90F38 /* User+CoreDataProperties.swift */,
+				BC37AEEF26370A5400E90F38 /* Coupon+CoreDataClass.swift */,
+				BC37AEF026370A5400E90F38 /* Coupon+CoreDataProperties.swift */,
+				BC37AE832635D00100E90F38 /* ResortFeedbackApp */,
+				BC37AE822635D00100E90F38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC37AE822635D00100E90F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC37AE812635D00100E90F38 /* ResortFeedbackApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC37AE832635D00100E90F38 /* ResortFeedbackApp */ = {
+			isa = PBXGroup;
+			children = (
+				BC37AEBA263637CB00E90F38 /* fonts */,
+				BC37AE842635D00100E90F38 /* AppDelegate.swift */,
+				BC37AE862635D00100E90F38 /* SceneDelegate.swift */,
+				BC37AE882635D00100E90F38 /* ViewController.swift */,
+				BC37AE8A2635D00100E90F38 /* Main.storyboard */,
+				BC37AEA82635D50800E90F38 /* LoginViewController.swift */,
+				BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */,
+				BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */,
+				BC37AE902635D00300E90F38 /* Assets.xcassets */,
+				BC37AE922635D00300E90F38 /* LaunchScreen.storyboard */,
+				BC37AE952635D00300E90F38 /* Info.plist */,
+			);
+			path = ResortFeedbackApp;
+			sourceTree = "<group>";
+		};
+		BC37AEBA263637CB00E90F38 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC37AEBD263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf */,
+				BC37AEBC263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf */,
+				BC37AEBE263637D600E90F38 /* PhosphatePro-Inline.otf */,
+				BC37AEBB263637D600E90F38 /* PhosphatePro-Solid.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC37AE802635D00100E90F38 /* ResortFeedbackApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC37AE982635D00300E90F38 /* Build configuration list for PBXNativeTarget "ResortFeedbackApp" */;
+			buildPhases = (
+				BC37AE7D2635D00100E90F38 /* Sources */,
+				BC37AE7E2635D00100E90F38 /* Frameworks */,
+				BC37AE7F2635D00100E90F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResortFeedbackApp;
+			productName = ResortFeedbackApp;
+			productReference = BC37AE812635D00100E90F38 /* ResortFeedbackApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC37AE792635D00100E90F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BC37AE802635D00100E90F38 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BC37AE7C2635D00100E90F38 /* Build configuration list for PBXProject "ResortFeedbackApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC37AE782635D00100E90F38;
+			productRefGroup = BC37AE822635D00100E90F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC37AE802635D00100E90F38 /* ResortFeedbackApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC37AE7F2635D00100E90F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC37AEC0263637D600E90F38 /* Phosphate Pro Cond Solid Regular.otf in Resources */,
+				BC37AE942635D00300E90F38 /* LaunchScreen.storyboard in Resources */,
+				BC37AEBF263637D600E90F38 /* PhosphatePro-Solid.otf in Resources */,
+				BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */,
+				BC37AE8C2635D00100E90F38 /* Main.storyboard in Resources */,
+				BC37AEC1263637D600E90F38 /* Phosphate Pro Cond Inline Regular.otf in Resources */,
+				BC37AEC2263637D600E90F38 /* PhosphatePro-Inline.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC37AE7D2635D00100E90F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC37AEF526370A5400E90F38 /* Coupon+CoreDataClass.swift in Sources */,
+				BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */,
+				BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */,
+				BC37AE892635D00100E90F38 /* ViewController.swift in Sources */,
+				BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */,
+				BC37AEF226370A5400E90F38 /* SurveyResults+CoreDataProperties.swift in Sources */,
+				BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */,
+				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
+				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
+				BC37AEF626370A5400E90F38 /* Coupon+CoreDataProperties.swift in Sources */,
+				BC37AEF426370A5400E90F38 /* User+CoreDataProperties.swift in Sources */,
+				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC37AE8A2635D00100E90F38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC37AE8B2635D00100E90F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC37AE922635D00300E90F38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC37AE932635D00300E90F38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC37AE962635D00300E90F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC37AE972635D00300E90F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC37AE992635D00300E90F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB4NL6J4U2;
+				INFOPLIST_FILE = ResortFeedbackApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirtlandross.ResortFeedbackApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC37AE9A2635D00300E90F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB4NL6J4U2;
+				INFOPLIST_FILE = ResortFeedbackApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirtlandross.ResortFeedbackApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC37AE7C2635D00100E90F38 /* Build configuration list for PBXProject "ResortFeedbackApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC37AE962635D00300E90F38 /* Debug */,
+				BC37AE972635D00300E90F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC37AE982635D00300E90F38 /* Build configuration list for PBXNativeTarget "ResortFeedbackApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC37AE992635D00300E90F38 /* Debug */,
+				BC37AE9A2635D00300E90F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC37AEA72635D50800E90F38 /* ResortFeedbackApp.xcdatamodel */,
+			);
+			currentVersion = BC37AEA72635D50800E90F38 /* ResortFeedbackApp.xcdatamodel */;
+			path = ResortFeedbackApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC37AE792635D00100E90F38 /* Project object */;
+}
