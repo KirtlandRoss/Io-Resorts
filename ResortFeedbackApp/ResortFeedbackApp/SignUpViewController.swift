@@ -49,7 +49,7 @@ class SignUpViewController: UIViewController {
         default:
             self.backgroundLogo.image = UIImage(named: "logoVertical")
         }
-
     }
 
+        
 }

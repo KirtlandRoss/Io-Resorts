@@ -1,0 +1,6 @@
+target 'ResortFeedbackApp' do
+  use_frameworks!
+    pod 'WCLShineButton'
+end
+
+

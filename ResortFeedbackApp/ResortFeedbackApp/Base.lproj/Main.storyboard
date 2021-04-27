@@ -348,7 +348,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Sfo-k9-eOW" kind="show" id="R6L-nl-weY"/>
+                                    <segue destination="X9O-BB-JUU" kind="show" id="aXM-Ve-5w5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwH-nQ-SIy">
@@ -362,9 +362,6 @@
                                 <state key="normal" title="Update Survey" backgroundImage="button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Sfo-k9-eOW" kind="show" id="60D-CW-mLV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-iK-wMx">
                                 <rect key="frame" x="164.5" y="598" width="85" height="30"/>
@@ -447,43 +444,48 @@
             </objects>
             <point key="canvasLocation" x="5750.7246376811599" y="646.875"/>
         </scene>
-        <!--Survey-->
-        <scene sceneID="Xxm-oG-eAx">
+        <!--View Controller-->
+        <scene sceneID="LM3-fE-5BG">
             <objects>
-                <tableViewController storyboardIdentifier="Survey" id="Sfo-k9-eOW" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nqh-16-10Y">
+                <viewController id="X9O-BB-JUU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ENM-Se-mhA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNn-p5-tiQ">
+                                <rect key="frame" x="192" y="242" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pool"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-jB-sXi">
+                                <rect key="frame" x="190" y="392" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Food"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARv-td-tp2">
+                                <rect key="frame" x="183" y="444" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Overall"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeF-Uf-Yih">
+                                <rect key="frame" x="185" y="154" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Room"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT5-4f-I2Z">
+                                <rect key="frame" x="193" y="354" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Spa"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hvS-VE-fdu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3Df-im-7qk">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Df-im-7qk" id="Hpl-kx-wfe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTt-rI-tfE">
-                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Sfo-k9-eOW" id="oNe-AR-G3O"/>
-                            <outlet property="delegate" destination="Sfo-k9-eOW" id="o7R-PG-afF"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Survey" id="bVL-ub-R6I"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="asG-jh-oJq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YdP-0D-dPT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYC-6h-HpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5751" y="-556"/>
+            <point key="canvasLocation" x="5613.04347826087" y="-368.30357142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HG4-qK-Xwd">
@@ -507,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewT-2Y-Zec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6683" y="-556"/>
+            <point key="canvasLocation" x="6526" y="-368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8g2-Ac-aZ3">
@@ -537,9 +539,6 @@
             <point key="canvasLocation" x="2999" y="130"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="R6L-nl-weY"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="button" width="393" height="47"/>
         <image name="fatButton" width="393" height="109"/>
