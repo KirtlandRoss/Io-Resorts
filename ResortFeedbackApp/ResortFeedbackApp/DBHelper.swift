@@ -13,9 +13,11 @@ class DBHelper{
     static var inst = DBHelper()
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
 
-    func addUserData(_ object: [String:String]){
+    func addData(_ object: [String:String]){
         let user = NSEntityDescription.insertNewObject(forEntityName: "User", into: context!) as! User
         user.name = object["name"]
+        user.password = object["password"]
+
 
 
         do{
@@ -25,29 +27,17 @@ class DBHelper{
         catch{
             print("data not saved")
         }
-        func addSurveyData(_ object: [String:String]){
-            let survey = NSEntityDescription.insertNewObject(forEntityName: "SurveyResults", into: context!) as! SurveyResults
-            survey.user.name = object["name"]
-
-
-            do{
-                try context?.save()
-                print("Data Saved")
-            }
-            catch{
-                print("data not saved")
-            }
-
     }
+
     func getOneData(name : String) -> User {
         var st = User()
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", name)
         fetchReq.fetchLimit = 1
         do{
-            let req = try context?.fetch(fetchReq) as! [User]
-            if (req.count != 0 ){
-                st = req.first! as User
+            let req = try? context?.fetch(fetchReq) as? [User]
+            if (req != nil && req!.count != 0  ){
+                st = req!.first! as User
             }
             return st
         }
@@ -68,7 +58,7 @@ class DBHelper{
         }
         return stu
     }
-    func deleteData(_ name: String){
+    func deleteUserData(_ name: String){
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", name)
         do {
@@ -83,7 +73,7 @@ class DBHelper{
 
         }
     }
-    func updateData(_ object: [String: String]){
+    func updateUserMetadata(_ object: [String: String]){
         var st = User()
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", object["name"]!)
@@ -100,4 +90,21 @@ class DBHelper{
         }
 
     }
+//    func updateUserSurvey(_ name: String){
+//        var st = User()
+//        let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
+//        fetchReq.predicate = NSPredicate(format: "name == %@", results)
+//        do{
+//            let req = try context?.fetch(fetchReq)
+//
+//            if (req?.count != 0 ){
+//                st = req!.first as! User
+//                
+//            }
+//        }
+//        catch{
+//
+//        }
+//
+//    }
 }

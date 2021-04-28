@@ -8,7 +8,9 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    var dbhelp = DBHelper()
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var username: UITextField!
     @IBOutlet weak var logoY: NSLayoutConstraint!
     @IBOutlet weak var logoX: NSLayoutConstraint!
     @IBOutlet weak var backgroundLogo: UIImageView!
@@ -50,6 +52,17 @@ class SignUpViewController: UIViewController {
             self.backgroundLogo.image = UIImage(named: "logoVertical")
         }
     }
+    @IBAction func submit(_ sender: Any) {
+
+        let dict = ["name": username.text!, "password": password.text!]
+
+
+       
+
+        dbhelp.addData(dict)
+
+    }
+
 
         
 }
