@@ -12,4 +12,10 @@ import CoreData
 @objc(User)
 public class User: NSManagedObject {
 
+    func passCheck(_ pass: String) -> Bool{
+        if pass == self.password{
+            return true
+        }
+        return false
+    }
 }

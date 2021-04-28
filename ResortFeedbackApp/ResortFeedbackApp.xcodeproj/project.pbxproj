@@ -18,7 +18,6 @@
 		BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */; };
 		BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */; };
 		BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA82635D50800E90F38 /* LoginViewController.swift */; };
-		BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */; };
 		BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */; };
 		BC37AFC6263759EE00E90F38 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */; };
 		BC37B0302638993900E90F38 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = BC37B02F2638993900E90F38 /* Podfile */; };
@@ -43,7 +42,6 @@
 		BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BC37AEA72635D50800E90F38 /* ResortFeedbackApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResortFeedbackApp.xcdatamodel; sourceTree = "<group>"; };
 		BC37AEA82635D50800E90F38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BC37B02F2638993900E90F38 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -85,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				BC37B02F2638993900E90F38 /* Podfile */,
-				BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */,
 				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
 				BC37AE832635D00100E90F38 /* ResortFeedbackApp */,
 				BC37AE822635D00100E90F38 /* Products */,
@@ -242,7 +239,6 @@
 				BC37AFC6263759EE00E90F38 /* SignUpViewController.swift in Sources */,
 				BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */,
 				BC37B0302638993900E90F38 /* Podfile in Sources */,
-				BC37AEF126370A5400E90F38 /* SurveyResults+CoreDataClass.swift in Sources */,
 				BC37AE892635D00100E90F38 /* ViewController.swift in Sources */,
 				BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */,
 				BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */,

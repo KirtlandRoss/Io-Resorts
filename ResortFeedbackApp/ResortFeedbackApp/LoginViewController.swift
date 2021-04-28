@@ -9,6 +9,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
     var userDictionary : [String: User]?
+    var dbhelp = DBHelper()
+
 
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
@@ -54,10 +56,11 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signIn(_ sender: Any) {
-        
-
+        let user = dbhelp.getOneData(name: username.text!)
+        if user.passCheck(password.text!){
+            shouldPerformSegue(withIdentifier: "MainMenu", sender: self)}
         
     }
-
+  
 }
 
