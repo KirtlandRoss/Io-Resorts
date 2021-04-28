@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BC0CAC9E2638F317001E7986 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = BC0CAC9D2638F317001E7986 /* fonts */; };
 		BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACAA2638F6AA001E7986 /* Main.storyboard */; };
+		BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CACAE2638FAFF001E7986 /* DBHelper.swift */; };
+		BC0CACB42638FCB7001E7986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */; };
 		BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE842635D00100E90F38 /* AppDelegate.swift */; };
 		BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE862635D00100E90F38 /* SceneDelegate.swift */; };
 		BC37AE892635D00100E90F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE882635D00100E90F38 /* ViewController.swift */; };
 		BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE902635D00300E90F38 /* Assets.xcassets */; };
-		BC37AE942635D00300E90F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE922635D00300E90F38 /* LaunchScreen.storyboard */; };
 		BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */; };
 		BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */; };
 		BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA82635D50800E90F38 /* LoginViewController.swift */; };
@@ -31,12 +32,13 @@
 		4424EA296170694874E3E9D2 /* Pods_ResortFeedbackApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResortFeedbackApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0CAC9D2638F317001E7986 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		BC0CACAB2638F6AA001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		BC0CACAE2638FAFF001E7986 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		BC0CACB32638FCB7001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		BC37AE812635D00100E90F38 /* ResortFeedbackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedbackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC37AE842635D00100E90F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC37AE862635D00100E90F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BC37AE882635D00100E90F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC37AE902635D00300E90F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BC37AE932635D00300E90F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC37AE952635D00300E90F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BC37AEA72635D50800E90F38 /* ResortFeedbackApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResortFeedbackApp.xcdatamodel; sourceTree = "<group>"; };
@@ -108,15 +110,16 @@
 				BC37AE862635D00100E90F38 /* SceneDelegate.swift */,
 				BC37AE882635D00100E90F38 /* ViewController.swift */,
 				BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */,
+				BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */,
 				BC0CACAA2638F6AA001E7986 /* Main.storyboard */,
 				BC37AEA82635D50800E90F38 /* LoginViewController.swift */,
 				BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */,
 				BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */,
 				BC37AE902635D00300E90F38 /* Assets.xcassets */,
-				BC37AE922635D00300E90F38 /* LaunchScreen.storyboard */,
 				BC37AE952635D00300E90F38 /* Info.plist */,
 				BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */,
 				BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */,
+				BC0CACAE2638FAFF001E7986 /* DBHelper.swift */,
 			);
 			path = ResortFeedbackApp;
 			sourceTree = "<group>";
@@ -180,8 +183,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC37AE942635D00300E90F38 /* LaunchScreen.storyboard in Resources */,
 				BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */,
+				BC0CACB42638FCB7001E7986 /* LaunchScreen.storyboard in Resources */,
 				BC0CAC9E2638F317001E7986 /* fonts in Resources */,
 				BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */,
 			);
@@ -248,6 +251,7 @@
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
 				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
 				BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */,
+				BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +266,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BC37AE922635D00300E90F38 /* LaunchScreen.storyboard */ = {
+		BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC37AE932635D00300E90F38 /* Base */,
+				BC0CACB32638FCB7001E7986 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
