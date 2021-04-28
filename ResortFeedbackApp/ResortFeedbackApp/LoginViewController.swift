@@ -10,6 +10,8 @@ import UIKit
 class LoginViewController: UIViewController {
     var userDictionary : [String: User]?
 
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var username: UITextField!
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -52,6 +54,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signIn(_ sender: Any) {
+        
 
         
     }
