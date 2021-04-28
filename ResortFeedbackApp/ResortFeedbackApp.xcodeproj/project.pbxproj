@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BC0CAC9E2638F317001E7986 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = BC0CAC9D2638F317001E7986 /* fonts */; };
+		BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACAA2638F6AA001E7986 /* Main.storyboard */; };
 		BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE842635D00100E90F38 /* AppDelegate.swift */; };
 		BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE862635D00100E90F38 /* SceneDelegate.swift */; };
 		BC37AE892635D00100E90F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE882635D00100E90F38 /* ViewController.swift */; };
-		BC37AE8C2635D00100E90F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE8A2635D00100E90F38 /* Main.storyboard */; };
 		BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE902635D00300E90F38 /* Assets.xcassets */; };
 		BC37AE942635D00300E90F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC37AE922635D00300E90F38 /* LaunchScreen.storyboard */; };
 		BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */; };
@@ -30,11 +30,11 @@
 		0A36DE820FFD954BDB79BCBA /* Pods-ResortFeedbackApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedbackApp.release.xcconfig"; path = "Target Support Files/Pods-ResortFeedbackApp/Pods-ResortFeedbackApp.release.xcconfig"; sourceTree = "<group>"; };
 		4424EA296170694874E3E9D2 /* Pods_ResortFeedbackApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResortFeedbackApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0CAC9D2638F317001E7986 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		BC0CACAB2638F6AA001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		BC37AE812635D00100E90F38 /* ResortFeedbackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedbackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC37AE842635D00100E90F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC37AE862635D00100E90F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BC37AE882635D00100E90F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC37AE8B2635D00100E90F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC37AE902635D00300E90F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC37AE932635D00300E90F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC37AE952635D00300E90F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		BC37AEEB26370A5400E90F38 /* SurveyResults+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResults+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		BC37B02F2638993900E90F38 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BC37B02F2638993900E90F38 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestionsView.swift; sourceTree = "<group>"; };
 		BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMenuViewController.swift; sourceTree = "<group>"; };
 		F9551C19B8D2BEE65A005582 /* Pods-ResortFeedbackApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedbackApp.debug.xcconfig"; path = "Target Support Files/Pods-ResortFeedbackApp/Pods-ResortFeedbackApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				BC37AE862635D00100E90F38 /* SceneDelegate.swift */,
 				BC37AE882635D00100E90F38 /* ViewController.swift */,
 				BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */,
-				BC37AE8A2635D00100E90F38 /* Main.storyboard */,
+				BC0CACAA2638F6AA001E7986 /* Main.storyboard */,
 				BC37AEA82635D50800E90F38 /* LoginViewController.swift */,
 				BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */,
 				BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */,
@@ -182,8 +182,8 @@
 			files = (
 				BC37AE942635D00300E90F38 /* LaunchScreen.storyboard in Resources */,
 				BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */,
-				BC37AE8C2635D00100E90F38 /* Main.storyboard in Resources */,
 				BC0CAC9E2638F317001E7986 /* fonts in Resources */,
+				BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +254,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC37AE8A2635D00100E90F38 /* Main.storyboard */ = {
+		BC0CACAA2638F6AA001E7986 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC37AE8B2635D00100E90F38 /* Base */,
+				BC0CACAB2638F6AA001E7986 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
