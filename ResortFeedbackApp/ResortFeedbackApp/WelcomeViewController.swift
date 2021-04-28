@@ -8,12 +8,16 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    let dbhelp = DBHelper()
+    var user : User?
 
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var nameX: NSLayoutConstraint!
     @IBOutlet weak var welcomeY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,6 +68,16 @@ class WelcomeViewController: UIViewController {
 
         }
 
+    }
+    @IBAction func coupons(_ sender: Any) {
+        self.user = (self.navigationController as! NavigationViewController).user
+        if self.user!.surveyComplete{
+            self.performSegue(withIdentifier: "CouponSegue", sender: self)
+        }
+        else{
+
+            nameLabel.text = "You have no coupons"
+        }
     }
 
 

@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
-    
+
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -59,7 +59,12 @@ class LoginViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         let user = dbhelp.getOneData(name: username.text!)
         if user.passCheck(password.text!){
-            shouldPerformSegue(withIdentifier: "MainMenu", sender: self)}
+            (self.navigationController as! NavigationViewController).user = user
+
+            self.performSegue(withIdentifier: "MainMenu", sender: self)
+
+
+        }
         
     }
   
