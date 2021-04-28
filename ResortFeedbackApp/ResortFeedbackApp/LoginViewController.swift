@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
+    
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)

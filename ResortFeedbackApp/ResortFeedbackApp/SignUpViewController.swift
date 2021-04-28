@@ -60,6 +60,7 @@ class SignUpViewController: UIViewController {
        
 
         dbhelp.addData(dict)
+        _ = navigationController?.popToRootViewController(animated: true)
 
     }
 
