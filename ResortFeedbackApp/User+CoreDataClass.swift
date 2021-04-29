@@ -2,7 +2,7 @@
 //  User+CoreDataClass.swift
 //  ResortFeedbackApp
 //
-//  Created by Kirtland Ross on 4/26/21.
+//  Created by Kirtland Ross on 4/28/21.
 //
 //
 
@@ -11,7 +11,6 @@ import CoreData
 
 @objc(User)
 public class User: NSManagedObject {
-    
     func passCheck(_ pass: String) -> Bool{
         if pass == self.password{
             return true
