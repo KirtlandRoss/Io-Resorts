@@ -20,13 +20,8 @@ class DBHelper{
 
         user.name = object["name"]
         user.password = object["password"]
-        results.q1 = Int64(res[0])
-        results.q2 = Int64(res[1])
-        results.q3 = Int64(res[2])
-        results.q4 = Int64(res[3])
-        results.q5 = Int64(res[4])
+        //set relationship pointer to owning object
         results.user = user
-
 
         do{
             try context.save()
@@ -44,7 +39,7 @@ class DBHelper{
         fetchReq.predicate = NSPredicate(format: "name == %@", name)
         fetchReq.fetchLimit = 1
         do{
-            let req = try? context.fetch(fetchReq) as? [User]
+            let req = try context.fetch(fetchReq) as? [User]
             if (req != nil && req!.count != 0  ){
                 st = req!.first! as User
             }
