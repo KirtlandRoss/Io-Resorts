@@ -68,7 +68,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signIn(_ sender: Any) {
-        user = dbhelp.getOneData(name: username.text!)
+        user = dbhelp.getOneUser(name: username.text!)
         if user!.name == nil{
             userErr.alpha = 1
         }
