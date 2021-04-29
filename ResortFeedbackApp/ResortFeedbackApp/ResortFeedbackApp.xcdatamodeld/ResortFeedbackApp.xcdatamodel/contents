@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F5046g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Results" representedClassName="Results" syncable="YES" codeGenerationType="category">
+        <attribute name="q1" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="q2" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="q3" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="q4" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="q5" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="roomResults" inverseEntity="User"/>
+    </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="category">
         <attribute name="foodResults" optional="YES" attributeType="String" customClassName="[Int]"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="overallResults" optional="YES" attributeType="String" customClassName="[Int32]"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="poolResults" optional="YES" attributeType="String" customClassName="[Integer 64]"/>
-        <attribute name="roomResults" optional="YES" attributeType="String" customClassName="[Integer 64]"/>
         <attribute name="spaResults" optional="YES" attributeType="String" customClassName="[Integer 64]"/>
         <attribute name="surveyComplete" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <relationship name="roomResults" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Results" inverseName="user" inverseEntity="Results"/>
     </entity>
     <elements>
         <element name="User" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="Results" positionX="-54" positionY="54" width="128" height="119"/>
     </elements>
 </model>

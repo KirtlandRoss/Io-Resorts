@@ -60,7 +60,6 @@ class LoginViewController: UIViewController {
         let user = dbhelp.getOneData(name: username.text!)
         if user.passCheck(password.text!){
             (self.navigationController as! NavigationViewController).user = user
-
             self.performSegue(withIdentifier: "MainMenu", sender: self)
 
 

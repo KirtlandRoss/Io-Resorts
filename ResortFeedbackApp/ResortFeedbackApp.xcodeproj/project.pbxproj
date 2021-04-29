@@ -24,6 +24,8 @@
 		BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */; };
 		BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */; };
 		BCDB646D263A0614008DFDAD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646C263A0614008DFDAD /* NavigationViewController.swift */; };
+		BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */; };
+		BCDB6472263A3A36008DFDAD /* Results+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB6470263A3A36008DFDAD /* Results+CoreDataClass.swift */; };
 		E030820E98D10D822B4044A0 /* Pods_ResortFeedbackApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4424EA296170694874E3E9D2 /* Pods_ResortFeedbackApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestionsView.swift; sourceTree = "<group>"; };
 		BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMenuViewController.swift; sourceTree = "<group>"; };
 		BCDB646C263A0614008DFDAD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSurveyViewController.swift; sourceTree = "<group>"; };
+		BCDB6470263A3A36008DFDAD /* Results+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F9551C19B8D2BEE65A005582 /* Pods-ResortFeedbackApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedbackApp.debug.xcconfig"; path = "Target Support Files/Pods-ResortFeedbackApp/Pods-ResortFeedbackApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,7 @@
 		BC37AE782635D00100E90F38 = {
 			isa = PBXGroup;
 			children = (
+				BCDB6470263A3A36008DFDAD /* Results+CoreDataClass.swift */,
 				BC37B02F2638993900E90F38 /* Podfile */,
 				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
 				BC37AE832635D00100E90F38 /* ResortFeedbackApp */,
@@ -120,6 +125,7 @@
 				BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */,
 				BC0CACAE2638FAFF001E7986 /* DBHelper.swift */,
 				BCDB646C263A0614008DFDAD /* NavigationViewController.swift */,
+				BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */,
 			);
 			path = ResortFeedbackApp;
 			sourceTree = "<group>";
@@ -248,9 +254,11 @@
 				BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */,
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
 				BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */,
+				BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
 				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
 				BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */,
+				BCDB6472263A3A36008DFDAD /* Results+CoreDataClass.swift in Sources */,
 				BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
