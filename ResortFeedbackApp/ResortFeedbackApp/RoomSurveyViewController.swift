@@ -71,8 +71,9 @@ class RoomSurveyViewController: UIViewController {
     @IBAction func submit(_ sender: Any) {
         var arr = (user?.results?.allObjects as! [Results])
         arr[0] = results!
-        user!.results = NSSet(array: arr)
-        dbHelp.updateData(user!)
+
+        dbHelp.updateResultsData(results: arr, user: user!)
+//        dbHelp.updateData(user!)
     }
 
 
