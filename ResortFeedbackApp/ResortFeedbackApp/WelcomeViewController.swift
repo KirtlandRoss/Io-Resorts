@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nameLabel.text = (self.navigationController as! NavigationViewController).user!.name
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {

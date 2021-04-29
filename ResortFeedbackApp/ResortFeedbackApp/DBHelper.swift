@@ -13,7 +13,7 @@ class DBHelper{
     static var inst = DBHelper()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-    func addData(_ object: [String:String], _ res: [Int]){
+    func addUser(_ object: [String:String]){
 
         let user = User(context: context)
         let results = Results(context: context)
@@ -34,7 +34,7 @@ class DBHelper{
 
 
     func getOneData(name : String) -> User {
-        var st = User()
+        var st = User(context: context)
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", name)
         fetchReq.fetchLimit = 1
@@ -42,8 +42,9 @@ class DBHelper{
             let req = try context.fetch(fetchReq) as? [User]
             if (req != nil && req!.count != 0  ){
                 st = req!.first! as User
+                return st
             }
-            return st
+
         }
         catch{
             print("no data returned")
