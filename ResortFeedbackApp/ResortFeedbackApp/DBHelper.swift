@@ -31,16 +31,33 @@ class DBHelper{
             print("data not saved")
         }
     }
+    func getOneResults(username: String ,cat : String) -> Results {
+        var st = Results(context: context)
+        let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
+        fetchReq.predicate = NSPredicate(format: "category == %@", cat)
+        fetchReq.fetchLimit = 1
+        do{
+            let req = try context.fetch(fetchReq) as? [Results]
+            if (req!.count != 0  ){
+                st = req!.first! as Results
+                return st
+            }
 
+        }
+        catch{
+            print("no data returned")
+        }
+        return st
+    }
 
-    func getOneData(name : String) -> User {
+    func getOneUser(name : String) -> User {
         var st = User(context: context)
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", name)
         fetchReq.fetchLimit = 1
         do{
             let req = try context.fetch(fetchReq) as? [User]
-            if (req != nil && req!.count != 0  ){
+            if (req!.count != 0  ){
                 st = req!.first! as User
                 return st
             }
@@ -51,6 +68,31 @@ class DBHelper{
         }
         return st
     }
+
+
+    
+
+
+//    func updateData(_ user : User){
+//        var st = User()
+//        let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
+//        fetchReq.predicate = NSPredicate(format: "name == %@", user.name!)
+//        fetchReq.fetchLimit = 1
+//        do{
+//            let req = try context.fetch(fetchReq)
+//            if (req.count != 0 ){
+//                st = req.first as! User
+//                st.results = user.results
+//
+//            }
+//            try context.save()
+//            print("Data Saved")
+//        }
+//        catch{
+//            print("data not saved")
+//        }
+//
+//    }
     func updateData(_ user : User){
         var st = User()
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
@@ -60,7 +102,7 @@ class DBHelper{
             let req = try context.fetch(fetchReq)
             if (req.count != 0 ){
                 st = req.first as! User
-                st.roomResults = user.roomResults
+                st.results = user.results
                 
             }
             try context.save()
