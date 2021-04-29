@@ -18,14 +18,14 @@
 		BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */; };
 		BC37AEAB2635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */; };
 		BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA82635D50800E90F38 /* LoginViewController.swift */; };
-		BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */; };
 		BC37AFC6263759EE00E90F38 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */; };
 		BC37B0302638993900E90F38 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = BC37B02F2638993900E90F38 /* Podfile */; };
 		BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */; };
 		BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */; };
 		BCDB646D263A0614008DFDAD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646C263A0614008DFDAD /* NavigationViewController.swift */; };
 		BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */; };
-		BCDB6472263A3A36008DFDAD /* Results+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB6470263A3A36008DFDAD /* Results+CoreDataClass.swift */; };
+		BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */; };
+		BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */; };
 		E030820E98D10D822B4044A0 /* Pods_ResortFeedbackApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4424EA296170694874E3E9D2 /* Pods_ResortFeedbackApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,14 +45,14 @@
 		BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BC37AEA72635D50800E90F38 /* ResortFeedbackApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResortFeedbackApp.xcdatamodel; sourceTree = "<group>"; };
 		BC37AEA82635D50800E90F38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BC37B02F2638993900E90F38 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestionsView.swift; sourceTree = "<group>"; };
 		BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMenuViewController.swift; sourceTree = "<group>"; };
 		BCDB646C263A0614008DFDAD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSurveyViewController.swift; sourceTree = "<group>"; };
-		BCDB6470263A3A36008DFDAD /* Results+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		F9551C19B8D2BEE65A005582 /* Pods-ResortFeedbackApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedbackApp.debug.xcconfig"; path = "Target Support Files/Pods-ResortFeedbackApp/Pods-ResortFeedbackApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,9 +88,7 @@
 		BC37AE782635D00100E90F38 = {
 			isa = PBXGroup;
 			children = (
-				BCDB6470263A3A36008DFDAD /* Results+CoreDataClass.swift */,
 				BC37B02F2638993900E90F38 /* Podfile */,
-				BC37AEED26370A5400E90F38 /* User+CoreDataClass.swift */,
 				BC37AE832635D00100E90F38 /* ResortFeedbackApp */,
 				BC37AE822635D00100E90F38 /* Products */,
 				88846D99CA45A13C93EB5F6E /* Pods */,
@@ -109,6 +107,7 @@
 		BC37AE832635D00100E90F38 /* ResortFeedbackApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCDB6474263A4A21008DFDAD /* Model */,
 				BC0CAC9D2638F317001E7986 /* fonts */,
 				BC37AE842635D00100E90F38 /* AppDelegate.swift */,
 				BC37AE862635D00100E90F38 /* SceneDelegate.swift */,
@@ -128,6 +127,15 @@
 				BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */,
 			);
 			path = ResortFeedbackApp;
+			sourceTree = "<group>";
+		};
+		BCDB6474263A4A21008DFDAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */,
+				BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,14 +259,14 @@
 				BC37B0302638993900E90F38 /* Podfile in Sources */,
 				BC37AE892635D00100E90F38 /* ViewController.swift in Sources */,
 				BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */,
-				BC37AEF326370A5400E90F38 /* User+CoreDataClass.swift in Sources */,
+				BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */,
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
 				BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */,
 				BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
+				BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */,
 				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
 				BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */,
-				BCDB6472263A3A36008DFDAD /* Results+CoreDataClass.swift in Sources */,
 				BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

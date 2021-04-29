@@ -55,11 +55,9 @@ class SignUpViewController: UIViewController {
     @IBAction func submit(_ sender: Any) {
 
         let dict = ["name": username.text!, "password": password.text!]
-
-
-       
-
-        dbhelp.addData(dict)
+        let res = [6,6,6,6,6]
+        
+        dbhelp.addData(dict, res)
         _ = navigationController?.popToRootViewController(animated: true)
 
     }
