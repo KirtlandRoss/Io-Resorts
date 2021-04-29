@@ -70,7 +70,6 @@ class DBHelper{
     }
 
     func updateResultsData(results : [Results], user: User){
-        var res = NSSet(array: results)
         var st = [Results(context: context)]
         let fetchReq = NSFetchRequest<Results>.init(entityName: "Results")
         fetchReq.predicate = NSPredicate(format: "user == %@", user)
