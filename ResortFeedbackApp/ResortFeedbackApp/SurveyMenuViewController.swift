@@ -15,18 +15,14 @@ class SurveyMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
-    @IBAction func presentRoomQs(_ sender: Any) {
+    @IBAction func roomSurvey(_ sender: Any) {
+        (self.navigationController as! NavigationViewController).chosenCategory = .room
+        self.performSegue(withIdentifier: "ShowSurvey", sender: self)
+    }
+    @IBAction func foodSurvey(_ sender: Any) {
+        (self.navigationController as! NavigationViewController).chosenCategory = .food
+        self.performSegue(withIdentifier: "ShowSurvey", sender: self)
     }
 
-    @IBAction func presentPoolQs(_ sender: Any) {
-    }
-
-    @IBAction func presentSpaQs(_ sender: Any) {
-    }
-    @IBAction func presentFoodQs(_ sender: Any) {
-    }
-    @IBAction func presentOverallQs(_ sender: Any) {
-    }
 
 }

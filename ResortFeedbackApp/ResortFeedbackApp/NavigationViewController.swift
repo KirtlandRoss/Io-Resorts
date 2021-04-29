@@ -9,6 +9,7 @@ import UIKit
 
 class NavigationViewController: UINavigationController {
     var user : User?
+    var chosenCategory : Category?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,4 +24,13 @@ extension StringProtocol {
     subscript(offset: Int) -> Character {
         self[index(startIndex, offsetBy: offset)]
     }
+}
+
+
+enum Category{
+    case pool
+    case spa
+    case food
+    case room
+    case overall
 }
