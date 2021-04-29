@@ -15,12 +15,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
 
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        errorLabel.alpha = 0
     }
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
         switch UIDevice.current.orientation{
@@ -61,8 +62,10 @@ class LoginViewController: UIViewController {
         if user.passCheck(password.text!){
             (self.navigationController as! NavigationViewController).user = user
             self.performSegue(withIdentifier: "MainMenu", sender: self)
-
-
+            errorLabel.alpha = 0
+        }
+        else{
+            errorLabel.alpha = 1
         }
         
     }
