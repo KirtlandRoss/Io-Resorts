@@ -66,7 +66,7 @@ class DBHelper{
         return st
     }
 
-    func getOneUser(name : String) -> User {
+    func getOneUser(name : String) throws -> User {
         var st : User?
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", name)
@@ -81,6 +81,9 @@ class DBHelper{
         }
         catch{
             print("no data returned")
+        }
+        if st == nil{
+            throw NilError.nilErr
         }
         return st!
     }
@@ -189,4 +192,8 @@ class DBHelper{
     //        }
     //
     //    }
+}
+
+enum NilError : Error{
+    case nilErr
 }
