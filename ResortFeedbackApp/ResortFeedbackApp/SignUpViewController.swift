@@ -56,7 +56,7 @@ class SignUpViewController: UIViewController {
 
         let dict = ["name": username.text!, "password": password.text!]
         
-        dbhelp.addUser(dict)
+        (self.navigationController as! NavigationViewController).user = dbhelp.addUser(dict)
         _ = navigationController?.popToRootViewController(animated: true)
 
     }
