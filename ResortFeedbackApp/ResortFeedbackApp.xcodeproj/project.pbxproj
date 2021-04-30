@@ -11,6 +11,10 @@
 		BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACAA2638F6AA001E7986 /* Main.storyboard */; };
 		BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CACAE2638FAFF001E7986 /* DBHelper.swift */; };
 		BC0CACB42638FCB7001E7986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */; };
+		BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */; };
+		BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */; };
+		BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */; };
+		BC371142263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113E263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf */; };
 		BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE842635D00100E90F38 /* AppDelegate.swift */; };
 		BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE862635D00100E90F38 /* SceneDelegate.swift */; };
 		BC37AE892635D00100E90F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE882635D00100E90F38 /* ViewController.swift */; };
@@ -37,6 +41,10 @@
 		BC0CACAB2638F6AA001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		BC0CACAE2638FAFF001E7986 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		BC0CACB32638FCB7001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Phosphate Pro Cond Solid Regular.otf"; path = "fonts/Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
+		BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Solid.otf"; path = "fonts/PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
+		BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Inline.otf"; path = "fonts/PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
+		BC37113E263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Phosphate Pro Cond Inline Regular.otf"; path = "fonts/Phosphate Pro Cond Inline Regular.otf"; sourceTree = "<group>"; };
 		BC37AE812635D00100E90F38 /* ResortFeedbackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedbackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC37AE842635D00100E90F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC37AE862635D00100E90F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +117,10 @@
 		BC37AE832635D00100E90F38 /* ResortFeedbackApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC37113E263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf */,
+				BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */,
+				BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */,
+				BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */,
 				BCDB6474263A4A21008DFDAD /* Model */,
 				BC0CAC9D2638F317001E7986 /* fonts */,
 				BC37AE842635D00100E90F38 /* AppDelegate.swift */,
@@ -201,8 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */,
+				BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */,
+				BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */,
+				BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */,
 				BC0CACB42638FCB7001E7986 /* LaunchScreen.storyboard in Resources */,
 				BC0CAC9E2638F317001E7986 /* fonts in Resources */,
+				BC371142263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf in Resources */,
 				BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
