@@ -54,6 +54,7 @@ class RoomSurveyViewController: UIViewController {
 
     @IBAction func submit(_ sender: Any) {
         user = (self.navigationController as! NavigationViewController).user!
+        results?.completed = true
         user?.replaceResults(at: currentCategory!.rawValue, with: results!)
         
         try! context.save()

@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F5046g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Results" representedClassName="Results" syncable="YES" codeGenerationType="category">
         <attribute name="catagory" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="q1" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="q2" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="q3" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -16,7 +17,7 @@
         <relationship name="results" optional="YES" toMany="YES" maxCount="5" deletionRule="Nullify" ordered="YES" destinationEntity="Results" inverseName="user" inverseEntity="Results"/>
     </entity>
     <elements>
-        <element name="Results" positionX="-54" positionY="54" width="128" height="134"/>
+        <element name="Results" positionX="-54" positionY="54" width="128" height="149"/>
         <element name="User" positionX="-54" positionY="63" width="128" height="89"/>
     </elements>
 </model>
