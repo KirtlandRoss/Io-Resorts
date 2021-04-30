@@ -60,7 +60,7 @@ class RoomSurveyViewController: UIViewController {
 
     func updateScores(){
         user = (self.navigationController as! NavigationViewController).user!
-        results = (user?.results?.allObjects as! [Results])[0]
+        results = (user?.results?.allObjects as! [Results])[currentCategory!.rawValue]
         if user!.results == nil{
             user!.results? = [Results()]
         }
@@ -96,6 +96,18 @@ class RoomSurveyViewController: UIViewController {
             question2.text = "How did you feel about the cost"
             question3.text = "How was the food service?"
             question4.text = "How was the selection?"
+            question5.text = "Overall"
+        case .pool:
+            question1.text = "How was the temperature"
+            question2.text = "How was the cleanliness"
+            question3.text = "How was the staff?"
+            question4.text = "How was the location?"
+            question5.text = "Overall"
+        case .pool:
+            question1.text = "How was the temperature"
+            question2.text = "How was the cleanliness"
+            question3.text = "How was the staff?"
+            question4.text = "How was the location?"
             question5.text = "Overall"
         default:
             ""
