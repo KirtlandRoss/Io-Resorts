@@ -71,7 +71,7 @@ class WelcomeViewController: UIViewController {
     }
     @IBAction func coupons(_ sender: Any) {
         self.user = (self.navigationController as! NavigationViewController).user
-        if self.user!.surveyComplete{
+        if self.user!.checkIfComplete(){
             self.performSegue(withIdentifier: "CouponSegue", sender: self)
         }
         else{

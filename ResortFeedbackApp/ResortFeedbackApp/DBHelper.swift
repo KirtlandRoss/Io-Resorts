@@ -21,6 +21,7 @@ class DBHelper{
         for _ in 0...4{
             
             user.addToResults(Results(context: context))
+            (user.results?.lastObject as! Results).completed = false
         }
 //        print(resultsArr.count)
 
