@@ -95,13 +95,12 @@ class LoginViewController: UIViewController {
             ud.set(password.text, forKey: "pass")
 
 
-            print("saved!")
-
+         
         }
         else{
             ud.removeObject(forKey: "id")
             ud.removeObject(forKey: "pass")
-            print("unsaved!")
+
         }
         ud.set(rememberMe.isOn, forKey: "bool")
 

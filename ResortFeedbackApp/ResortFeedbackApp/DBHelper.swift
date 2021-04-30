@@ -20,11 +20,12 @@ class DBHelper{
 
         user.name = object["name"]
         user.password = object["password"]
+        user.surveyComplete = false
         //set relationship pointer to owning object
         results.user = user
 
         do{
-            try context.save()
+            try! context.save()
             print("Data Saved")
         }
         catch{

@@ -27,10 +27,10 @@ extension StringProtocol {
 }
 
 
-enum Category{
-    case pool
-    case spa
-    case food
-    case room
-    case overall
+enum Category : Int{
+    case room = 0
+    case food = 1
+    case pool = 2
+    case spa = 3
+    case overall = 4
 }
