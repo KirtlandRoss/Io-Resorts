@@ -32,6 +32,7 @@ class RoomSurveyViewController: UIViewController {
         updateScores()
         getQuestions()
 
+
     }
     
     @IBAction func q1Select(_ sender: UISegmentedControl) {
@@ -93,24 +94,35 @@ class RoomSurveyViewController: UIViewController {
             question3.text = "How was the view?"
             question4.text = "How loud were your neighbors"
             question5.text = "Overall"
+            self.title = "Room"
         case .food:
             question1.text = "How did the food taste"
             question2.text = "How did you feel about the cost"
             question3.text = "How was the food service?"
             question4.text = "How was the selection?"
             question5.text = "Overall"
+            self.title = "Food"
         case .pool:
             question1.text = "How was the temperature"
             question2.text = "How was the cleanliness"
             question3.text = "How was the staff?"
             question4.text = "How was the location?"
             question5.text = "Overall"
-        case .pool:
-            question1.text = "How was the temperature"
-            question2.text = "How was the cleanliness"
+            self.title = "Pool"
+        case .spa:
+            question1.text = "How was the wait?"
+            question2.text = "How was the cleanliness?"
             question3.text = "How was the staff?"
-            question4.text = "How was the location?"
+            question4.text = "How was the price?"
             question5.text = "Overall"
+            self.title = "Spa"
+        case .overall:
+            question1.text = "How was the check-in experience?"
+            question2.text = "How was the location?"
+            question3.text = "How was the staff?"
+            question4.text = "How was the price?"
+            question5.text = "How was the experience?"
+            self.title = "Overall"
         default:
             ""
         }
