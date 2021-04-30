@@ -22,10 +22,12 @@ class UpdatePassViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: Any) {
-        let user = dbhelp.getOneUser(name: username.text!)
+        do{
+        let user = try dbhelp.getOneUser(name: username.text!)
         if user.passCheck(oldPass.text!){
             user.password = newPass.text
             dbhelp.updateData(user)
+            message.textColor = .white
             message.text = "Password Changed"
             username.text = ""
             oldPass.text = ""
@@ -33,7 +35,16 @@ class UpdatePassViewController: UIViewController {
             message.alpha = 1
         }
         else{
+            message.textColor = .red
             message.text = "Current Password Incorrect"
+            message.alpha = 1
+
+        }
+
+        }
+        catch{
+            message.textColor = .red
+            message.text = "User Not Found"
             message.alpha = 1
 
         }

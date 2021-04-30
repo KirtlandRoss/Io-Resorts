@@ -68,10 +68,11 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signIn(_ sender: Any) {
-        user = dbhelp.getOneUser(name: username.text!)
+        do{
+            try user = dbhelp.getOneUser(name: username.text!)
         print(user?.results?.array.count)
-        
-        
+
+
         if user!.name == nil{
             userErr.alpha = 1
         }
@@ -89,6 +90,11 @@ class LoginViewController: UIViewController {
         else{
             passErr.alpha = 1
         }
+    }
+        catch{
+            userErr.alpha = 1
+        }
+
         
     }
   
