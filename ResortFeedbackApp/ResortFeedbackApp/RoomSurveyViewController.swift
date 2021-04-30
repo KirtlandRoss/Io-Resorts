@@ -6,8 +6,9 @@
 //
 
 import UIKit
-
+import CoreData
 class RoomSurveyViewController: UIViewController {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     @IBOutlet weak var question1: UILabel!
     @IBOutlet weak var question3: UILabel!
@@ -51,16 +52,17 @@ class RoomSurveyViewController: UIViewController {
     }
 
     @IBAction func submit(_ sender: Any) {
-        var arr = (user?.results?.allObjects as! [Results])
-        arr[0] = results!
+        user = (self.navigationController as! NavigationViewController).user!
+        user?.replaceResults(at: currentCategory!.rawValue, with: results!)
 
-        dbHelp.updateResultsData(results: arr, user: user!)
+        try! context.save()
         //        dbHelp.updateData(user!)
     }
 
     func updateScores(){
         user = (self.navigationController as! NavigationViewController).user!
-        results = (user?.results?.allObjects as! [Results])[currentCategory!.rawValue]
+
+        results = (user?.results?.array as! [Results])[currentCategory!.rawValue]
         if user!.results == nil{
             user!.results? = [Results()]
         }

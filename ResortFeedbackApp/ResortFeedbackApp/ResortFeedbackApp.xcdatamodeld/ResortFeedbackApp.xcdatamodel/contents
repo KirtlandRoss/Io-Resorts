@@ -13,7 +13,7 @@
         <attribute name="name" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="surveyComplete" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
-        <relationship name="results" optional="YES" toMany="YES" maxCount="5" deletionRule="Nullify" destinationEntity="Results" inverseName="user" inverseEntity="Results"/>
+        <relationship name="results" optional="YES" toMany="YES" maxCount="5" deletionRule="Nullify" ordered="YES" destinationEntity="Results" inverseName="user" inverseEntity="Results"/>
     </entity>
     <elements>
         <element name="Results" positionX="-54" positionY="54" width="128" height="134"/>
