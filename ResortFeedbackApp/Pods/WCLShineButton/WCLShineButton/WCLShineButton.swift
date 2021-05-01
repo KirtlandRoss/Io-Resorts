@@ -44,7 +44,7 @@ public class WCLShineButton: UIControl {
     }
     
     /// 点击后的颜色
-    @IBInspectable public var fillColor: UIColor = UIColor(rgb: (255, 102, 102)) {
+    @IBInspectable public var fillColor: UIColor = UIColor(rgb: (255, 246, 106)) {
         willSet {
             clickLayer.fillColor = newValue
             shineLayer.fillColor = newValue
@@ -52,7 +52,7 @@ public class WCLShineButton: UIControl {
     }
     
     /// button的图片
-    public var image: WCLShineImage = .heart {
+    public var image: WCLShineImage = .star {
         willSet {
             clickLayer.image = newValue
         }
