@@ -82,33 +82,33 @@ class RoomSurveyViewController: UIViewController {
         q5b4.addTarget(self, action: #selector(q5b4Toggle), for: .valueChanged)
         q5b3.addTarget(self, action: #selector(q5b3Toggle), for: .valueChanged)
         q5b2.addTarget(self, action: #selector(q5b2Toggle), for: .valueChanged)
-        q5b1.addTarget(self, action: #selector(q5b2Toggle), for: .valueChanged)
+        q5b1.addTarget(self, action: #selector(q5b1Toggle), for: .valueChanged)
 
         q4b5.addTarget(self, action: #selector(q4b5Toggle), for: .valueChanged)
         q4b4.addTarget(self, action: #selector(q4b4Toggle), for: .valueChanged)
         q4b3.addTarget(self, action: #selector(q4b3Toggle), for: .valueChanged)
         q4b2.addTarget(self, action: #selector(q4b2Toggle), for: .valueChanged)
+        q4b1.addTarget(self, action: #selector(q4b1Toggle), for: .valueChanged)
 
-        q3b1.addTarget(self, action: #selector(q3b2Toggle), for: .valueChanged)
         q3b5.addTarget(self, action: #selector(q3b5Toggle), for: .valueChanged)
         q3b4.addTarget(self, action: #selector(q3b4Toggle), for: .valueChanged)
         q3b3.addTarget(self, action: #selector(q3b3Toggle), for: .valueChanged)
         q3b2.addTarget(self, action: #selector(q3b2Toggle), for: .valueChanged)
-        q3b1.addTarget(self, action: #selector(q3b2Toggle), for: .valueChanged)
+        q3b1.addTarget(self, action: #selector(q3b1Toggle), for: .valueChanged)
 
-        q2b1.addTarget(self, action: #selector(q2b2Toggle), for: .valueChanged)
+
         q2b5.addTarget(self, action: #selector(q2b5Toggle), for: .valueChanged)
         q2b4.addTarget(self, action: #selector(q2b4Toggle), for: .valueChanged)
         q2b3.addTarget(self, action: #selector(q2b3Toggle), for: .valueChanged)
         q2b2.addTarget(self, action: #selector(q2b2Toggle), for: .valueChanged)
-        q2b1.addTarget(self, action: #selector(q2b2Toggle), for: .valueChanged)
+        q2b1.addTarget(self, action: #selector(q2b1Toggle), for: .valueChanged)
 
-        q1b1.addTarget(self, action: #selector(q1b2Toggle), for: .valueChanged)
+
         q1b5.addTarget(self, action: #selector(q1b5Toggle), for: .valueChanged)
         q1b4.addTarget(self, action: #selector(q1b4Toggle), for: .valueChanged)
         q1b3.addTarget(self, action: #selector(q1b3Toggle), for: .valueChanged)
         q1b2.addTarget(self, action: #selector(q1b2Toggle), for: .valueChanged)
-        q1b1.addTarget(self, action: #selector(q1b2Toggle), for: .valueChanged)
+        q1b1.addTarget(self, action: #selector(q1b1Toggle), for: .valueChanged)
 
 
     }
@@ -185,30 +185,48 @@ class RoomSurveyViewController: UIViewController {
                 }
             }
             if results?.q4 != nil{
-                switch results!.q3{
+                switch results!.q4{
                 case 5:
-                    q3b5Toggle()
+                    q4b5Toggle()
                 case 4:
-                    q3b4Toggle()
+                    q4b4Toggle()
                 case 3:
-                    q3b3Toggle()
+                    q4b3Toggle()
                 case 2:
-                    q3b2Toggle()
+                    q4b2Toggle()
                 case 1:
-                    q3b1Toggle()
+                    q4b1Toggle()
                 default:
                     print("uh oh")
                 }
-            }
-            if results?.q3 != nil{
-                q3Sel.selectedSegmentIndex = Int(exactly: results!.q3)!
+                
             }
             if results?.q4 != nil{
-                q4Sel.selectedSegmentIndex = Int(exactly: results!.q4)!
+                switch results!.q5{
+                case 5:
+                    q5b5Toggle()
+                case 4:
+                    q5b4Toggle()
+                case 3:
+                    q5b3Toggle()
+                case 2:
+                    q5b2Toggle()
+                case 1:
+                    q5b1Toggle()
+                default:
+                    print("uh oh")
+                }
+                
             }
-            if results?.q5 != nil{
-                q5Sel.selectedSegmentIndex = Int(exactly: results!.q5)!
-            }
+//            if results?.q3 != nil{
+//                q3Sel.selectedSegmentIndex = Int(exactly: results!.q3)!
+//            }
+//            if results?.q4 != nil{
+//                q4Sel.selectedSegmentIndex = Int(exactly: results!.q4)!
+//            }
+//            if results?.q5 != nil{
+//                q5Sel.selectedSegmentIndex = Int(exactly: results!.q5)!
+//            }
         }
     }
     func getQuestions(){
