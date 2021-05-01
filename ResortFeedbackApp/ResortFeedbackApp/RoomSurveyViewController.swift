@@ -62,21 +62,26 @@ class RoomSurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.currentCategory = (self.navigationController as! NavigationViewController).chosenCategory!
+
         updateScores()
+
         getQuestions()
+
+        var params = WCLShineParams()
+        params.bigShineColor = UIColor(rgb: (153,152,38))
+        params.smallShineColor = UIColor(rgb: (0,0,0))
+        params.enableFlashing = true
+        setButtonAppearnce(params)
+
         setupRating()
 
 
 
     }
     func setupRating(){
-        var param1 = WCLShineParams()
-        param1.bigShineColor = UIColor(rgb: (153,152,38))
-        param1.smallShineColor = UIColor(rgb: (102,102,102))
-        q5b3.params = param1
-        q5b3.frame = .init(x: 100, y: 100, width: 60, height: 60)
-        q5b3.fillColor = UIColor(rgb: (153,152,38))
-        q5b3.color = UIColor(rgb: (170,170,170))
+
+
+
 
         q5b5.addTarget(self, action: #selector(q5b5Toggle), for: .valueChanged)
         q5b4.addTarget(self, action: #selector(q5b4Toggle), for: .valueChanged)
@@ -95,7 +100,6 @@ class RoomSurveyViewController: UIViewController {
         q3b3.addTarget(self, action: #selector(q3b3Toggle), for: .valueChanged)
         q3b2.addTarget(self, action: #selector(q3b2Toggle), for: .valueChanged)
         q3b1.addTarget(self, action: #selector(q3b1Toggle), for: .valueChanged)
-
 
         q2b5.addTarget(self, action: #selector(q2b5Toggle), for: .valueChanged)
         q2b4.addTarget(self, action: #selector(q2b4Toggle), for: .valueChanged)
@@ -125,9 +129,50 @@ class RoomSurveyViewController: UIViewController {
         user?.replaceResults(at: currentCategory!.rawValue, with: results!)
         
         try! context.save()
-        //        dbHelp.updateData(user!)
     }
+    func setButtonAppearnce( _ params : WCLShineParams){
 
+
+
+        //sets appearnce parameters of buttons
+
+
+        q5b5.params = params
+        q5b4.params = params
+        q5b3.params = params
+        q5b2.params = params
+        q5b1.params = params
+
+        q4b5.params = params
+        q4b4.params = params
+        q4b3.params = params
+        q4b2.params = params
+        q4b1.params = params
+
+        q3b5.params = params
+        q3b4.params = params
+        q3b3.params = params
+        q3b2.params = params
+        q3b1.params = params
+
+        q2b5.params = params
+        q2b4.params = params
+        q2b3.params = params
+        q2b2.params = params
+        q2b1.params = params
+
+        q1b5.params = params
+        q1b4.params = params
+        q1b3.params = params
+        q1b2.params = params
+        q1b1.params = params
+        //set button images
+        q5b5.image = .like;q5b4.image = .like; q5b3.image = .like; q5b2.image = .like; q5b1.image = .like
+        q4b5.image = .like; q4b4.image = .like; q4b3.image = .like; q4b2.image = .like ; q4b1.image = .like
+        q3b5.image = .like; q3b4.image = .like; q3b3.image = .like; q3b2.image = .like; q3b1.image = .like
+        q2b5.image = .like; q2b4.image = .like; q2b3.image = .like; q2b2.image = .like; q2b1.image = .like
+        q1b5.image = .like; q1b4.image = .like; q1b3.image = .like; q1b2.image = .like; q1b1.image = .like
+    }
     func updateScores(){
         user = (self.navigationController as! NavigationViewController).user!
 
@@ -216,17 +261,9 @@ class RoomSurveyViewController: UIViewController {
                 default:
                     print("uh oh")
                 }
-                
+
             }
-//            if results?.q3 != nil{
-//                q3Sel.selectedSegmentIndex = Int(exactly: results!.q3)!
-//            }
-//            if results?.q4 != nil{
-//                q4Sel.selectedSegmentIndex = Int(exactly: results!.q4)!
-//            }
-//            if results?.q5 != nil{
-//                q5Sel.selectedSegmentIndex = Int(exactly: results!.q5)!
-//            }
+
         }
     }
     func getQuestions(){
@@ -272,7 +309,9 @@ class RoomSurveyViewController: UIViewController {
         }
     }
 
-//MARK: Here there be dragons, this is to make the ratings work stars work graphically
+//MARK: Here there be dragons, these are the button handler functions
+
+    //sets the rating and then runs the functions for selecting/deselecting the other buttons according to the rating
     @objc func q1b5Toggle(){
         results!.q1 = 5
         q1RatingSwitch()
@@ -293,6 +332,7 @@ class RoomSurveyViewController: UIViewController {
         results!.q1 = 1
         q1RatingSwitch()
     }
+    //rating switch makes sure the other rating buttons are filled/unfilled based on the rating.
     func q1RatingSwitch(){
         q1b5.isSelected=false ;q1b4.isSelected=false; q1b3.isSelected=false ; q1b2.isSelected=false
         switch results!.q1{
