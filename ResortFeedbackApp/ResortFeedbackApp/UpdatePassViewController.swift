@@ -46,9 +46,7 @@ class UpdatePassViewController: UIViewController {
             message.textColor = .red
             message.text = "User Not Found"
             message.alpha = 1
-
         }
-
     }
 
 

@@ -15,6 +15,7 @@
 		BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */; };
 		BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */; };
 		BC371142263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113E263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf */; };
+		BC371164263C993900CDAAFA /* ShineButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC371163263C993900CDAAFA /* ShineButtonView.swift */; };
 		BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE842635D00100E90F38 /* AppDelegate.swift */; };
 		BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE862635D00100E90F38 /* SceneDelegate.swift */; };
 		BC37AE892635D00100E90F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AE882635D00100E90F38 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Solid.otf"; path = "fonts/PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
 		BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Inline.otf"; path = "fonts/PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
 		BC37113E263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Phosphate Pro Cond Inline Regular.otf"; path = "fonts/Phosphate Pro Cond Inline Regular.otf"; sourceTree = "<group>"; };
+		BC371163263C993900CDAAFA /* ShineButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShineButtonView.swift; sourceTree = "<group>"; };
 		BC37AE812635D00100E90F38 /* ResortFeedbackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedbackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC37AE842635D00100E90F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC37AE862635D00100E90F38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				BCDB646C263A0614008DFDAD /* NavigationViewController.swift */,
 				BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */,
 				BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */,
+				BC371163263C993900CDAAFA /* ShineButtonView.swift */,
 			);
 			path = ResortFeedbackApp;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */,
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
 				BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */,
+				BC371164263C993900CDAAFA /* ShineButtonView.swift in Sources */,
 				BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
 				BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */,
