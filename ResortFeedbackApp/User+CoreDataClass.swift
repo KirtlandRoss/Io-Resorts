@@ -17,12 +17,12 @@ public class User: NSManagedObject {
         }
         return false
     }
-    func checkIfComplete() -> Bool{
+    func checkIfComplete(){
         for i in 0...4{
             if !(self.results?.array[i] as! Results).completed{
-                return false
+                self.surveyComplete = false
             }
         }
-        return true
+        self.surveyComplete = true
     }
 }

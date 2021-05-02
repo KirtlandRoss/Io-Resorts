@@ -16,18 +16,29 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var welcomeY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var survey: UIButton!
+
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = (self.navigationController as! NavigationViewController).user!.name
+        user = (self.navigationController as! NavigationViewController).user
+        nameLabel.text = user?.name
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
             welcomeY.constant -= view.bounds.height
             nameX.constant -= view.bounds.width
-//            loginButton.alpha = 0.0
+        if user!.surveyComplete{
+            survey.setTitle("Update Survey", for: .normal)
+        }
+        else{
+
+            survey.setTitle("Complete Survey", for: .normal)
+        }
+        
+
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -49,9 +60,7 @@ class WelcomeViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        // Restore the navigation bar to default
-        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
-        navigationController?.navigationBar.shadowImage = nil
+
     }
 
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
@@ -71,7 +80,7 @@ class WelcomeViewController: UIViewController {
     }
     @IBAction func coupons(_ sender: Any) {
         self.user = (self.navigationController as! NavigationViewController).user
-        if self.user!.checkIfComplete(){
+        if self.user!.surveyComplete{
             self.performSegue(withIdentifier: "CouponSegue", sender: self)
         }
         else{

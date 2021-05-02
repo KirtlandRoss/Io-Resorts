@@ -125,7 +125,8 @@ class RoomSurveyViewController: UIViewController {
         user = (self.navigationController as! NavigationViewController).user!
         results?.completed = true
         user?.replaceResults(at: currentCategory!.rawValue, with: results!)
-        
+        //checks if all surveys are complete and sets user.surveyComplete
+        user?.checkIfComplete()
         try! context.save()
     }
     func setButtonAppearnce( image: WCLShineImage){
@@ -154,7 +155,7 @@ class RoomSurveyViewController: UIViewController {
         params5.shineDistanceMultiple = 2
         params5.shineSize=10
         params5.animDuration = 1.5
-        
+
 
 
         //sets appearnce parameters of buttons
