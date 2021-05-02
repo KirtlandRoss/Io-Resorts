@@ -67,11 +67,9 @@ class RoomSurveyViewController: UIViewController {
 
         getQuestions()
 
-        var params = WCLShineParams()
-        params.bigShineColor = UIColor(rgb: (153,152,38))
-        params.smallShineColor = UIColor(rgb: (0,0,0))
-        params.enableFlashing = true
-        setButtonAppearnce(params)
+
+
+        setButtonAppearnce(image: .star)
 
         setupRating()
 
@@ -130,48 +128,73 @@ class RoomSurveyViewController: UIViewController {
         
         try! context.save()
     }
-    func setButtonAppearnce( _ params : WCLShineParams){
+    func setButtonAppearnce( image: WCLShineImage){
 
+        //custom animation based on button rating
+        var params2 = WCLShineParams()
+        params2.bigShineColor = UIColor(rgb: (255,245,71))
+        params2.smallShineColor = UIColor(rgb: (255,255,255))
+        params2.shineCount = 1
+
+        var params3 = WCLShineParams()
+        params3.bigShineColor = UIColor(rgb: (255,245,71))
+        params3.smallShineColor = UIColor(rgb: (255,255,255))
+        params3.shineCount = 5
+
+        var params4 = WCLShineParams()
+        params4.bigShineColor = UIColor(rgb: (255,245,71))
+        params4.smallShineColor = UIColor(rgb: (255,255,255))
+        params4.shineCount = 10
+
+        var params5 = WCLShineParams()
+        params5.bigShineColor = UIColor(rgb: (255,245,71))
+        params5.smallShineColor = UIColor(rgb: (255,255,255))
+        params5.shineCount = 20
+        params5.enableFlashing = true
+        params5.shineDistanceMultiple = 2
+        params5.shineSize=10
+        params5.animDuration = 1.5
+        
 
 
         //sets appearnce parameters of buttons
 
 
-        q5b5.params = params
-        q5b4.params = params
-        q5b3.params = params
-        q5b2.params = params
-        q5b1.params = params
+        q5b5.params = params5
+        q5b4.params = params4
+        q5b3.params = params3
+        q5b2.params = params2
+//        q5b1.params = params
 
-        q4b5.params = params
-        q4b4.params = params
-        q4b3.params = params
-        q4b2.params = params
-        q4b1.params = params
+        q4b5.params = params5
+        q4b4.params = params4
+        q4b3.params = params3
+        q4b2.params = params2
+//        q4b1.params = params
 
-        q3b5.params = params
-        q3b4.params = params
-        q3b3.params = params
-        q3b2.params = params
-        q3b1.params = params
+        q3b5.params = params5
+        q3b4.params = params4
+        q3b3.params = params3
+        q3b2.params = params2
+//        q3b1.params = params
 
-        q2b5.params = params
-        q2b4.params = params
-        q2b3.params = params
-        q2b2.params = params
-        q2b1.params = params
+        q2b5.params = params5
+        q2b4.params = params4
+        q2b3.params = params3
+        q2b2.params = params2
+//        q2b1.params = params
 
-        q1b5.params = params
-        q1b4.params = params
-        q1b3.params = params
-        q1b2.params = params
-        q1b1.params = params
+        q1b5.params = params5
+        q1b4.params = params4
+        q1b3.params = params3
+        q1b2.params = params2
+//        q1b1.params = params
         //set button images
-        q5b5.image = .like;q5b4.image = .like; q5b3.image = .like; q5b2.image = .like; q5b1.image = .like
-        q4b5.image = .like; q4b4.image = .like; q4b3.image = .like; q4b2.image = .like ; q4b1.image = .like
-        q3b5.image = .like; q3b4.image = .like; q3b3.image = .like; q3b2.image = .like; q3b1.image = .like
-        q2b5.image = .like; q2b4.image = .like; q2b3.image = .like; q2b2.image = .like; q2b1.image = .like
-        q1b5.image = .like; q1b4.image = .like; q1b3.image = .like; q1b2.image = .like; q1b1.image = .like
+        q5b5.image = image;q5b4.image = image; q5b3.image = image; q5b2.image = image; q5b1.image = image
+        q4b5.image = image; q4b4.image = image; q4b3.image = image; q4b2.image = image ; q4b1.image = image
+        q3b5.image = image; q3b4.image = image; q3b3.image = image; q3b2.image = image; q3b1.image = image
+        q2b5.image = image; q2b4.image = image; q2b3.image = image; q2b2.image = image; q2b1.image = image
+        q1b5.image = image; q1b4.image = image; q1b3.image = image; q1b2.image = image; q1b1.image = image
     }
     func updateScores(){
         user = (self.navigationController as! NavigationViewController).user!
