@@ -8,33 +8,34 @@
 import UIKit
 
 class SurveyMenuViewController: UIViewController {
-
+    var navController : NavigationViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
+        navController = (self.navigationController! as! NavigationViewController)
 
         // Do any additional setup after loading the view.
     }
 
     @IBAction func roomSurvey(_ sender: Any) {
-        (self.navigationController as! NavigationViewController).chosenCategory = .room
+        navController!.chosenCategory = .room
 
         self.performSegue(withIdentifier: "ShowSurvey", sender: self)
 
     }
     @IBAction func foodSurvey(_ sender: Any) {
-        (self.navigationController as! NavigationViewController).chosenCategory = .food
+        navController!.chosenCategory = .food
         self.performSegue(withIdentifier: "ShowSurvey", sender: self)
     }
     @IBAction func spaSurvey(_ sender: Any) {
-        (self.navigationController as! NavigationViewController).chosenCategory = .spa
+        navController!.chosenCategory = .spa
         self.performSegue(withIdentifier: "ShowSurvey", sender: self)
     }
     @IBAction func poolSurvey(_ sender: Any) {
-        (self.navigationController as! NavigationViewController).chosenCategory = .pool
+        navController!.chosenCategory = .pool
         self.performSegue(withIdentifier: "ShowSurvey", sender: self)
     }
     @IBAction func overallSurvey(_ sender: Any) {
-        (self.navigationController as! NavigationViewController).chosenCategory = .overall
+        navController!.chosenCategory = .overall
         self.performSegue(withIdentifier: "ShowSurvey", sender: self)
     }
 
