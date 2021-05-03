@@ -22,19 +22,11 @@ class DBHelper{
             user.addToResults(Results(context: context))
             (user.results?.lastObject as! Results).completed = false
         }
-
-
         user.name = object["name"]
         user.password = object["password"]
         user.surveyComplete = false
-
-
         print(user.results!.array.count)
-
-
-
         do{
-
             try context.save()
             print("Data Saved")
         }
@@ -48,7 +40,6 @@ class DBHelper{
         var st : User?
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", name)
-
         do{
             let req = try context.fetch(fetchReq) as? [User]
             if (req!.count != 0  ){
@@ -64,6 +55,19 @@ class DBHelper{
             throw NilError.nilErr
         }
         return st!
+    }
+    func userExists(name : String) -> Bool{
+
+        let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
+        fetchReq.predicate = NSPredicate(format: "name == %@", name)
+
+        let req = try? context.fetch(fetchReq) as? [User]
+        if req!.count != 0{
+            return true
+        }
+        else {
+            return false
+        }
     }
 
     func updateResultsData(user: User){
