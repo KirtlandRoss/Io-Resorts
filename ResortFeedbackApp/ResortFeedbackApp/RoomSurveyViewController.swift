@@ -130,6 +130,7 @@ class RoomSurveyViewController: UIViewController {
         }
         try! context.save()
     }
+
     func setButtonAppearnce( image: WCLShineImage){
 
         //custom animation based on button rating
@@ -205,9 +206,9 @@ class RoomSurveyViewController: UIViewController {
         q2b5.image = image; q2b4.image = image; q2b3.image = image; q2b2.image = image; q2b1.image = image
         q1b5.image = image; q1b4.image = image; q1b3.image = image; q1b2.image = image; q1b1.image = image
     }
+
     func updateScores(){
         user = (self.navigationController as! NavigationViewController).user!
-
         results = (user?.results?.array as! [Results])[currentCategory!.rawValue]
         if user!.results == nil{
             user!.results? = [Results()]
@@ -298,6 +299,7 @@ class RoomSurveyViewController: UIViewController {
 
         }
     }
+
     func updateContent(){
         currentCategory = (self.navigationController as! NavigationViewController).chosenCategory
         //change questions and background image
@@ -343,7 +345,7 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "How was the experience?"
             self.title = "Overall"
         default:
-            ""
+            print("")
         }
     }
 
