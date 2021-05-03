@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BC0CAC9E2638F317001E7986 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = BC0CAC9D2638F317001E7986 /* fonts */; };
-		BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACAA2638F6AA001E7986 /* Main.storyboard */; };
 		BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CACAE2638FAFF001E7986 /* DBHelper.swift */; };
-		BC0CACB42638FCB7001E7986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */; };
 		BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */; };
 		BC19060C264057D400AA4DD7 /* WCLShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC19060A2640552C00AA4DD7 /* WCLShineButton.framework */; };
+		BC19062F26408C3900AA4DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC19062B26408C3900AA4DD7 /* LaunchScreen.storyboard */; };
+		BC19063026408C3900AA4DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC19062D26408C3900AA4DD7 /* Main.storyboard */; };
 		BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */; };
 		BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */; };
 		BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */; };
@@ -39,11 +39,11 @@
 		0A36DE820FFD954BDB79BCBA /* Pods-ResortFeedbackApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedbackApp.release.xcconfig"; path = "Target Support Files/Pods-ResortFeedbackApp/Pods-ResortFeedbackApp.release.xcconfig"; sourceTree = "<group>"; };
 		4424EA296170694874E3E9D2 /* Pods_ResortFeedbackApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResortFeedbackApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0CAC9D2638F317001E7986 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
-		BC0CACAB2638F6AA001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		BC0CACAE2638FAFF001E7986 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
-		BC0CACB32638FCB7001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCompleteController.swift; sourceTree = "<group>"; };
 		BC19060A2640552C00AA4DD7 /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC19062C26408C3900AA4DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC19062E26408C3900AA4DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Phosphate Pro Cond Solid Regular.otf"; path = "fonts/Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
 		BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Solid.otf"; path = "fonts/PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
 		BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Inline.otf"; path = "fonts/PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
@@ -131,8 +131,6 @@
 				BC37AE862635D00100E90F38 /* SceneDelegate.swift */,
 				BC37AE882635D00100E90F38 /* ViewController.swift */,
 				BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */,
-				BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */,
-				BC0CACAA2638F6AA001E7986 /* Main.storyboard */,
 				BC37AEA82635D50800E90F38 /* LoginViewController.swift */,
 				BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */,
 				BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */,
@@ -143,6 +141,8 @@
 				BC0CACAE2638FAFF001E7986 /* DBHelper.swift */,
 				BCDB646C263A0614008DFDAD /* NavigationViewController.swift */,
 				BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */,
+				BC19062B26408C3900AA4DD7 /* LaunchScreen.storyboard */,
+				BC19062D26408C3900AA4DD7 /* Main.storyboard */,
 				BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */,
 				BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */,
 			);
@@ -220,11 +220,11 @@
 				BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */,
 				BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */,
 				BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */,
+				BC19063026408C3900AA4DD7 /* Main.storyboard in Resources */,
 				BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */,
-				BC0CACB42638FCB7001E7986 /* LaunchScreen.storyboard in Resources */,
+				BC19062F26408C3900AA4DD7 /* LaunchScreen.storyboard in Resources */,
 				BC0CAC9E2638F317001E7986 /* fonts in Resources */,
 				BC371142263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf in Resources */,
-				BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +300,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC0CACAA2638F6AA001E7986 /* Main.storyboard */ = {
+		BC19062B26408C3900AA4DD7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC0CACAB2638F6AA001E7986 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC0CACB32638FCB7001E7986 /* Base */,
+				BC19062C26408C3900AA4DD7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC19062D26408C3900AA4DD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC19062E26408C3900AA4DD7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

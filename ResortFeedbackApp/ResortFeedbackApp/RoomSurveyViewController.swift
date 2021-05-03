@@ -342,7 +342,7 @@ class RoomSurveyViewController: UIViewController {
             self.title = "Spa"
         case .overall:
             backgroundImage.image = UIImage(named: "overall")
-            question1.text = "How was the check-in experience?"
+            question1.text = "How was check-in?"
             question2.text = "How was the location?"
             question3.text = "How was the staff?"
             question4.text = "How was the price?"
