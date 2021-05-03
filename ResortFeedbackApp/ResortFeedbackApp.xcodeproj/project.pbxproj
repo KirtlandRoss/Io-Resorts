@@ -11,6 +11,7 @@
 		BC0CACAC2638F6AA001E7986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACAA2638F6AA001E7986 /* Main.storyboard */; };
 		BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CACAE2638FAFF001E7986 /* DBHelper.swift */; };
 		BC0CACB42638FCB7001E7986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0CACB22638FCB7001E7986 /* LaunchScreen.storyboard */; };
+		BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */; };
 		BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */; };
 		BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */; };
 		BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */; };
@@ -41,6 +42,7 @@
 		BC0CACAB2638F6AA001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		BC0CACAE2638FAFF001E7986 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		BC0CACB32638FCB7001E7986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Revature-Projects-58fbb4d1ac15c63c3faca63a04c3d3efd314ce7d/ResortFeedbackApp/ResortFeedbackApp/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCompleteController.swift; sourceTree = "<group>"; };
 		BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Phosphate Pro Cond Solid Regular.otf"; path = "fonts/Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
 		BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Solid.otf"; path = "fonts/PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
 		BC37113D263C690400CDAAFA /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Inline.otf"; path = "fonts/PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				BCDB646C263A0614008DFDAD /* NavigationViewController.swift */,
 				BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */,
 				BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */,
+				BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */,
 			);
 			path = ResortFeedbackApp;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */,
 				BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
+				BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */,
 				BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */,
 				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
 				BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */,
