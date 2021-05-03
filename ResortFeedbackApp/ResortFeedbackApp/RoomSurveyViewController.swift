@@ -17,6 +17,7 @@ class RoomSurveyViewController: UIViewController {
     @IBOutlet weak var question4: UILabel!
     @IBOutlet weak var question5: UILabel!
 
+    @IBOutlet weak var backgroundImage: UIImageView!
 
 
 //MARK: Outlets for rating buttons
@@ -65,9 +66,7 @@ class RoomSurveyViewController: UIViewController {
 
         updateScores()
 
-        getQuestions()
-
-
+        updateContent()
 
         setButtonAppearnce(image: .star)
 
@@ -125,13 +124,21 @@ class RoomSurveyViewController: UIViewController {
         user = (self.navigationController as! NavigationViewController).user!
         results?.completed = true
         user?.replaceResults(at: currentCategory!.rawValue, with: results!)
-        //checks if all surveys are complete and sets user.surveyComplete
-        user?.checkIfComplete()
+        //checks if all surveys are complete. checkIfComplete also sets user.surveyComplete
+        if !user!.surveyComplete && user!.checkIfComplete(){
+            performSegue(withIdentifier: "SurveyComplete", sender: self)
+        }
         try! context.save()
     }
     func setButtonAppearnce( image: WCLShineImage){
 
         //custom animation based on button rating
+        var params1 = WCLShineParams()
+        params1.bigShineColor = UIColor(rgb: (255,245,71))
+        params1.smallShineColor = UIColor(rgb: (255,255,255))
+        params1.shineCount = 0
+
+
         var params2 = WCLShineParams()
         params2.bigShineColor = UIColor(rgb: (255,245,71))
         params2.smallShineColor = UIColor(rgb: (255,255,255))
@@ -165,31 +172,32 @@ class RoomSurveyViewController: UIViewController {
         q5b4.params = params4
         q5b3.params = params3
         q5b2.params = params2
-//        q5b1.params = params
+        q5b1.params = params1
 
         q4b5.params = params5
         q4b4.params = params4
         q4b3.params = params3
         q4b2.params = params2
-//        q4b1.params = params
+        q4b1.params = params1
 
         q3b5.params = params5
         q3b4.params = params4
         q3b3.params = params3
         q3b2.params = params2
-//        q3b1.params = params
+        q3b1.params = params1
 
         q2b5.params = params5
         q2b4.params = params4
         q2b3.params = params3
         q2b2.params = params2
-//        q2b1.params = params
+        q2b1.params = params1
 
         q1b5.params = params5
         q1b4.params = params4
         q1b3.params = params3
         q1b2.params = params2
-//        q1b1.params = params
+        q1b1.params = params1
+
         //set button images
         q5b5.image = image;q5b4.image = image; q5b3.image = image; q5b2.image = image; q5b1.image = image
         q4b5.image = image; q4b4.image = image; q4b3.image = image; q4b2.image = image ; q4b1.image = image
@@ -290,10 +298,12 @@ class RoomSurveyViewController: UIViewController {
 
         }
     }
-    func getQuestions(){
-       let category = (self.navigationController as! NavigationViewController).chosenCategory
-        switch category {
+    func updateContent(){
+        currentCategory = (self.navigationController as! NavigationViewController).chosenCategory
+        //change questions and background image
+        switch currentCategory {
         case .room:
+
             question1.text = "How clean was your room"
             question2.text = "How roomy was your room"
             question3.text = "How was the view?"
@@ -301,6 +311,7 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "Overall"
             self.title = "Room"
         case .food:
+            backgroundImage.image = UIImage(named: "sunset1")
             question1.text = "How did the food taste"
             question2.text = "How did you feel about the cost"
             question3.text = "How was the food service?"
@@ -308,6 +319,7 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "Overall"
             self.title = "Food"
         case .pool:
+            backgroundImage.image = UIImage(named: "sunset2")
             question1.text = "How was the temperature"
             question2.text = "How was the cleanliness"
             question3.text = "How was the staff?"
@@ -315,6 +327,7 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "Overall"
             self.title = "Pool"
         case .spa:
+            backgroundImage.image = UIImage(named: "sunset1")
             question1.text = "How was the wait?"
             question2.text = "How was the cleanliness?"
             question3.text = "How was the staff?"
@@ -322,6 +335,7 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "Overall"
             self.title = "Spa"
         case .overall:
+            backgroundImage.image = UIImage(named: "sunset4")
             question1.text = "How was the check-in experience?"
             question2.text = "How was the location?"
             question3.text = "How was the staff?"
