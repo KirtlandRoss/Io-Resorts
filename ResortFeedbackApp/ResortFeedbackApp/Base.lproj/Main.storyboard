@@ -166,6 +166,7 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="rua-lW-nna"/>
                     <connections>
                         <outlet property="backgroundLogo" destination="MOs-hz-Jvv" id="spl-bV-Uld"/>
+                        <outlet property="button" destination="g6T-bX-u4N" id="1Sj-1c-o34"/>
                         <outlet property="logoX" destination="I2u-BL-bkf" id="Gxi-z3-gSm"/>
                         <outlet property="logoY" destination="oPz-C7-Ttd" id="95y-zt-5Bu"/>
                         <outlet property="password" destination="A0N-vO-xPv" id="Z7T-MZ-MjL"/>
@@ -568,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYC-6h-HpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6847.826086956522" y="129.91071428571428"/>
+            <point key="canvasLocation" x="6172" y="130"/>
         </scene>
         <!--Survey Complete Controller-->
         <scene sceneID="xBW-7r-n0s">
@@ -609,12 +610,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSV-Qa-oGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8505.7971014492759" y="-721.20535714285711"/>
+            <point key="canvasLocation" x="7039" y="903"/>
         </scene>
         <!--Room-->
         <scene sceneID="HG4-qK-Xwd">
             <objects>
-                <viewController id="Ps1-fe-bU2" customClass="RoomSurveyViewController" customModule="ResortFeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ps1-fe-bU2" customClass="SurveyViewController" customModule="ResortFeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ld9-2q-mBT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1097,7 +1098,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewT-2Y-Zec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8505.7971014492759" y="129.91071428571428"/>
+            <point key="canvasLocation" x="7039" y="130"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="8g2-Ac-aZ3">

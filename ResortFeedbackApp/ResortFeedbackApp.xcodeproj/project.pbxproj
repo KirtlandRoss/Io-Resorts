@@ -30,7 +30,7 @@
 		BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */; };
 		BC507985263B2DCB00B0077C /* UpdatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */; };
 		BCDB646D263A0614008DFDAD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646C263A0614008DFDAD /* NavigationViewController.swift */; };
-		BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */; };
+		BCDB646F263A1611008DFDAD /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646E263A1611008DFDAD /* SurveyViewController.swift */; };
 		BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */; };
 		BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
@@ -63,7 +63,7 @@
 		BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMenuViewController.swift; sourceTree = "<group>"; };
 		BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePassViewController.swift; sourceTree = "<group>"; };
 		BCDB646C263A0614008DFDAD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSurveyViewController.swift; sourceTree = "<group>"; };
+		BCDB646E263A1611008DFDAD /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		F9551C19B8D2BEE65A005582 /* Pods-ResortFeedbackApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedbackApp.debug.xcconfig"; path = "Target Support Files/Pods-ResortFeedbackApp/Pods-ResortFeedbackApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 				BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */,
 				BC0CACAE2638FAFF001E7986 /* DBHelper.swift */,
 				BCDB646C263A0614008DFDAD /* NavigationViewController.swift */,
-				BCDB646E263A1611008DFDAD /* RoomSurveyViewController.swift */,
+				BCDB646E263A1611008DFDAD /* SurveyViewController.swift */,
 				BC19062B26408C3900AA4DD7 /* LaunchScreen.storyboard */,
 				BC19062D26408C3900AA4DD7 /* Main.storyboard */,
 				BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */,
@@ -287,7 +287,7 @@
 				BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */,
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
 				BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */,
-				BCDB646F263A1611008DFDAD /* RoomSurveyViewController.swift in Sources */,
+				BCDB646F263A1611008DFDAD /* SurveyViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
 				BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */,
 				BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */,
