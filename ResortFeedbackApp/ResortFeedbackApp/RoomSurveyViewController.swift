@@ -227,7 +227,7 @@ class RoomSurveyViewController: UIViewController {
                 case 1:
                     q1b1Toggle()
                 default:
-                    print("uh oh")
+                    print("")
                 }
             }
             if results?.q2 != nil{
@@ -243,7 +243,7 @@ class RoomSurveyViewController: UIViewController {
                 case 1:
                     q2b1Toggle()
                 default:
-                    print("uh oh")
+                    print("")
                 }
             }
             if results?.q3 != nil{
@@ -259,7 +259,7 @@ class RoomSurveyViewController: UIViewController {
                 case 1:
                     q3b1Toggle()
                 default:
-                    print("uh oh")
+                    print("")
                 }
             }
             if results?.q4 != nil{
@@ -275,7 +275,7 @@ class RoomSurveyViewController: UIViewController {
                 case 1:
                     q4b1Toggle()
                 default:
-                    print("uh oh")
+                    print("")
                 }
                 
             }
@@ -292,7 +292,7 @@ class RoomSurveyViewController: UIViewController {
                 case 1:
                     q5b1Toggle()
                 default:
-                    print("uh oh")
+                    print("")
                 }
 
             }
@@ -304,6 +304,7 @@ class RoomSurveyViewController: UIViewController {
         currentCategory = (self.navigationController as! NavigationViewController).chosenCategory
         //change questions and background image
         switch currentCategory {
+
         case .room:
 
             question1.text = "How clean was your room"
@@ -349,7 +350,7 @@ class RoomSurveyViewController: UIViewController {
         }
     }
 
-//MARK: Here there be dragons, these are the button handler functions
+//MARK: These are the button handler functions
 
     //sets the rating and then runs the functions for selecting/deselecting the other buttons according to the rating
     @objc func q1b5Toggle(){

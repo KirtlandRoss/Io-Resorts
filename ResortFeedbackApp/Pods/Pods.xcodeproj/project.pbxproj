@@ -18,12 +18,21 @@
 		8319F032C30E865BB82260208EF0F346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		8C8B6FA1A214E7C14E99C9AD49E59BA0 /* WCLShineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9900B0B97C9276DD1D6D5C559856C21 /* WCLShineButton.swift */; };
 		A47D4CB1B13EB0835DCB4CE698B4E3BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		BC19061D2640581F00AA4DD7 /* ShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC1906142640581F00AA4DD7 /* ShineButton.framework */; };
+		BC1906222640581F00AA4DD7 /* ShineButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1906212640581F00AA4DD7 /* ShineButtonTests.swift */; };
 		D159828425828A2F3CACB355E4673FEE /* Pods-ResortFeedbackApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA198CFABD1638B110B76EBBE128EA7 /* Pods-ResortFeedbackApp-dummy.m */; };
 		D7D702E98AC1E133E09F5B6C2A54A6CF /* WCLShineButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEB784980D68B409B7DD0AFAF85D5AA /* WCLShineButton-dummy.m */; };
 		EC3E9858A70131522B060F0016FA4374 /* WCLShineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7417D6B09A4EE313D4E064F6A6E5125 /* WCLShineLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BC19061E2640581F00AA4DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC1906132640581F00AA4DD7;
+			remoteInfo = ShineButton;
+		};
 		FE838F4C661721180EA2E3AFEF7A68BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -34,12 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		098814983BC053555A485F9F0FE788DC /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WCLShineButton.framework; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098814983BC053555A485F9F0FE788DC /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEB784980D68B409B7DD0AFAF85D5AA /* WCLShineButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCLShineButton-dummy.m"; sourceTree = "<group>"; };
 		116D61B3C2DD76669E2F3CCC456EEF50 /* WCLShineClickLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineClickLayer.swift; path = WCLShineButton/WCLShineClickLayer.swift; sourceTree = "<group>"; };
 		18418164FC3B46F4E2E9A1192D152028 /* Pods-ResortFeedbackApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ResortFeedbackApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		20217760C983843F9969DCEA4ACF57B2 /* WCLShineButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-umbrella.h"; sourceTree = "<group>"; };
-		21E73B69E2C2D0079EB213DDCD0EDE9C /* Pods_ResortFeedbackApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ResortFeedbackApp.framework; path = "Pods-ResortFeedbackApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E73B69E2C2D0079EB213DDCD0EDE9C /* Pods_ResortFeedbackApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResortFeedbackApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D165430FE7D9606CEFB508079D03C6D /* WCLShineButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCLShineButton.modulemap; sourceTree = "<group>"; };
 		3C79160B4AA82F2E1345DC90BE5A7AE6 /* WCLShineButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCLShineButton.debug.xcconfig; sourceTree = "<group>"; };
 		438753B9F335AF0ACD1173DE532C9BA0 /* WCLShineBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineBundle.swift; path = WCLShineButton/WCLShineBundle.swift; sourceTree = "<group>"; };
@@ -50,9 +59,13 @@
 		840C4E97E0D999F35422A361478DCAF1 /* Pods-ResortFeedbackApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ResortFeedbackApp.release.xcconfig"; sourceTree = "<group>"; };
 		992A6790EEAC5E3D506364415243F184 /* Pods-ResortFeedbackApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ResortFeedbackApp-Info.plist"; sourceTree = "<group>"; };
 		9B7D9500C30E80047DAD6DF5030EBAA2 /* Pods-ResortFeedbackApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ResortFeedbackApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A5ED9885A3061657C10AAEF30E54A7B4 /* WCLShineButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WCLShineButton-Info.plist"; sourceTree = "<group>"; };
 		A9900B0B97C9276DD1D6D5C559856C21 /* WCLShineButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineButton.swift; path = WCLShineButton/WCLShineButton.swift; sourceTree = "<group>"; };
+		BC1906142640581F00AA4DD7 /* ShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC19061C2640581F00AA4DD7 /* ShineButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShineButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1906212640581F00AA4DD7 /* ShineButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShineButtonTests.swift; sourceTree = "<group>"; };
+		BC1906232640581F00AA4DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1722A99C398582241758BEDA0C344B2 /* Pods-ResortFeedbackApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ResortFeedbackApp-umbrella.h"; sourceTree = "<group>"; };
 		D1F11BA5D107FDC5E1A29146C3B1CCC3 /* WCLShineButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-prefix.pch"; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -71,6 +84,21 @@
 			files = (
 				8319F032C30E865BB82260208EF0F346 /* Foundation.framework in Frameworks */,
 				A47D4CB1B13EB0835DCB4CE698B4E3BD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1906112640581F00AA4DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1906192640581F00AA4DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC19061D2640581F00AA4DD7 /* ShineButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +186,20 @@
 			path = "Target Support Files/Pods-ResortFeedbackApp";
 			sourceTree = "<group>";
 		};
+		BC1906202640581F00AA4DD7 /* ShineButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC1906212640581F00AA4DD7 /* ShineButtonTests.swift */,
+				BC1906232640581F00AA4DD7 /* Info.plist */,
+			);
+			path = ShineButtonTests;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BC1906202640581F00AA4DD7 /* ShineButtonTests */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				58F81390328D7E0A3FE6D7166CF994EB /* Pods */,
 				D71FC9D2BCB666F3D548E24559EC03A3 /* Products */,
@@ -181,7 +219,6 @@
 				2704652E38509C2530578AA0CB1E82A5 /* Resources */,
 				810FC35DAE514F69B07C0CDD18E8EB3A /* Support Files */,
 			);
-			name = WCLShineButton;
 			path = WCLShineButton;
 			sourceTree = "<group>";
 		};
@@ -190,6 +227,8 @@
 			children = (
 				21E73B69E2C2D0079EB213DDCD0EDE9C /* Pods_ResortFeedbackApp.framework */,
 				098814983BC053555A485F9F0FE788DC /* WCLShineButton.framework */,
+				BC1906142640581F00AA4DD7 /* ShineButton.framework */,
+				BC19061C2640581F00AA4DD7 /* ShineButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,6 +241,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				42719F081F577389CD7F0303C99F8D94 /* WCLShineButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC19060F2640581F00AA4DD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +281,42 @@
 			productReference = 21E73B69E2C2D0079EB213DDCD0EDE9C /* Pods_ResortFeedbackApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BC1906132640581F00AA4DD7 /* ShineButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1906252640581F00AA4DD7 /* Build configuration list for PBXNativeTarget "ShineButton" */;
+			buildPhases = (
+				BC19060F2640581F00AA4DD7 /* Headers */,
+				BC1906102640581F00AA4DD7 /* Sources */,
+				BC1906112640581F00AA4DD7 /* Frameworks */,
+				BC1906122640581F00AA4DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShineButton;
+			productName = ShineButton;
+			productReference = BC1906142640581F00AA4DD7 /* ShineButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC19061B2640581F00AA4DD7 /* ShineButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1906282640581F00AA4DD7 /* Build configuration list for PBXNativeTarget "ShineButtonTests" */;
+			buildPhases = (
+				BC1906182640581F00AA4DD7 /* Sources */,
+				BC1906192640581F00AA4DD7 /* Frameworks */,
+				BC19061A2640581F00AA4DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC19061F2640581F00AA4DD7 /* PBXTargetDependency */,
+			);
+			name = ShineButtonTests;
+			productName = ShineButtonTests;
+			productReference = BC19061C2640581F00AA4DD7 /* ShineButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C83993C8F5EFBE2ED74A821934C595E9 /* WCLShineButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92386CD5881A0194179FDDDFEE3A281A /* Build configuration list for PBXNativeTarget "WCLShineButton" */;
@@ -259,8 +341,16 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					BC1906132640581F00AA4DD7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					BC19061B2640581F00AA4DD7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -277,12 +367,28 @@
 			targets = (
 				177FB65A2BB8B0A6A43752562C488A28 /* Pods-ResortFeedbackApp */,
 				C83993C8F5EFBE2ED74A821934C595E9 /* WCLShineButton */,
+				BC1906132640581F00AA4DD7 /* ShineButton */,
+				BC19061B2640581F00AA4DD7 /* ShineButtonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7339A9EE73750F794C354D61E2301110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1906122640581F00AA4DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC19061A2640581F00AA4DD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,9 +428,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC1906102640581F00AA4DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1906182640581F00AA4DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1906222640581F00AA4DD7 /* ShineButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BC19061F2640581F00AA4DD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC1906132640581F00AA4DD7 /* ShineButton */;
+			targetProxy = BC19061E2640581F00AA4DD7 /* PBXContainerItemProxy */;
+		};
 		E9652E5F18E004CB68F113DA2ADCB41D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WCLShineButton;
@@ -349,7 +475,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WCLShineButton/WCLShineButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WCLShineButton/WCLShineButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,6 +659,114 @@
 			};
 			name = Debug;
 		};
+		BC1906262640581F00AA4DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RB4NL6J4U2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShineButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirtlandross.ShineButton;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC1906272640581F00AA4DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RB4NL6J4U2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ShineButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirtlandross.ShineButton;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC1906292640581F00AA4DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB4NL6J4U2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShineButtonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirtlandross.ShineButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC19062A2640581F00AA4DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB4NL6J4U2;
+				INFOPLIST_FILE = ShineButtonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirtlandross.ShineButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BE83BDEB9CE230432689369D8348734C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 840C4E97E0D999F35422A361478DCAF1 /* Pods-ResortFeedbackApp.release.xcconfig */;
@@ -586,7 +820,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WCLShineButton/WCLShineButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WCLShineButton/WCLShineButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,6 +857,24 @@
 			buildConfigurations = (
 				32F96539D9E12447CF0E4C997C0161C2 /* Debug */,
 				C8ABF9A088FCD8B3C3644B65EF1C490C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC1906252640581F00AA4DD7 /* Build configuration list for PBXNativeTarget "ShineButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1906262640581F00AA4DD7 /* Debug */,
+				BC1906272640581F00AA4DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC1906282640581F00AA4DD7 /* Build configuration list for PBXNativeTarget "ShineButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1906292640581F00AA4DD7 /* Debug */,
+				BC19062A2640581F00AA4DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

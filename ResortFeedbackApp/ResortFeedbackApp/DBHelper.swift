@@ -16,54 +16,32 @@ class DBHelper{
     func addUser(_ object: [String:String]) -> User{
 
         let user = User(context: context)
-//        let results = Results(context: context)
-//        var resultsArr = [Results]()
+
         for _ in 0...4{
             
             user.addToResults(Results(context: context))
             (user.results?.lastObject as! Results).completed = false
         }
-//        print(resultsArr.count)
+
 
         user.name = object["name"]
         user.password = object["password"]
         user.surveyComplete = false
 
-//        print(user.results!.array.count)
-//        for i in 0...user.results!.array.count{
-//            print(user.results!.array[i])
-//        }
+
         print(user.results!.array.count)
-        //set relationship pointer to owning object
+
 
 
         do{
 
-            try! context.save()
+            try context.save()
             print("Data Saved")
         }
         catch{
             print("data not saved")
         }
         return user
-    }
-    func getOneResults(username: String ,cat : String) -> Results {
-        var st = Results(context: context)
-        let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
-        fetchReq.predicate = NSPredicate(format: "category == %@", cat)
-        fetchReq.fetchLimit = 1
-        do{
-            let req = try context.fetch(fetchReq) as? [Results]
-            if (req!.count != 0  ){
-                st = req!.first! as Results
-                return st
-            }
-
-        }
-        catch{
-            print("no data returned")
-        }
-        return st
     }
 
     func getOneUser(name : String) throws -> User {
@@ -89,20 +67,12 @@ class DBHelper{
     }
 
     func updateResultsData(user: User){
-//        var st = User(context: context)
-        print(user.managedObjectContext)
-//        print(st.managedObjectContext)
-//        let fetchReq = NSFetchRequest<User>.init(entityName: "User")
-//        fetchReq.predicate = NSPredicate(format: "name == %@", user.name!)
-//        fetchReq.fetchLimit = 1
+
+        print(user.managedObjectContext as Any)
 
         do{
-//            let req = try context.fetch(fetchReq)
-//            if (req.count != 0 ){
 
-//            st.name = user.name
-//            }
-            try! context.save()
+            try context.save()
             print("Data Saved")
         }
         catch{
@@ -175,23 +145,6 @@ class DBHelper{
         }
 
     }
-    //    func updateUserSurvey(_ name: String){
-    //        var st = User()
-    //        let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
-    //        fetchReq.predicate = NSPredicate(format: "name == %@", results)
-    //        do{
-    //            let req = try context?.fetch(fetchReq)
-    //
-    //            if (req?.count != 0 ){
-    //                st = req!.first as! User
-    //
-    //            }
-    //        }
-    //        catch{
-    //
-    //        }
-    //
-    //    }
 }
 
 enum NilError : Error{

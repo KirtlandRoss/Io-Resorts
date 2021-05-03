@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import WCLShineButton
 class NavigationViewController: UINavigationController {
     var user : User?
     var chosenCategory : Category?
@@ -15,17 +15,7 @@ class NavigationViewController: UINavigationController {
 
         // Do any additional setup after loading the view.
     }
-    
-
 }
-
-//gives strings more array type behavior
-extension StringProtocol {
-    subscript(offset: Int) -> Character {
-        self[index(startIndex, offsetBy: offset)]
-    }
-}
-
 
 enum Category : Int{
     case room = 0
@@ -34,3 +24,4 @@ enum Category : Int{
     case spa = 3
     case overall = 4
 }
+
