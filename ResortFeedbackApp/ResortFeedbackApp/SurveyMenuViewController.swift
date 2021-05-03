@@ -18,9 +18,7 @@ class SurveyMenuViewController: UIViewController {
 
     @IBAction func roomSurvey(_ sender: Any) {
         navController!.chosenCategory = .room
-
         self.performSegue(withIdentifier: "ShowSurvey", sender: self)
-
     }
     @IBAction func foodSurvey(_ sender: Any) {
         navController!.chosenCategory = .food
@@ -38,7 +36,4 @@ class SurveyMenuViewController: UIViewController {
         navController!.chosenCategory = .overall
         self.performSegue(withIdentifier: "ShowSurvey", sender: self)
     }
-
-    
-
 }
