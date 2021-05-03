@@ -57,13 +57,11 @@ class SignUpViewController: UIViewController {
         }
     }
     @IBAction func submit(_ sender: Any) {
-        do{
-            try dbhelp.getOneUser(name: username.text!)
+        if dbhelp.userExists(name: username.text!){
             button.setTitle("User Already Exists", for: .normal)
             button.setTitleColor(.red, for: .normal)
-
         }
-        catch{
+        else{
             button.setTitle("Submit", for: .normal)
             button.setTitleColor(.black, for: .normal)
 
