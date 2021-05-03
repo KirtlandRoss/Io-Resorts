@@ -20,7 +20,7 @@ class RoomSurveyViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
 
 
-//MARK: Outlets for rating buttons
+    //MARK: Outlets for rating buttons
     @IBOutlet weak var q5b3: WCLShineButton!
     @IBOutlet weak var q5b1: WCLShineButton!
     @IBOutlet weak var q5b2: WCLShineButton!
@@ -52,7 +52,7 @@ class RoomSurveyViewController: UIViewController {
     @IBOutlet weak var q1b5: WCLShineButton!
 
 
- 
+
 
 
     var user : User?
@@ -63,7 +63,7 @@ class RoomSurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.currentCategory = (self.navigationController as! NavigationViewController).chosenCategory!
-
+        setLabelImages()
         updateScores()
 
         updateContent()
@@ -75,10 +75,33 @@ class RoomSurveyViewController: UIViewController {
 
 
     }
+
+
+
+
+
+
+
+
+    @IBAction func submit(_ sender: Any) {
+        user = (self.navigationController as! NavigationViewController).user!
+        results?.completed = true
+        user?.replaceResults(at: currentCategory!.rawValue, with: results!)
+        //checks if all surveys are complete. checkIfComplete also sets user.surveyComplete
+        if !user!.surveyComplete && user!.checkIfComplete(){
+            performSegue(withIdentifier: "SurveyComplete", sender: self)
+        }
+        try! context.save()
+    }
+    func setLabelImages(){
+        question1.backgroundColor = UIColor(patternImage: UIImage(named: "button")!)
+        question2.backgroundColor = UIColor(patternImage: UIImage(named: "button")!)
+        question3.backgroundColor = UIColor(patternImage: UIImage(named: "button")!)
+        question4.backgroundColor = UIColor(patternImage: UIImage(named: "button")!)
+        question5.backgroundColor = UIColor(patternImage: UIImage(named: "button")!)
+    }
+
     func setupRating(){
-
-
-
 
         q5b5.addTarget(self, action: #selector(q5b5Toggle), for: .valueChanged)
         q5b4.addTarget(self, action: #selector(q5b4Toggle), for: .valueChanged)
@@ -113,37 +136,17 @@ class RoomSurveyViewController: UIViewController {
 
 
     }
-
-
-
-
-
-
-
-    @IBAction func submit(_ sender: Any) {
-        user = (self.navigationController as! NavigationViewController).user!
-        results?.completed = true
-        user?.replaceResults(at: currentCategory!.rawValue, with: results!)
-        //checks if all surveys are complete. checkIfComplete also sets user.surveyComplete
-        if !user!.surveyComplete && user!.checkIfComplete(){
-            performSegue(withIdentifier: "SurveyComplete", sender: self)
-        }
-        try! context.save()
-    }
-
     func setButtonAppearnce( image: WCLShineImage){
 
         //custom animation based on button rating
         var params1 = WCLShineParams()
-        params1.bigShineColor = UIColor(rgb: (255,245,71))
-        params1.smallShineColor = UIColor(rgb: (255,255,255))
         params1.shineCount = 0
 
 
         var params2 = WCLShineParams()
         params2.bigShineColor = UIColor(rgb: (255,245,71))
         params2.smallShineColor = UIColor(rgb: (255,255,255))
-        params2.shineCount = 1
+        params2.shineCount = 2
 
         var params3 = WCLShineParams()
         params3.bigShineColor = UIColor(rgb: (255,245,71))
@@ -156,7 +159,6 @@ class RoomSurveyViewController: UIViewController {
         params4.shineCount = 10
 
         var params5 = WCLShineParams()
-        params5.bigShineColor = UIColor(rgb: (255,245,71))
         params5.smallShineColor = UIColor(rgb: (255,255,255))
         params5.shineCount = 20
         params5.enableFlashing = true
@@ -306,7 +308,7 @@ class RoomSurveyViewController: UIViewController {
         switch currentCategory {
 
         case .room:
-
+            backgroundImage.image = UIImage(named: "room")
             question1.text = "How clean was your room"
             question2.text = "How roomy was your room"
             question3.text = "How was the view?"
@@ -314,7 +316,7 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "Overall"
             self.title = "Room"
         case .food:
-            backgroundImage.image = UIImage(named: "sunset1")
+            backgroundImage.image = UIImage(named: "food")
             question1.text = "How did the food taste"
             question2.text = "How did you feel about the cost"
             question3.text = "How was the food service?"
@@ -322,15 +324,16 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "Overall"
             self.title = "Food"
         case .pool:
-            backgroundImage.image = UIImage(named: "sunset2")
+            backgroundImage.image = UIImage(named: "pool")
             question1.text = "How was the temperature"
             question2.text = "How was the cleanliness"
             question3.text = "How was the staff?"
             question4.text = "How was the location?"
             question5.text = "Overall"
             self.title = "Pool"
+
         case .spa:
-            backgroundImage.image = UIImage(named: "sunset1")
+            backgroundImage.image = UIImage(named: "spa")
             question1.text = "How was the wait?"
             question2.text = "How was the cleanliness?"
             question3.text = "How was the staff?"
@@ -338,7 +341,7 @@ class RoomSurveyViewController: UIViewController {
             question5.text = "Overall"
             self.title = "Spa"
         case .overall:
-            backgroundImage.image = UIImage(named: "sunset4")
+            backgroundImage.image = UIImage(named: "overall")
             question1.text = "How was the check-in experience?"
             question2.text = "How was the location?"
             question3.text = "How was the staff?"
@@ -350,7 +353,7 @@ class RoomSurveyViewController: UIViewController {
         }
     }
 
-//MARK: These are the button handler functions
+    //MARK: These are the button handler functions
 
     //sets the rating and then runs the functions for selecting/deselecting the other buttons according to the rating
     @objc func q1b5Toggle(){
