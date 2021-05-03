@@ -14,6 +14,10 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var logoY: NSLayoutConstraint!
     @IBOutlet weak var logoX: NSLayoutConstraint!
     @IBOutlet weak var backgroundLogo: UIImageView!
+
+    @IBOutlet weak var button: UIButton!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,11 +57,22 @@ class SignUpViewController: UIViewController {
         }
     }
     @IBAction func submit(_ sender: Any) {
+        do{
+            try dbhelp.getOneUser(name: username.text!)
+            button.setTitle("User Already Exists", for: .normal)
+            button.setTitleColor(.red, for: .normal)
 
-        let dict = ["name": username.text!, "password": password.text!]
-        
-        (self.navigationController as! NavigationViewController).user = dbhelp.addUser(dict)
-        _ = navigationController?.popToRootViewController(animated: true)
+        }
+        catch{
+            button.setTitle("Submit", for: .normal)
+            button.setTitleColor(.black, for: .normal)
+
+            let dict = ["name": username.text!, "password": password.text!]
+
+            (self.navigationController as! NavigationViewController).user = dbhelp.addUser(dict)
+            _ = navigationController?.popToRootViewController(animated: true)
+        }
+
 
     }
 
