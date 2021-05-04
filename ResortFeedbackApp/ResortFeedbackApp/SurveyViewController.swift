@@ -19,7 +19,6 @@ class SurveyViewController: UIViewController {
 
     @IBOutlet weak var backgroundImage: UIImageView!
 
-
     //MARK: Outlets for rating buttons
     @IBOutlet weak var q5b3: WCLShineButton!
     @IBOutlet weak var q5b1: WCLShineButton!
@@ -52,9 +51,6 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var q1b5: WCLShineButton!
 
 
-
-
-
     var user : User?
     let dbHelp = DBHelper()
     var results : Results?
@@ -65,23 +61,17 @@ class SurveyViewController: UIViewController {
         self.currentCategory = (self.navigationController as! NavigationViewController).chosenCategory!
         setLabelImages()
         updateScores()
-
         updateContent()
-
         setButtonAppearnce(image: .star)
-
         setupRating()
-
-
-
     }
-
 
     @IBAction func submit(_ sender: Any) {
         user = (self.navigationController as! NavigationViewController).user!
         results?.completed = true
-        user?.replaceResults(at: currentCategory!.rawValue, with: results!)
+        user?.replaceResults(at: Int(currentCategory!.rawValue), with: results!)
         try! context.save()
+
         //checks if all surveys are complete. checkIfComplete also sets user.surveyComplete
         if !user!.surveyComplete && user!.checkIfComplete(){
             performSegue(withIdentifier: "SurveyComplete", sender: self)
@@ -90,9 +80,17 @@ class SurveyViewController: UIViewController {
             let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
             self.navigationController!.popToViewController(viewControllers[viewControllers.count - 2], animated: true)
         }
+    }
 
-
-
+    func updateContent(){
+        results?.questions?.setCategory(currentCategory!)
+        results?.questions?.setContent()
+        question1.text = results?.questions?.question1
+        question2.text = results?.questions?.question2
+        question3.text = results?.questions?.question3
+        question4.text = results?.questions?.question4
+        question5.text = results?.questions?.question5
+        backgroundImage.image = UIImage(named: (results?.questions?.categoryString)!)
     }
 
     func setLabelImages(){
@@ -104,7 +102,6 @@ class SurveyViewController: UIViewController {
     }
 
     func setupRating(){
-
         q5b5.addTarget(self, action: #selector(q5b5Toggle), for: .valueChanged)
         q5b4.addTarget(self, action: #selector(q5b4Toggle), for: .valueChanged)
         q5b3.addTarget(self, action: #selector(q5b3Toggle), for: .valueChanged)
@@ -168,10 +165,7 @@ class SurveyViewController: UIViewController {
         params5.shineSize=10
         params5.animDuration = 1.5
 
-
-
         //sets appearnce parameters of buttons
-
 
         q5b5.params = params5
         q5b4.params = params4
@@ -213,7 +207,7 @@ class SurveyViewController: UIViewController {
 
     func updateScores(){
         user = (self.navigationController as! NavigationViewController).user!
-        results = (user?.results?.array as! [Results])[currentCategory!.rawValue]
+        results = (user?.results?.array as! [Results])[Int(currentCategory!.rawValue)]
         if user!.results == nil{
             user!.results? = [Results()]
         }
@@ -304,57 +298,6 @@ class SurveyViewController: UIViewController {
         }
     }
 
-    func updateContent(){
-        currentCategory = (self.navigationController as! NavigationViewController).chosenCategory
-        //change questions and background image
-        switch currentCategory {
-
-        case .room:
-            backgroundImage.image = UIImage(named: "room")
-            question1.text = "How clean was your room"
-            question2.text = "How roomy was your room"
-            question3.text = "How was the view?"
-            question4.text = "How loud were your neighbors"
-            question5.text = "Overall"
-            self.title = "Room"
-        case .food:
-            backgroundImage.image = UIImage(named: "food")
-            question1.text = "How did the food taste"
-            question2.text = "How did you feel about the cost"
-            question3.text = "How was the food service?"
-            question4.text = "How was the selection?"
-            question5.text = "Overall"
-            self.title = "Food"
-        case .pool:
-            backgroundImage.image = UIImage(named: "pool")
-            question1.text = "How was the temperature"
-            question2.text = "How was the cleanliness"
-            question3.text = "How was the staff?"
-            question4.text = "How was the location?"
-            question5.text = "Overall"
-            self.title = "Pool"
-
-        case .spa:
-            backgroundImage.image = UIImage(named: "spa")
-            question1.text = "How was the wait?"
-            question2.text = "How was the cleanliness?"
-            question3.text = "How was the staff?"
-            question4.text = "How was the price?"
-            question5.text = "Overall"
-            self.title = "Spa"
-        case .overall:
-            backgroundImage.image = UIImage(named: "overall")
-            question1.text = "How was check-in?"
-            question2.text = "How was the location?"
-            question3.text = "How was the staff?"
-            question4.text = "How was the price?"
-            question5.text = "How was the experience?"
-            self.title = "Overall"
-        default:
-            print("")
-        }
-    }
-
     //MARK: These are the button handler functions
 
     //sets the rating and then runs the functions for selecting/deselecting the other buttons according to the rating
@@ -398,12 +341,6 @@ class SurveyViewController: UIViewController {
             q1b1.isSelected = true
         }
     }
-
-
-
-
-
-
     @objc func q2b5Toggle(){
         results!.q2 = 5
         q2RatingSwitch()
@@ -443,10 +380,6 @@ class SurveyViewController: UIViewController {
             q2b1.isSelected = true
         }
     }
-
-
-
-
     @objc func q3b5Toggle(){
         results!.q3 = 5
         q3RatingSwitch()
@@ -486,10 +419,6 @@ class SurveyViewController: UIViewController {
             q3b1.isSelected = true
         }
     }
-
-
-
-
     @objc func q4b5Toggle(){
         results!.q4 = 5
         q4RatingSwitch()

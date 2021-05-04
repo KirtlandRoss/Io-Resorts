@@ -17,11 +17,12 @@ class NavigationViewController: UINavigationController {
     }
 }
 
-enum Category : Int{
+enum Category : Int64{
     case room = 0
     case food = 1
     case pool = 2
     case spa = 3
     case overall = 4
+    case unknown = 5
 }
 

@@ -69,7 +69,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func signIn(_ sender: Any) {
         do{
-        try user = dbhelp.getOneUser(name: username.text!)
+        try user = dbhelp.fetchUser(name: username.text!)
             print(user?.results?.array.count as Any)
 
 

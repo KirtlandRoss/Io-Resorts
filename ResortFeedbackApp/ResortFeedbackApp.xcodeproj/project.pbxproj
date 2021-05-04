@@ -27,6 +27,7 @@
 		BC37B0302638993900E90F38 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = BC37B02F2638993900E90F38 /* Podfile */; };
 		BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */; };
 		BC507985263B2DCB00B0077C /* UpdatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */; };
+		BCA0024C26418DD0007DE789 /* Questions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0024A26418DD0007DE789 /* Questions+CoreDataClass.swift */; };
 		BCDB646D263A0614008DFDAD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646C263A0614008DFDAD /* NavigationViewController.swift */; };
 		BCDB646F263A1611008DFDAD /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646E263A1611008DFDAD /* SurveyViewController.swift */; };
 		BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */; };
@@ -61,6 +62,7 @@
 		BC37B02F2638993900E90F38 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMenuViewController.swift; sourceTree = "<group>"; };
 		BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePassViewController.swift; sourceTree = "<group>"; };
+		BCA0024A26418DD0007DE789 /* Questions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questions+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BCDB646C263A0614008DFDAD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		BCDB646E263A1611008DFDAD /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -155,6 +157,7 @@
 		BCDB6474263A4A21008DFDAD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCA0024A26418DD0007DE789 /* Questions+CoreDataClass.swift */,
 				BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */,
 				BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */,
 			);
@@ -293,6 +296,7 @@
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
 				BCDB646F263A1611008DFDAD /* SurveyViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
+				BCA0024C26418DD0007DE789 /* Questions+CoreDataClass.swift in Sources */,
 				BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */,
 				BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */,
 				BC37AE872635D00100E90F38 /* SceneDelegate.swift in Sources */,
