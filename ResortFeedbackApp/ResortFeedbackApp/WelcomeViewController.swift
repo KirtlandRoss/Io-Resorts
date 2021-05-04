@@ -34,11 +34,8 @@ class WelcomeViewController: UIViewController {
             survey.setTitle("Update Survey", for: .normal)
         }
         else{
-
             survey.setTitle("Complete Survey", for: .normal)
         }
-        
-
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -59,8 +56,6 @@ class WelcomeViewController: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
-
     }
 
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
@@ -74,9 +69,7 @@ class WelcomeViewController: UIViewController {
             self.backgoundY.constant += 50
         default:
             self.backgroundImage.image = UIImage(named: "logoVertical")
-
         }
-
     }
     @IBAction func coupons(_ sender: Any) {
         self.user = (self.navigationController as! NavigationViewController).user

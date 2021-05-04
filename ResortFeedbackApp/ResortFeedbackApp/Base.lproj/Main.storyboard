@@ -564,6 +564,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Survey Menu" id="YdP-0D-dPT"/>
                     <connections>
+                        <outlet property="foodButton" destination="fNn-p5-tiQ" id="b9M-Jh-zZy"/>
+                        <outlet property="overallButton" destination="ARv-td-tp2" id="kh2-va-kXe"/>
+                        <outlet property="poolButton" destination="aIw-jB-sXi" id="UoP-z0-c7p"/>
+                        <outlet property="roomButton" destination="EeF-Uf-Yih" id="1dq-Ro-Tx6"/>
+                        <outlet property="spaButton" destination="a6g-Pb-qwg" id="zSJ-rZ-IoU"/>
                         <segue destination="Ps1-fe-bU2" kind="show" identifier="ShowSurvey" id="JlR-nD-1Kj"/>
                     </connections>
                 </viewController>

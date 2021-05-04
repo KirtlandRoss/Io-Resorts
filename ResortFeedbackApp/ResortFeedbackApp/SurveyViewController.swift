@@ -59,6 +59,8 @@ class SurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.currentCategory = (self.navigationController as! NavigationViewController).chosenCategory!
+        //set user pointer to navigationController's user pointee
+        user = (self.navigationController as! NavigationViewController).user!
         setLabelImages()
         updateScores()
         updateContent()
@@ -67,11 +69,11 @@ class SurveyViewController: UIViewController {
     }
 
     @IBAction func submit(_ sender: Any) {
-        user = (self.navigationController as! NavigationViewController).user!
-        results?.completed = true
+
+        results?.checkIfComplete()
         user?.replaceResults(at: Int(currentCategory!.rawValue), with: results!)
         try! context.save()
-
+        print(self.results! as NSManagedObject)
         //checks if all surveys are complete. checkIfComplete also sets user.surveyComplete
         if !user!.surveyComplete && user!.checkIfComplete(){
             performSegue(withIdentifier: "SurveyComplete", sender: self)
