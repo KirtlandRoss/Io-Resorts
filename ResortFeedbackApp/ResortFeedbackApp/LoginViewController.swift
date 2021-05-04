@@ -70,14 +70,14 @@ class LoginViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         do{
         try user = dbhelp.getOneUser(name: username.text!)
-        print(user?.results?.array.count)
+            print(user?.results?.array.count as Any)
 
 
         if user!.name == nil{
             userErr.alpha = 1
         }
         else if user!.passCheck(password.text!){
-            print(user?.id)
+            print(user?.id as Any)
             (self.navigationController as! NavigationViewController).user = user
             self.performSegue(withIdentifier: "MainMenu", sender: self)
             passErr.alpha = 0
