@@ -11,7 +11,6 @@
 		BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CACAE2638FAFF001E7986 /* DBHelper.swift */; };
 		BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */; };
 		BC19060C264057D400AA4DD7 /* WCLShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC19060A2640552C00AA4DD7 /* WCLShineButton.framework */; };
-		BC19062F26408C3900AA4DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC19062B26408C3900AA4DD7 /* LaunchScreen.storyboard */; };
 		BC19063026408C3900AA4DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC19062D26408C3900AA4DD7 /* Main.storyboard */; };
 		BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */; };
 		BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */; };
@@ -26,13 +25,15 @@
 		BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEA82635D50800E90F38 /* LoginViewController.swift */; };
 		BC37AFC6263759EE00E90F38 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */; };
 		BC37B0302638993900E90F38 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = BC37B02F2638993900E90F38 /* Podfile */; };
-		BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */; };
 		BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */; };
 		BC507985263B2DCB00B0077C /* UpdatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */; };
 		BCDB646D263A0614008DFDAD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646C263A0614008DFDAD /* NavigationViewController.swift */; };
 		BCDB646F263A1611008DFDAD /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646E263A1611008DFDAD /* SurveyViewController.swift */; };
 		BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */; };
 		BCDB6485263A4B7A008DFDAD /* Results+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */; };
+		BCF2E9312640D1DA0017F4A0 /* launchImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E9302640D1DA0017F4A0 /* launchImage.jpg */; };
+		BCF2E9352640D4A40017F4A0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E9342640D4A40017F4A0 /* Launch Screen.storyboard */; };
+		BCF2E9372640D7930017F4A0 /* logo-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E9362640D7930017F4A0 /* logo-launch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +43,6 @@
 		BC0CACAE2638FAFF001E7986 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCompleteController.swift; sourceTree = "<group>"; };
 		BC19060A2640552C00AA4DD7 /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC19062C26408C3900AA4DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC19062E26408C3900AA4DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Phosphate Pro Cond Solid Regular.otf"; path = "fonts/Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
 		BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PhosphatePro-Solid.otf"; path = "fonts/PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
@@ -59,13 +59,15 @@
 		BC37AEA82635D50800E90F38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BC37B02F2638993900E90F38 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestionsView.swift; sourceTree = "<group>"; };
 		BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMenuViewController.swift; sourceTree = "<group>"; };
 		BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePassViewController.swift; sourceTree = "<group>"; };
 		BCDB646C263A0614008DFDAD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		BCDB646E263A1611008DFDAD /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BCDB6481263A4B7A008DFDAD /* Results+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		BCF2E9302640D1DA0017F4A0 /* launchImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchImage.jpg; sourceTree = "<group>"; };
+		BCF2E9342640D4A40017F4A0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "/Users/kirtlandross/Desktop/Revature Projects/ResortFeedbackApp/ResortFeedbackApp/Launch Screen.storyboard"; sourceTree = "<absolute>"; };
+		BCF2E9362640D7930017F4A0 /* logo-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-launch.png"; sourceTree = "<group>"; };
 		F9551C19B8D2BEE65A005582 /* Pods-ResortFeedbackApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedbackApp.debug.xcconfig"; path = "Target Support Files/Pods-ResortFeedbackApp/Pods-ResortFeedbackApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,12 +138,13 @@
 				BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */,
 				BC37AE902635D00300E90F38 /* Assets.xcassets */,
 				BC37AE952635D00300E90F38 /* Info.plist */,
-				BC37B03726389BFF00E90F38 /* SurveyQuestionsView.swift */,
+				BCF2E9342640D4A40017F4A0 /* Launch Screen.storyboard */,
+				BCF2E9362640D7930017F4A0 /* logo-launch.png */,
+				BCF2E9302640D1DA0017F4A0 /* launchImage.jpg */,
 				BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */,
 				BC0CACAE2638FAFF001E7986 /* DBHelper.swift */,
 				BCDB646C263A0614008DFDAD /* NavigationViewController.swift */,
 				BCDB646E263A1611008DFDAD /* SurveyViewController.swift */,
-				BC19062B26408C3900AA4DD7 /* LaunchScreen.storyboard */,
 				BC19062D26408C3900AA4DD7 /* Main.storyboard */,
 				BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */,
 				BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */,
@@ -220,9 +223,11 @@
 				BC37AE912635D00300E90F38 /* Assets.xcassets in Resources */,
 				BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */,
 				BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */,
+				BCF2E9352640D4A40017F4A0 /* Launch Screen.storyboard in Resources */,
+				BCF2E9312640D1DA0017F4A0 /* launchImage.jpg in Resources */,
 				BC19063026408C3900AA4DD7 /* Main.storyboard in Resources */,
+				BCF2E9372640D7930017F4A0 /* logo-launch.png in Resources */,
 				BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */,
-				BC19062F26408C3900AA4DD7 /* LaunchScreen.storyboard in Resources */,
 				BC0CAC9E2638F317001E7986 /* fonts in Resources */,
 				BC371142263C690400CDAAFA /* Phosphate Pro Cond Inline Regular.otf in Resources */,
 			);
@@ -286,7 +291,6 @@
 				BC37AE852635D00100E90F38 /* AppDelegate.swift in Sources */,
 				BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */,
 				BC37AEAC2635D50800E90F38 /* LoginViewController.swift in Sources */,
-				BC37B03826389BFF00E90F38 /* SurveyQuestionsView.swift in Sources */,
 				BCDB646F263A1611008DFDAD /* SurveyViewController.swift in Sources */,
 				BC37AEAA2635D50800E90F38 /* WelcomeViewController.swift in Sources */,
 				BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */,
@@ -300,14 +304,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC19062B26408C3900AA4DD7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC19062C26408C3900AA4DD7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		BC19062D26408C3900AA4DD7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

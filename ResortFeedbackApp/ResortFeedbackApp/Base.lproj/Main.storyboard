@@ -117,7 +117,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVertical" translatesAutoresizingMaskIntoConstraints="NO" id="MOs-hz-Jvv">
-                                <rect key="frame" x="21" y="127.5" width="372" height="372"/>
+                                <rect key="frame" x="21" y="262" width="372" height="372"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-79-niM">
                                 <rect key="frame" x="132" y="162" width="150" height="34"/>
@@ -160,7 +160,7 @@
                             <constraint firstItem="ASv-79-niM" firstAttribute="centerY" secondItem="s78-Xu-ybC" secondAttribute="centerY" multiplier="0.4" id="cxV-U9-Lb3"/>
                             <constraint firstItem="A0N-vO-xPv" firstAttribute="centerX" secondItem="s78-Xu-ybC" secondAttribute="centerX" id="ehy-Vw-KCt"/>
                             <constraint firstItem="ASv-79-niM" firstAttribute="centerX" secondItem="s78-Xu-ybC" secondAttribute="centerX" id="lBO-cJ-nWN"/>
-                            <constraint firstItem="MOs-hz-Jvv" firstAttribute="centerY" secondItem="s78-Xu-ybC" secondAttribute="centerY" multiplier="0.7" id="oPz-C7-Ttd"/>
+                            <constraint firstItem="MOs-hz-Jvv" firstAttribute="centerY" secondItem="s78-Xu-ybC" secondAttribute="centerY" id="oPz-C7-Ttd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="rua-lW-nna"/>
@@ -212,7 +212,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVertical" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Ry-eeq" userLabel="Background logo">
-                                <rect key="frame" x="0.0" y="127.5" width="414" height="372"/>
+                                <rect key="frame" x="0.0" y="262" width="414" height="372"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
                                 <rect key="frame" x="117" y="162" width="180" height="34"/>
@@ -344,7 +344,7 @@
                             <constraint firstItem="7fW-uP-7zj" firstAttribute="top" secondItem="KM9-78-cYm" secondAttribute="bottom" constant="35" id="VOU-Cz-Efg"/>
                             <constraint firstItem="Lg7-EP-sa1" firstAttribute="top" secondItem="KM9-78-cYm" secondAttribute="bottom" constant="1" id="Vdv-1F-lRR"/>
                             <constraint firstItem="2gi-Ry-eeq" firstAttribute="centerX" secondItem="ac5-uh-rso" secondAttribute="centerX" id="Xxx-MB-bAs"/>
-                            <constraint firstItem="2gi-Ry-eeq" firstAttribute="centerY" secondItem="ac5-uh-rso" secondAttribute="centerY" multiplier="0.7" id="Z05-eK-ZCb"/>
+                            <constraint firstItem="2gi-Ry-eeq" firstAttribute="centerY" secondItem="ac5-uh-rso" secondAttribute="centerY" id="Z05-eK-ZCb"/>
                             <constraint firstItem="yry-BJ-5yy" firstAttribute="top" secondItem="wur-qM-VcH" secondAttribute="bottom" constant="21" id="ZeI-QR-bnL"/>
                             <constraint firstItem="hhL-hQ-dJq" firstAttribute="centerY" secondItem="ac5-uh-rso" secondAttribute="centerY" multiplier="0.4" id="aB0-FD-aWU"/>
                             <constraint firstItem="7fW-uP-7zj" firstAttribute="leading" secondItem="KGV-gg-COB" secondAttribute="trailing" constant="9" id="c7u-NS-XBW"/>
@@ -390,7 +390,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVertical" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-q5-XR9">
-                                <rect key="frame" x="21" y="127.5" width="372" height="372"/>
+                                <rect key="frame" x="21" y="262" width="372" height="372"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6g-Au-ZGj">
                                 <rect key="frame" x="100.5" y="154" width="213" height="50.5"/>
@@ -442,7 +442,7 @@
                             <constraint firstItem="Hm8-qL-DvB" firstAttribute="centerX" secondItem="rPa-WJ-9DQ" secondAttribute="centerX" id="LF7-SB-y2a"/>
                             <constraint firstItem="x6g-Au-ZGj" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" multiplier="0.4" id="OWW-F7-Z9I"/>
                             <constraint firstItem="Wbv-iK-wMx" firstAttribute="centerX" secondItem="rPa-WJ-9DQ" secondAttribute="centerX" id="QCq-2q-c8c"/>
-                            <constraint firstItem="eoW-q5-XR9" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" multiplier="0.7" id="SSq-GO-Vy8"/>
+                            <constraint firstItem="eoW-q5-XR9" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" id="SSq-GO-Vy8"/>
                             <constraint firstItem="Wbv-iK-wMx" firstAttribute="top" secondItem="Hm8-qL-DvB" secondAttribute="bottom" constant="27" id="SmN-Hm-l59"/>
                             <constraint firstItem="MTg-zi-oYc" firstAttribute="centerX" secondItem="rPa-WJ-9DQ" secondAttribute="centerX" id="ViV-7d-jS2"/>
                             <constraint firstItem="Hm8-qL-DvB" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" multiplier="0.9" id="n6D-Du-dh3"/>
@@ -960,9 +960,6 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                         <color key="value" red="1" green="0.95983058300000001" blue="0.27919651680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bigShineColor">
-                                        <color key="value" systemColor="systemYellowColor"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtP-XL-VLt" userLabel="q3b1" customClass="WCLShineButton" customModule="WCLShineButton">
@@ -1147,9 +1144,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
