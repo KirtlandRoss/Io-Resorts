@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Oh-jL-bRA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3YZ-fS-pp3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -211,8 +211,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Ry-eeq" userLabel="Background logo">
-                                <rect key="frame" x="0.0" y="222.5" width="414" height="451"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Ry-eeq" userLabel="Background logo">
+                                <rect key="frame" x="0.0" y="231" width="414" height="434"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
                                 <rect key="frame" x="117" y="162" width="180" height="34"/>
@@ -1163,8 +1163,8 @@
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="1ju-Ho-mMs">
-                                <rect key="frame" x="0.0" y="222.5" width="414" height="451"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1ju-Ho-mMs">
+                                <rect key="frame" x="17" y="231" width="380" height="434"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gRm-ca-EMk"/>
@@ -1172,13 +1172,12 @@
                         <constraints>
                             <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerY" secondItem="s0c-Jr-938" secondAttribute="centerY" id="9nW-p4-cFw"/>
                             <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="E89-9q-lth"/>
-                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="UdT-YI-O9Z"/>
-                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerY" secondItem="s0c-Jr-938" secondAttribute="centerY" id="zjE-pw-hq4"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="logo" destination="1ju-Ho-mMs" id="MdJ-gM-r6V"/>
-                        <segue destination="1Oh-jL-bRA" kind="presentation" identifier="splash" modalPresentationStyle="fullScreen" id="QwE-k3-zvV"/>
+                        <outlet property="logoX" destination="E89-9q-lth" id="N9T-ic-aZR"/>
+                        <outlet property="logoY" destination="9nW-p4-cFw" id="Gk6-SE-uMS"/>
+                        <segue destination="1Oh-jL-bRA" kind="presentation" identifier="splash" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="QwE-k3-zvV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYN-Tr-wFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1190,7 +1189,7 @@
         <image name="background" width="2923" height="4016"/>
         <image name="background-small" width="728" height="1000"/>
         <image name="fatButton" width="393" height="109"/>
-        <image name="logo-launch.png" width="414" height="451"/>
+        <image name="fullLogo" width="380" height="434"/>
         <image name="logoVertical" width="372" height="372"/>
         <image name="overall" width="2308" height="3465"/>
         <systemColor name="labelColor">
