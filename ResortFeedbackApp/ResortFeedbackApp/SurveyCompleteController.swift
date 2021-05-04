@@ -11,13 +11,13 @@ class SurveyCompleteController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
 
     @IBAction func returnToMain(_ sender: Any) {
 
-
+        navigationItem.hidesBackButton = false
             let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
             var i = 0
         //search through ViewController stack and then return to main menu

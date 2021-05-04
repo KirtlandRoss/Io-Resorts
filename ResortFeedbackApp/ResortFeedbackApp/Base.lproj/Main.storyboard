@@ -1151,7 +1151,7 @@
                         <outlet property="question3" destination="cNq-d8-IyT" id="8TP-FE-NmG"/>
                         <outlet property="question4" destination="kYB-6o-Is1" id="w66-1O-fek"/>
                         <outlet property="question5" destination="Dqh-Uj-yCK" id="pjn-Gm-JuO"/>
-                        <segue destination="aQD-Cb-c61" kind="presentation" identifier="SurveyComplete" modalPresentationStyle="fullScreen" id="pjH-45-9mz"/>
+                        <segue destination="aQD-Cb-c61" kind="show" identifier="SurveyComplete" id="pjH-45-9mz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewT-2Y-Zec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
