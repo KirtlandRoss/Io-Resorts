@@ -22,8 +22,8 @@
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-p3-F29">
-                                <rect key="frame" x="0.0" y="222.5" width="414" height="451"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-p3-F29">
+                                <rect key="frame" x="17" y="231" width="380" height="434"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
@@ -43,6 +43,6 @@
     </scenes>
     <resources>
         <image name="background-small" width="728" height="1000"/>
-        <image name="logo-launch.png" width="414" height="451"/>
+        <image name="fullLogo.png" width="380" height="434"/>
     </resources>
 </document>
