@@ -17,6 +17,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var survey: UIButton!
+    @IBOutlet weak var couponButton: UIButton!
 
 
 
@@ -37,9 +38,13 @@ class WelcomeViewController: UIViewController {
 
         if user!.surveyComplete{
             survey.setTitle("Update Survey", for: .normal)
+            couponButton.isEnabled = true
+            couponButton.alpha = 1
         }
         else{
             survey.setTitle("Complete Survey", for: .normal)
+            couponButton.isEnabled = false
+            couponButton.alpha = 0.95
         }
     }
 

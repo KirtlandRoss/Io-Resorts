@@ -189,15 +189,51 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have earned:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-JG-vt4">
+                                <rect key="frame" x="19.5" y="167" width="375.5" height="51"/>
+                                <fontDescription key="fontDescription" name="PhosphateProCondSolid-Regular" family="PhosphateProCondSolid-Regular" pointSize="50"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-v7-0by">
+                                <rect key="frame" x="73.5" y="109" width="267" height="50.5"/>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="50"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your next Stay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEk-OP-Aj2">
+                                <rect key="frame" x="111.5" y="339" width="191.5" height="31"/>
+                                <fontDescription key="fontDescription" name="PhosphateProCondSolid-Regular" family="PhosphateProCondSolid-Regular" pointSize="30"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10% Off" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3U-gg-ZM6">
+                                <rect key="frame" x="121" y="255" width="172.5" height="51.5"/>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="50"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f7A-Z3-bgf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q3U-gg-ZM6" firstAttribute="top" secondItem="QhO-JG-vt4" secondAttribute="bottom" constant="37" id="1HO-sX-7H2"/>
+                            <constraint firstItem="QhO-JG-vt4" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="OEn-jX-azs"/>
+                            <constraint firstItem="QhO-JG-vt4" firstAttribute="top" secondItem="cRp-v7-0by" secondAttribute="bottom" constant="7.5" id="aum-ZM-VYA"/>
+                            <constraint firstItem="q3U-gg-ZM6" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="buO-Yj-oCr"/>
+                            <constraint firstItem="aEk-OP-Aj2" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="f7C-9h-yae"/>
+                            <constraint firstItem="cRp-v7-0by" firstAttribute="centerY" secondItem="7aU-xn-xDy" secondAttribute="centerY" multiplier="0.3" id="gEl-kD-5ic"/>
+                            <constraint firstItem="cRp-v7-0by" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="hut-uM-I7O"/>
+                            <constraint firstItem="aEk-OP-Aj2" firstAttribute="top" secondItem="q3U-gg-ZM6" secondAttribute="bottom" constant="32.5" id="ioe-gu-gD1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Coupons" id="ye1-6E-9mu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2eE-Li-FoD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5197" y="871"/>
+            <point key="canvasLocation" x="5195.652173913044" y="870.53571428571422"/>
         </scene>
         <!--Login-->
         <scene sceneID="Zyf-9m-5EG">
@@ -405,7 +441,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hm8-qL-DvB">
-                                <rect key="frame" x="107" y="378" width="200" height="50"/>
+                                <rect key="frame" x="107" y="333.5" width="200" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="3Xl-yM-Kyn"/>
@@ -420,7 +456,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-iK-wMx">
-                                <rect key="frame" x="107" y="455" width="200" height="50"/>
+                                <rect key="frame" x="107" y="405" width="200" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CGI-zm-8Bg"/>
@@ -428,7 +464,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Coupons" backgroundImage="fatButton"/>
+                                <state key="normal" title="Coupon" backgroundImage="fatButton"/>
                                 <connections>
                                     <action selector="coupons:" destination="yzD-Jg-aFR" eventType="touchUpInside" id="xhf-M1-JDz"/>
                                 </connections>
@@ -443,9 +479,9 @@
                             <constraint firstItem="x6g-Au-ZGj" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" multiplier="0.4" id="OWW-F7-Z9I"/>
                             <constraint firstItem="Wbv-iK-wMx" firstAttribute="centerX" secondItem="rPa-WJ-9DQ" secondAttribute="centerX" id="QCq-2q-c8c"/>
                             <constraint firstItem="eoW-q5-XR9" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" id="SSq-GO-Vy8"/>
-                            <constraint firstItem="Wbv-iK-wMx" firstAttribute="top" secondItem="Hm8-qL-DvB" secondAttribute="bottom" constant="27" id="SmN-Hm-l59"/>
                             <constraint firstItem="MTg-zi-oYc" firstAttribute="centerX" secondItem="rPa-WJ-9DQ" secondAttribute="centerX" id="ViV-7d-jS2"/>
-                            <constraint firstItem="Hm8-qL-DvB" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" multiplier="0.9" id="n6D-Du-dh3"/>
+                            <constraint firstItem="Wbv-iK-wMx" firstAttribute="top" secondItem="Hm8-qL-DvB" secondAttribute="bottom" constant="21.5" id="dop-KC-Y5L"/>
+                            <constraint firstItem="Hm8-qL-DvB" firstAttribute="centerY" secondItem="rPa-WJ-9DQ" secondAttribute="centerY" multiplier="0.8" id="n6D-Du-dh3"/>
                             <constraint firstItem="x6g-Au-ZGj" firstAttribute="centerX" secondItem="rPa-WJ-9DQ" secondAttribute="centerX" id="sfO-0I-O7n"/>
                         </constraints>
                     </view>
@@ -453,6 +489,7 @@
                     <connections>
                         <outlet property="backgoundY" destination="SSq-GO-Vy8" id="o7n-I0-Hzr"/>
                         <outlet property="backgroundImage" destination="eoW-q5-XR9" id="l3f-oU-FKa"/>
+                        <outlet property="couponButton" destination="Wbv-iK-wMx" id="I67-uu-o7l"/>
                         <outlet property="nameLabel" destination="MTg-zi-oYc" id="VA6-vS-4g7"/>
                         <outlet property="nameX" destination="ViV-7d-jS2" id="Ifn-Wr-QwE"/>
                         <outlet property="survey" destination="Hm8-qL-DvB" id="J1y-oA-Ypy"/>

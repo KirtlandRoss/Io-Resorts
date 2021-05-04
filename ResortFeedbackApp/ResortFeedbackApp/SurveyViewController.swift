@@ -68,7 +68,16 @@ class SurveyViewController: UIViewController {
         setupRating()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        //reset font color of title in navigation controller
+        if var textAttributes = navigationController?.navigationBar.titleTextAttributes {
+            textAttributes[NSAttributedString.Key.foregroundColor] = UIColor.white
+            navigationController?.navigationBar.titleTextAttributes = textAttributes
+        }
+    }
+
     @IBAction func submit(_ sender: Any) {
+
 
         results?.checkIfComplete()
         user?.replaceResults(at: Int(currentCategory!.rawValue), with: results!)
@@ -87,6 +96,21 @@ class SurveyViewController: UIViewController {
     func updateContent(){
         results?.questions?.setCategory(currentCategory!)
         results?.questions?.setContent()
+        self.title = results?.questions?.categoryString
+
+        //change font color of title in navigation controller based on background image
+        if self.currentCategory == .food || self.currentCategory == .room || self.currentCategory == .pool{
+            if var textAttributes = navigationController?.navigationBar.titleTextAttributes {
+                textAttributes[NSAttributedString.Key.foregroundColor] = UIColor.black
+                navigationController?.navigationBar.titleTextAttributes = textAttributes
+            }
+        }
+        else{
+            if var textAttributes = navigationController?.navigationBar.titleTextAttributes {
+                textAttributes[NSAttributedString.Key.foregroundColor] = UIColor.white
+                navigationController?.navigationBar.titleTextAttributes = textAttributes
+            }
+        }
         question1.text = results?.questions?.question1
         question2.text = results?.questions?.question2
         question3.text = results?.questions?.question3
