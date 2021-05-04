@@ -588,6 +588,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50k-db-upR">
+                                <rect key="frame" x="83" y="149.5" width="248" height="59"/>
+                                <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="50"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRN-mf-gry">
                                 <rect key="frame" x="107" y="423" width="200" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -603,19 +609,32 @@
                                     <action selector="returnToMain:" destination="aQD-Cb-c61" eventType="touchUpInside" id="UzS-74-4ig"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For completing the survey You have earned a coupon!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KJ-V6-IEA">
+                                <rect key="frame" x="0.0" y="223" width="414" height="48.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Occ-n8-4HQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="50k-db-upR" firstAttribute="centerY" secondItem="KC1-J4-ByA" secondAttribute="centerY" multiplier="0.4" id="Ivd-cU-2xY"/>
                             <constraint firstItem="XRN-mf-gry" firstAttribute="centerY" secondItem="KC1-J4-ByA" secondAttribute="centerY" id="KVG-Y3-pXv"/>
+                            <constraint firstItem="8KJ-V6-IEA" firstAttribute="top" secondItem="50k-db-upR" secondAttribute="bottom" constant="14.5" id="LfB-Ht-NkV"/>
+                            <constraint firstItem="8KJ-V6-IEA" firstAttribute="trailing" secondItem="Occ-n8-4HQ" secondAttribute="trailing" id="Z77-bR-gn4"/>
+                            <constraint firstItem="8KJ-V6-IEA" firstAttribute="centerX" secondItem="KC1-J4-ByA" secondAttribute="centerX" id="bOu-Sr-0jT"/>
+                            <constraint firstItem="50k-db-upR" firstAttribute="centerX" secondItem="KC1-J4-ByA" secondAttribute="centerX" id="bgb-Yu-Ih0"/>
                             <constraint firstItem="XRN-mf-gry" firstAttribute="centerX" secondItem="KC1-J4-ByA" secondAttribute="centerX" id="nMl-KY-b8p"/>
+                            <constraint firstItem="8KJ-V6-IEA" firstAttribute="leading" secondItem="Occ-n8-4HQ" secondAttribute="leading" id="o7j-3p-4Tp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iym-QZ-ylk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSV-Qa-oGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7039" y="903"/>
+            <point key="canvasLocation" x="7037.68115942029" y="902.67857142857133"/>
         </scene>
         <!--Room-->
         <scene sceneID="HG4-qK-Xwd">
@@ -1095,7 +1114,7 @@
                         <outlet property="question3" destination="cNq-d8-IyT" id="8TP-FE-NmG"/>
                         <outlet property="question4" destination="kYB-6o-Is1" id="w66-1O-fek"/>
                         <outlet property="question5" destination="Dqh-Uj-yCK" id="pjn-Gm-JuO"/>
-                        <segue destination="aQD-Cb-c61" kind="show" identifier="SurveyComplete" id="pjH-45-9mz"/>
+                        <segue destination="aQD-Cb-c61" kind="presentation" identifier="SurveyComplete" modalPresentationStyle="fullScreen" id="pjH-45-9mz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewT-2Y-Zec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1149,6 +1168,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

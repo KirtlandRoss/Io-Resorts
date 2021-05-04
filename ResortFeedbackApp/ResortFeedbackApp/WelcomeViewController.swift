@@ -24,12 +24,16 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         user = (self.navigationController as! NavigationViewController).user
         nameLabel.text = user?.name
-        // Do any additional setup after loading the view.
+
+        //make sure before going any further that the user has completed or not completed the survey
+        user?.checkIfComplete()
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
             welcomeY.constant -= view.bounds.height
             nameX.constant -= view.bounds.width
+
         if user!.surveyComplete{
             survey.setTitle("Update Survey", for: .normal)
         }
