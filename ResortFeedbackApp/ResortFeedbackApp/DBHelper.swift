@@ -13,14 +13,17 @@ class DBHelper{
     static var inst = DBHelper()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-    func addUser(_ object: [String:String]) -> User{
+    func createUser(_ object: [String:String]) -> User{
 
         let user = User(context: context)
 
         for _ in 0...4{
             
             user.addToResults(Results(context: context))
+            (user.results?.lastObject as! Results).questions = Questions(context: context)
+            (user.results?.lastObject as! Results).catagory = 5
             (user.results?.lastObject as! Results).completed = false
+
         }
         user.name = object["name"]
         user.password = object["password"]
@@ -36,7 +39,7 @@ class DBHelper{
         return user
     }
 
-    func getOneUser(name : String) throws -> User {
+    func fetchUser(name : String) throws -> User {
         var st : User?
         let fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
         fetchReq.predicate = NSPredicate(format: "name == %@", name)

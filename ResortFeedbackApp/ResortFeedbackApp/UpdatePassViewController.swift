@@ -23,7 +23,7 @@ class UpdatePassViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         do{
-        let user = try dbhelp.getOneUser(name: username.text!)
+        let user = try dbhelp.fetchUser(name: username.text!)
         if user.passCheck(oldPass.text!){
             user.password = newPass.text
             dbhelp.updateData(user)
