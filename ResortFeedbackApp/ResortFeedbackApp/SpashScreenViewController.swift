@@ -11,7 +11,9 @@ class SpashScreenViewController: UIViewController {
 
 
 
-    @IBOutlet weak var logoX: NSLayoutConstraint!
+
+    @IBOutlet weak var circleY: NSLayoutConstraint!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +27,8 @@ class SpashScreenViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 0.2, delay: 1.5, options: UIView.AnimationOptions.curveLinear, animations: {
-              self.logoX.constant += self.view.bounds.width
+        UIView.animate(withDuration: 0.5, delay: 1, options: UIView.AnimationOptions.curveEaseOut, animations: {
+              self.circleY.constant -= 200
               self.view.layoutIfNeeded()
           }, completion: nil)
     }
