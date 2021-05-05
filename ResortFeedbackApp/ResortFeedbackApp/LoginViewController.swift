@@ -21,7 +21,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passErr: UILabel!
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
+
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         passErr.alpha = 0
@@ -31,11 +33,9 @@ class LoginViewController: UIViewController {
         if ud.bool(forKey: "bool"){
             rememberMe.isOn = true
         }
-
     }
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
         switch UIDevice.current.orientation{
-
         case .landscapeLeft:
             self.backgroundImage.image = UIImage(named: "logo")
             self.backgoundY.constant += 50
@@ -45,7 +45,6 @@ class LoginViewController: UIViewController {
         default:
             self.backgroundImage.image = UIImage(named: "logoVertical")
         }
-
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -56,7 +55,6 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         UINavigationBar.appearance().backIndicatorImage = UIImage(named: "button")
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "button")
-
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -69,51 +67,47 @@ class LoginViewController: UIViewController {
 
     @IBAction func signIn(_ sender: Any) {
         do{
-        try user = dbhelp.fetchUser(name: username.text!)
+            try user = dbhelp.fetchUser(name: username.text!)
             print(user?.results?.array.count as Any)
 
-
-        if user!.name == nil{
-            userErr.alpha = 1
-        }
-        else if user!.passCheck(password.text!){
-            print(user?.id as Any)
-            (self.navigationController as! NavigationViewController).user = user
-            self.performSegue(withIdentifier: "MainMenu", sender: self)
-            passErr.alpha = 0
-            userErr.alpha = 0
-            if !rememberMe.isOn{
-                username.text = ""
-                password.text = ""
+            if user!.name == nil{
+                userErr.alpha = 1
+            }
+            else if user!.passCheck(password.text!){
+                print(user?.id as Any)
+                saveUserDefault()
+                (self.navigationController as! NavigationViewController).user = user
+                self.performSegue(withIdentifier: "MainMenu", sender: self)
+                passErr.alpha = 0
+                userErr.alpha = 0
+                if !rememberMe.isOn{
+                    username.text = ""
+                    password.text = ""
+                }
+            }
+            else{
+                passErr.alpha = 1
             }
         }
-        else{
-            passErr.alpha = 1
-        }
-    }
         catch{
             userErr.alpha = 1
         }
-
-        
     }
-  
-    @IBAction func rememberMe(_ sender: UISwitch) {
-        if sender.isOn{
 
+    @IBAction func rememberMe(_ sender: UISwitch) {
+        saveUserDefault()
+    }
+
+    func saveUserDefault(){
+        if rememberMe.isOn{
             ud.set(username.text, forKey: "id")
             ud.set(password.text, forKey: "pass")
-
-
-         
         }
         else{
             ud.removeObject(forKey: "id")
             ud.removeObject(forKey: "pass")
-
         }
         ud.set(rememberMe.isOn, forKey: "bool")
-
     }
 }
 
