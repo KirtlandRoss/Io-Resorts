@@ -19,7 +19,6 @@ public class Questions: NSManagedObject {
 
     func setContent(){
 
-
         switch getCategory() {
         case .room:
             categoryString = "room"
@@ -61,9 +60,7 @@ public class Questions: NSManagedObject {
         }
     }
 
-
     func getQuestions() -> [String]{
-
 
         switch getCategory() {
         case .room:
