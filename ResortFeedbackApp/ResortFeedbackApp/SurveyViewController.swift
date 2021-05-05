@@ -74,6 +74,8 @@ class SurveyViewController: UIViewController {
             textAttributes[NSAttributedString.Key.foregroundColor] = UIColor.white
             navigationController?.navigationBar.titleTextAttributes = textAttributes
         }
+        //reset navigationview back button color
+        navigationController?.navigationBar.tintColor = .none
     }
 
     @IBAction func submit(_ sender: Any) {
@@ -98,8 +100,16 @@ class SurveyViewController: UIViewController {
         results?.questions?.setContent()
         self.title = results?.questions?.categoryString
 
+        //set color of back button
+        if currentCategory == .room || currentCategory == .pool {
+            navigationController?.navigationBar.tintColor = .red
+        }
+        if currentCategory == .overall {
+            navigationController?.navigationBar.tintColor = .green
+        }
+
         //change font color of title in navigation controller based on background image
-        if self.currentCategory == .food || self.currentCategory == .room || self.currentCategory == .pool{
+        if currentCategory == .food || currentCategory == .room || currentCategory == .pool{
             if var textAttributes = navigationController?.navigationBar.titleTextAttributes {
                 textAttributes[NSAttributedString.Key.foregroundColor] = UIColor.black
                 navigationController?.navigationBar.titleTextAttributes = textAttributes

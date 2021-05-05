@@ -14,9 +14,6 @@
         <array key="PhosphatePro-Inline.otf">
             <string>PhosphatePro-Inline</string>
         </array>
-        <array key="TimesNewRoman.ttf">
-            <string>.SFUI-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Change Password-->
@@ -62,7 +59,7 @@
                                     <constraint firstAttribute="width" constant="200" id="ZME-a4-kGX"/>
                                     <constraint firstAttribute="height" constant="50" id="znX-AS-hcn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Submit" backgroundImage="fatButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -102,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xX-8F-hj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524.6376811594205" y="870.53571428571422"/>
+            <point key="canvasLocation" x="4251" y="871"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="Xox-qn-TBZ">
@@ -141,7 +138,7 @@
                                     <constraint firstAttribute="height" constant="50" id="7fc-ae-otS"/>
                                     <constraint firstAttribute="width" constant="200" id="gdz-K0-GKR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Submit" backgroundImage="fatButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -175,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRR-pr-h1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4398.5507246376819" y="870.53571428571422"/>
+            <point key="canvasLocation" x="3514" y="871"/>
         </scene>
         <!--Coupons-->
         <scene sceneID="a15-n8-BHJ">
@@ -188,6 +185,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gxw-nz-c7M">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVertical" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-wa-Y0O">
+                                <rect key="frame" x="0.0" y="217" width="414" height="372"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have earned:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-JG-vt4">
                                 <rect key="frame" x="19.5" y="167" width="375.5" height="51"/>
@@ -204,14 +204,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your next Stay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEk-OP-Aj2">
                                 <rect key="frame" x="111.5" y="339" width="191.5" height="31"/>
                                 <fontDescription key="fontDescription" name="PhosphateProCondSolid-Regular" family="PhosphateProCondSolid-Regular" pointSize="30"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10% Off" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3U-gg-ZM6">
                                 <rect key="frame" x="121" y="255" width="172.5" height="51.5"/>
                                 <fontDescription key="fontDescription" name="PhosphatePro-Inline" family="PhosphatePro-Inline" pointSize="50"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
@@ -219,10 +219,14 @@
                         <viewLayoutGuide key="safeArea" id="f7A-Z3-bgf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hBS-wa-Y0O" firstAttribute="leading" secondItem="f7A-Z3-bgf" secondAttribute="leading" id="0Ye-q9-J3e"/>
                             <constraint firstItem="q3U-gg-ZM6" firstAttribute="top" secondItem="QhO-JG-vt4" secondAttribute="bottom" constant="37" id="1HO-sX-7H2"/>
+                            <constraint firstItem="hBS-wa-Y0O" firstAttribute="centerY" secondItem="7aU-xn-xDy" secondAttribute="centerY" multiplier="0.9" id="3DN-Em-sBG"/>
+                            <constraint firstItem="hBS-wa-Y0O" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="6jK-bK-HkW"/>
                             <constraint firstItem="QhO-JG-vt4" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="OEn-jX-azs"/>
                             <constraint firstItem="QhO-JG-vt4" firstAttribute="top" secondItem="cRp-v7-0by" secondAttribute="bottom" constant="7.5" id="aum-ZM-VYA"/>
                             <constraint firstItem="q3U-gg-ZM6" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="buO-Yj-oCr"/>
+                            <constraint firstItem="hBS-wa-Y0O" firstAttribute="trailing" secondItem="f7A-Z3-bgf" secondAttribute="trailing" id="eGP-LV-5qj"/>
                             <constraint firstItem="aEk-OP-Aj2" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="f7C-9h-yae"/>
                             <constraint firstItem="cRp-v7-0by" firstAttribute="centerY" secondItem="7aU-xn-xDy" secondAttribute="centerY" multiplier="0.3" id="gEl-kD-5ic"/>
                             <constraint firstItem="cRp-v7-0by" firstAttribute="centerX" secondItem="7aU-xn-xDy" secondAttribute="centerX" id="hut-uM-I7O"/>
@@ -310,7 +314,7 @@
                                     <constraint firstAttribute="width" constant="160" id="XZW-Tv-3Cy"/>
                                     <constraint firstAttribute="height" constant="50" id="jCe-f1-vba"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
                                 <state key="normal" title="Change Password" backgroundImage="fatButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -325,9 +329,9 @@
                                     <constraint firstAttribute="width" constant="150" id="e8r-gN-dAK"/>
                                     <constraint firstAttribute="height" constant="50" id="eEK-st-t9n"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <state key="normal" title="Login" backgroundImage="fatButton">
-                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="signIn:" destination="nZy-Po-l7G" eventType="touchUpInside" id="fw6-cb-Fjo"/>
@@ -354,7 +358,7 @@
                                     <constraint firstAttribute="height" constant="50" id="QDt-Pf-aWH"/>
                                     <constraint firstAttribute="width" constant="150" id="vKO-q5-DFK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <state key="normal" title="Sign Up" backgroundImage="fatButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -447,7 +451,7 @@
                                     <constraint firstAttribute="width" constant="200" id="3Xl-yM-Kyn"/>
                                     <constraint firstAttribute="height" constant="50" id="Sas-2d-vsX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Complete Survey" backgroundImage="fatButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -462,7 +466,7 @@
                                     <constraint firstAttribute="height" constant="50" id="CGI-zm-8Bg"/>
                                     <constraint firstAttribute="width" constant="200" id="mZz-i2-fIb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Coupon" backgroundImage="fatButton"/>
                                 <connections>
@@ -519,7 +523,7 @@
                                     <constraint firstAttribute="width" constant="200" id="Fgq-Nl-xJb"/>
                                     <constraint firstAttribute="height" constant="50" id="Wzg-qS-No8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Pool" backgroundImage="fatButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -533,7 +537,7 @@
                                     <constraint firstAttribute="height" constant="50" id="6bn-W0-pFm"/>
                                     <constraint firstAttribute="width" constant="200" id="gaD-rB-eJZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Overall" backgroundImage="fatButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -547,7 +551,7 @@
                                     <constraint firstAttribute="height" constant="50" id="LME-3y-sIO"/>
                                     <constraint firstAttribute="width" constant="200" id="rtl-mX-0dl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Room" backgroundImage="fatButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -561,7 +565,7 @@
                                     <constraint firstAttribute="height" constant="50" id="6eQ-4c-qSn"/>
                                     <constraint firstAttribute="width" constant="200" id="Isn-1Y-ruv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Food" backgroundImage="fatButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -575,7 +579,7 @@
                                     <constraint firstAttribute="height" constant="50" id="KcP-JB-uNs"/>
                                     <constraint firstAttribute="width" constant="200" id="ogY-Fq-ymg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Spa" backgroundImage="fatButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -691,7 +695,7 @@
                                     <constraint firstAttribute="height" constant="25" id="91a-I6-PLu"/>
                                     <constraint firstAttribute="width" constant="250" id="SUD-9r-85I"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -701,7 +705,7 @@
                                     <constraint firstAttribute="height" constant="25" id="D9m-TV-IBl"/>
                                     <constraint firstAttribute="width" constant="250" id="lwH-Mi-18e"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -711,7 +715,7 @@
                                     <constraint firstAttribute="height" constant="25" id="LMC-AO-C22"/>
                                     <constraint firstAttribute="width" constant="250" id="LSM-TL-RAE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -721,7 +725,7 @@
                                     <constraint firstAttribute="width" constant="250" id="T7w-Ch-nwc"/>
                                     <constraint firstAttribute="height" constant="25" id="lN9-VW-HJh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -731,7 +735,7 @@
                                     <constraint firstAttribute="height" constant="25" id="Vcl-Tv-BUJ"/>
                                     <constraint firstAttribute="width" constant="250" id="zaU-4V-mQP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1235,9 +1239,6 @@
         <image name="fullLogo" width="380" height="434"/>
         <image name="logoVertical" width="372" height="372"/>
         <image name="overall" width="2308" height="3465"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
