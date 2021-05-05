@@ -27,7 +27,7 @@ class WelcomeViewController: UIViewController {
         nameLabel.text = user?.name
 
         //make sure before going any further that the user has completed or not completed the survey
-        user?.checkIfComplete()
+        _ = user?.checkIfComplete()
 
 
     }

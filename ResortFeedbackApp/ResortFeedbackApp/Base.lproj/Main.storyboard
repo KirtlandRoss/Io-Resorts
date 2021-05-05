@@ -1085,6 +1085,7 @@
                             <constraint firstItem="epw-pf-RqZ" firstAttribute="leading" secondItem="VdA-46-T0j" secondAttribute="trailing" constant="5" id="MN2-i1-Bo2"/>
                             <constraint firstItem="kYB-6o-Is1" firstAttribute="top" secondItem="mfu-1M-jqH" secondAttribute="bottom" constant="25" id="Ncf-gd-pHf"/>
                             <constraint firstItem="cNq-d8-IyT" firstAttribute="top" secondItem="HSv-VJ-KOH" secondAttribute="bottom" constant="25" id="NpX-cg-SOd"/>
+                            <constraint firstItem="AkR-MT-d7F" firstAttribute="trailing" secondItem="s5F-50-IaM" secondAttribute="trailing" constant="107" id="O7c-u0-4Xd"/>
                             <constraint firstItem="Yvf-kR-o9P" firstAttribute="leading" secondItem="4tx-0C-iKr" secondAttribute="trailing" constant="5" id="Pma-E2-1EE"/>
                             <constraint firstItem="FuH-FG-XmW" firstAttribute="leading" secondItem="HSv-VJ-KOH" secondAttribute="trailing" constant="5" id="R96-p9-DSc"/>
                             <constraint firstItem="SvM-sz-ueh" firstAttribute="leading" secondItem="txq-WY-zsf" secondAttribute="trailing" constant="5" id="SaY-Yk-DCn"/>
@@ -1201,14 +1202,16 @@
                                 </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1ju-Ho-mMs">
-                                <rect key="frame" x="17" y="231" width="380" height="434"/>
+                                <rect key="frame" x="0.0" y="231" width="414" height="434"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gRm-ca-EMk"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerY" secondItem="s0c-Jr-938" secondAttribute="centerY" id="9nW-p4-cFw"/>
+                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="trailing" secondItem="gRm-ca-EMk" secondAttribute="trailing" id="A2c-nb-Hlb"/>
                             <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="E89-9q-lth"/>
+                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="leading" secondItem="gRm-ca-EMk" secondAttribute="leading" id="KlE-2W-QbD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1219,7 +1222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYN-Tr-wFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="130"/>
+            <point key="canvasLocation" x="2002.8985507246377" y="129.91071428571428"/>
         </scene>
     </scenes>
     <resources>
