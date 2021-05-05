@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passErr: UILabel!
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var coverColor: UIImageView!
+    @IBOutlet weak var coverLogo: UIImageView!
 
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 
@@ -45,6 +47,16 @@ class LoginViewController: UIViewController {
         default:
             self.backgroundImage.image = UIImage(named: "logoVertical")
         }
+    }
+
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions.curveLinear, animations: {
+            self.coverColor.alpha = 0
+            self.coverLogo.alpha = 0
+              self.view.layoutIfNeeded()
+          }, completion: nil)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

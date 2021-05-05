@@ -15,23 +15,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-small" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-yQ-i3K">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundColor.png" translatesAutoresizingMaskIntoConstraints="NO" id="L4l-xc-Xs0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                                </accessibility>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-p3-F29">
-                                <rect key="frame" x="17" y="231" width="380" height="434"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coverImage" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-p3-F29">
+                                <rect key="frame" x="9.5" y="211" width="395" height="474"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="395" id="8rX-Y3-CnM"/>
+                                    <constraint firstAttribute="height" constant="474" id="rgb-rx-FGs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundColor.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUh-J9-bjg">
+                                <rect key="frame" x="53" y="225" width="308" height="183"/>
+                                <color key="backgroundColor" red="0.030481757599999999" green="0.29982927440000001" blue="0.74472910169999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="YUh-J9-bjg" secondAttribute="trailing" constant="53" id="2my-Zh-Txa"/>
                             <constraint firstItem="5ju-p3-F29" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4is-7R-7Fa"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="YUh-J9-bjg" secondAttribute="bottom" constant="454" id="61A-QB-OFF"/>
                             <constraint firstItem="5ju-p3-F29" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IzJ-sl-SZB"/>
                             <constraint firstItem="5ju-p3-F29" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UBs-pv-RRM"/>
+                            <constraint firstItem="YUh-J9-bjg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ljH-ak-RFN"/>
+                            <constraint firstItem="YUh-J9-bjg" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="181" id="oUV-7m-wMG"/>
+                            <constraint firstItem="YUh-J9-bjg" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="53" id="uQo-TD-DPS"/>
                             <constraint firstItem="5ju-p3-F29" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="whr-fl-1HO"/>
                         </constraints>
                     </view>
@@ -42,7 +51,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background-small" width="728" height="1000"/>
-        <image name="fullLogo.png" width="380" height="434"/>
+        <image name="backgroundColor.png" width="395" height="474"/>
+        <image name="coverImage" width="395" height="474"/>
     </resources>
 </document>

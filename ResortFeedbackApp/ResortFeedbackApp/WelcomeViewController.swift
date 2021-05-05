@@ -29,7 +29,6 @@ class WelcomeViewController: UIViewController {
         //make sure before going any further that the user has completed or not completed the survey
         _ = user?.checkIfComplete()
 
-
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

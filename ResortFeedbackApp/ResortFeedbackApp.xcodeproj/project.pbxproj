@@ -26,6 +26,8 @@
 		BC37B0302638993900E90F38 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = BC37B02F2638993900E90F38 /* Podfile */; };
 		BC37B03B26389C3900E90F38 /* SurveyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */; };
 		BC507985263B2DCB00B0077C /* UpdatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */; };
+		BC96F3A32643644200909923 /* coverImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BC96F3A22643644200909923 /* coverImage.png */; };
+		BC96F3A52643655100909923 /* backgroundColor.png in Resources */ = {isa = PBXBuildFile; fileRef = BC96F3A42643655100909923 /* backgroundColor.png */; };
 		BCA0024C26418DD0007DE789 /* Questions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0024A26418DD0007DE789 /* Questions+CoreDataClass.swift */; };
 		BCA0024F2641ACA1007DE789 /* SpashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0024E2641ACA1007DE789 /* SpashScreenViewController.swift */; };
 		BCA002962641EDB1007DE789 /* fullLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA002952641EDB1007DE789 /* fullLogo.png */; };
@@ -63,6 +65,8 @@
 		BC37B02F2638993900E90F38 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC37B03A26389C3900E90F38 /* SurveyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMenuViewController.swift; sourceTree = "<group>"; };
 		BC507984263B2DCB00B0077C /* UpdatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePassViewController.swift; sourceTree = "<group>"; };
+		BC96F3A22643644200909923 /* coverImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coverImage.png; sourceTree = "<group>"; };
+		BC96F3A42643655100909923 /* backgroundColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundColor.png; sourceTree = "<group>"; };
 		BCA0024A26418DD0007DE789 /* Questions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questions+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BCA0024E2641ACA1007DE789 /* SpashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashScreenViewController.swift; sourceTree = "<group>"; };
 		BCA002952641EDB1007DE789 /* fullLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullLogo.png; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				BC37AFC5263759EE00E90F38 /* SignUpViewController.swift */,
 				BC37AEA82635D50800E90F38 /* LoginViewController.swift */,
 				BC37AEA62635D50800E90F38 /* ResortFeedbackApp.xcdatamodeld */,
+				BC96F3A22643644200909923 /* coverImage.png */,
+				BC96F3A42643655100909923 /* backgroundColor.png */,
 				BC37AEA52635D50800E90F38 /* WelcomeViewController.swift */,
 				BC37AE902635D00300E90F38 /* Assets.xcassets */,
 				BCA002952641EDB1007DE789 /* fullLogo.png */,
@@ -230,6 +236,8 @@
 				BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */,
 				BC371141263C690400CDAAFA /* PhosphatePro-Inline.otf in Resources */,
 				BCF2E9352640D4A40017F4A0 /* Launch Screen.storyboard in Resources */,
+				BC96F3A32643644200909923 /* coverImage.png in Resources */,
+				BC96F3A52643655100909923 /* backgroundColor.png in Resources */,
 				BCF2E9312640D1DA0017F4A0 /* launchImage.jpg in Resources */,
 				BC19063026408C3900AA4DD7 /* Main.storyboard in Resources */,
 				BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */,
