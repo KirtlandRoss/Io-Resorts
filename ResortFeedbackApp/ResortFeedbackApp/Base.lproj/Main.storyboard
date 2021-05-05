@@ -1202,21 +1202,24 @@
                                 </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1ju-Ho-mMs">
-                                <rect key="frame" x="0.0" y="231" width="414" height="434"/>
+                                <rect key="frame" x="17" y="231" width="380" height="434"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="cW2-J2-cpv"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gRm-ca-EMk"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="57t-fa-6AQ"/>
                             <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerY" secondItem="s0c-Jr-938" secondAttribute="centerY" id="9nW-p4-cFw"/>
-                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="trailing" secondItem="gRm-ca-EMk" secondAttribute="trailing" id="A2c-nb-Hlb"/>
-                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="E89-9q-lth"/>
-                            <constraint firstItem="1ju-Ho-mMs" firstAttribute="leading" secondItem="gRm-ca-EMk" secondAttribute="leading" id="KlE-2W-QbD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="logoX" destination="E89-9q-lth" id="N9T-ic-aZR"/>
-                        <outlet property="logoY" destination="9nW-p4-cFw" id="Gk6-SE-uMS"/>
+                        <outlet property="logoX" destination="57t-fa-6AQ" id="nVA-r2-7lt"/>
                         <segue destination="1Oh-jL-bRA" kind="presentation" identifier="splash" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="QwE-k3-zvV"/>
                     </connections>
                 </viewController>
