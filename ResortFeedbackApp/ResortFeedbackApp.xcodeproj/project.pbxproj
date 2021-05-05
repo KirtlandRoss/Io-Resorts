@@ -10,7 +10,6 @@
 		BC0CAC9E2638F317001E7986 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = BC0CAC9D2638F317001E7986 /* fonts */; };
 		BC0CACAF2638FAFF001E7986 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CACAE2638FAFF001E7986 /* DBHelper.swift */; };
 		BC190605264043FA00AA4DD7 /* SurveyCompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC190604264043FA00AA4DD7 /* SurveyCompleteController.swift */; };
-		BC19060C264057D400AA4DD7 /* WCLShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC19060A2640552C00AA4DD7 /* WCLShineButton.framework */; };
 		BC19063026408C3900AA4DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC19062D26408C3900AA4DD7 /* Main.storyboard */; };
 		BC37113F263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113B263C690400CDAAFA /* Phosphate Pro Cond Solid Regular.otf */; };
 		BC371140263C690400CDAAFA /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC37113C263C690400CDAAFA /* PhosphatePro-Solid.otf */; };
@@ -30,6 +29,7 @@
 		BCA0024C26418DD0007DE789 /* Questions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0024A26418DD0007DE789 /* Questions+CoreDataClass.swift */; };
 		BCA0024F2641ACA1007DE789 /* SpashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0024E2641ACA1007DE789 /* SpashScreenViewController.swift */; };
 		BCA002962641EDB1007DE789 /* fullLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA002952641EDB1007DE789 /* fullLogo.png */; };
+		BCB456612642E23800BD0222 /* WCLShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC19060A2640552C00AA4DD7 /* WCLShineButton.framework */; };
 		BCDB646D263A0614008DFDAD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646C263A0614008DFDAD /* NavigationViewController.swift */; };
 		BCDB646F263A1611008DFDAD /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB646E263A1611008DFDAD /* SurveyViewController.swift */; };
 		BCDB6483263A4B7A008DFDAD /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB647F263A4B7A008DFDAD /* User+CoreDataClass.swift */; };
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC19060C264057D400AA4DD7 /* WCLShineButton.framework in Frameworks */,
+				BCB456612642E23800BD0222 /* WCLShineButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

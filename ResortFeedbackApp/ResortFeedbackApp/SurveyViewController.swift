@@ -65,7 +65,7 @@ class SurveyViewController: UIViewController {
         updateScores()
         updateContent()
         setButtonAppearnce(image: .star)
-        setupRating()
+        setButtonTargets()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -127,7 +127,8 @@ class SurveyViewController: UIViewController {
         question5.backgroundColor = UIColor(patternImage: UIImage(named: "button")!)
     }
 
-    func setupRating(){
+    func setButtonTargets(){
+
         q5b5.addTarget(self, action: #selector(q5b5Toggle), for: .valueChanged)
         q5b4.addTarget(self, action: #selector(q5b4Toggle), for: .valueChanged)
         q5b3.addTarget(self, action: #selector(q5b3Toggle), for: .valueChanged)
@@ -163,7 +164,7 @@ class SurveyViewController: UIViewController {
     }
     func setButtonAppearnce( image: WCLShineImage){
 
-        //custom animation based on button rating
+        //custom animation parameters based on button rating
         var params1 = WCLShineParams()
         params1.shineCount = 0
 
@@ -327,6 +328,7 @@ class SurveyViewController: UIViewController {
     //MARK: These are the button handler functions
 
     //sets the rating and then runs the functions for selecting/deselecting the other buttons according to the rating
+    //pattern repeats for all 5 rows of buttons
     @objc func q1b5Toggle(){
         results!.q1 = 5
         q1RatingSwitch()
@@ -348,6 +350,7 @@ class SurveyViewController: UIViewController {
         q1RatingSwitch()
     }
     //rating switch makes sure the other rating buttons are filled/unfilled based on the rating.
+
     func q1RatingSwitch(){
         q1b5.isSelected=false ;q1b4.isSelected=false; q1b3.isSelected=false ; q1b2.isSelected=false
         switch results!.q1{
@@ -367,6 +370,7 @@ class SurveyViewController: UIViewController {
             q1b1.isSelected = true
         }
     }
+
     @objc func q2b5Toggle(){
         results!.q2 = 5
         q2RatingSwitch()
@@ -445,6 +449,7 @@ class SurveyViewController: UIViewController {
             q3b1.isSelected = true
         }
     }
+
     @objc func q4b5Toggle(){
         results!.q4 = 5
         q4RatingSwitch()
