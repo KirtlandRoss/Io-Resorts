@@ -12,8 +12,6 @@ class WelcomeViewController: UIViewController {
     var user : User?
 
     @IBOutlet weak var backgoundY: NSLayoutConstraint!
-    @IBOutlet weak var nameX: NSLayoutConstraint!
-    @IBOutlet weak var welcomeY: NSLayoutConstraint!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var survey: UIButton!
@@ -32,8 +30,6 @@ class WelcomeViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-            welcomeY.constant -= view.bounds.height
-            nameX.constant -= view.bounds.width
 
         if user!.surveyComplete{
             survey.setTitle("Update Survey", for: .normal)
@@ -48,16 +44,6 @@ class WelcomeViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
-              self.welcomeY.constant += self.view.bounds.height
-              self.view.layoutIfNeeded()
-          }, completion: nil)
-
-        UIView.animate(withDuration: 0.5, delay: 0.3, options: .curveEaseOut, animations: {
-              self.nameX.constant += self.view.bounds.width
-              self.view.layoutIfNeeded()
-          }, completion: nil)
-
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
