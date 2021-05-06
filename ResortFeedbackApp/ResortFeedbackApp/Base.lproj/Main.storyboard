@@ -254,7 +254,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Ry-eeq" userLabel="Background logo">
                                 <rect key="frame" x="0.0" y="211" width="414" height="474"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
+                            <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
                                 <rect key="frame" x="117" y="162" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="ds3-ve-6mW"/>
@@ -262,7 +262,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KM9-78-cYm">
+                            <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KM9-78-cYm">
                                 <rect key="frame" x="117" y="246" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="QMf-ar-ywu"/>
@@ -294,20 +294,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KGV-gg-COB">
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KGV-gg-COB">
                                 <rect key="frame" x="120.5" y="310" width="51" height="31"/>
                                 <color key="onTintColor" red="0.092924736440181732" green="0.93719196319580078" blue="0.035318728536367416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="rememberMe:" destination="nZy-Po-l7G" eventType="valueChanged" id="1L7-7x-dwF"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-uP-7zj">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-uP-7zj">
                                 <rect key="frame" x="178.5" y="315" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yry-BJ-5yy">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yry-BJ-5yy">
                                 <rect key="frame" x="127" y="451" width="160" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -322,7 +322,7 @@
                                     <segue destination="FLm-C7-hpa" kind="presentation" id="jAR-ud-Res"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-5O-Kv4">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-5O-Kv4">
                                 <rect key="frame" x="28.5" y="380" width="150" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -351,7 +351,7 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wur-qM-VcH">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wur-qM-VcH">
                                 <rect key="frame" x="235.5" y="380" width="150" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -418,11 +418,14 @@
                     <connections>
                         <outlet property="backgoundY" destination="Z05-eK-ZCb" id="cOP-t0-Pu0"/>
                         <outlet property="backgroundImage" destination="2gi-Ry-eeq" id="6CW-uL-fhg"/>
+                        <outlet property="changePassword" destination="yry-BJ-5yy" id="jEN-zr-m1V"/>
                         <outlet property="coverColor" destination="Shc-76-wak" id="8WN-LO-VtG"/>
                         <outlet property="coverLogo" destination="hiF-Eu-vOe" id="uIR-sg-Tcd"/>
+                        <outlet property="login" destination="VV4-5O-Kv4" id="aSU-E4-ZZA"/>
                         <outlet property="passErr" destination="Lg7-EP-sa1" id="ntn-yW-qjZ"/>
                         <outlet property="password" destination="KM9-78-cYm" id="lOS-gG-yhH"/>
                         <outlet property="rememberMe" destination="KGV-gg-COB" id="Fyk-ZR-YZf"/>
+                        <outlet property="signUp" destination="wur-qM-VcH" id="r06-cG-ltW"/>
                         <outlet property="userErr" destination="qPG-1T-clb" id="QD5-NX-bKO"/>
                         <outlet property="username" destination="hhL-hQ-dJq" id="nEG-OS-72c"/>
                         <segue destination="yzD-Jg-aFR" kind="show" identifier="MainMenu" id="Tim-oZ-v7v"/>
