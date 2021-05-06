@@ -1271,6 +1271,7 @@
                     <connections>
                         <outlet property="circleY" destination="9nW-p4-cFw" id="1u4-hv-HBP"/>
                         <outlet property="fullLogo" destination="Hkc-1U-2Xv" id="rBs-Ip-JqB"/>
+                        <outlet property="name" destination="VNG-zV-n5B" id="Z5n-NH-fja"/>
                         <segue destination="1Oh-jL-bRA" kind="presentation" identifier="splash" animates="NO" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QwE-k3-zvV"/>
                     </connections>
                 </viewController>
