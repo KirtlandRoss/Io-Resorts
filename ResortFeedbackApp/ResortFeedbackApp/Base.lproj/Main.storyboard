@@ -94,6 +94,7 @@
                         <outlet property="message" destination="JL0-x3-XcB" id="IM3-Ux-dkg"/>
                         <outlet property="newPass" destination="npp-qH-2pW" id="DP4-if-lwh"/>
                         <outlet property="oldPass" destination="RCX-uf-gPp" id="yZB-kp-hPI"/>
+                        <outlet property="submit" destination="XoV-Qj-G2B" id="RHM-jR-Xns"/>
                         <outlet property="username" destination="WTd-bp-tRJ" id="hWz-IM-ABL"/>
                     </connections>
                 </viewController>
