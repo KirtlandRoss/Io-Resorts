@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
         }
     }
 
-
+//MARK: splash screen transitions happen here
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
