@@ -252,7 +252,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Ry-eeq" userLabel="Background logo">
-                                <rect key="frame" x="0.0" y="231" width="414" height="434"/>
+                                <rect key="frame" x="0.0" y="211" width="414" height="474"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hQ-dJq">
                                 <rect key="frame" x="117" y="162" width="180" height="34"/>
@@ -370,7 +370,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coverImage" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-Eu-vOe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-Eu-vOe">
                                 <rect key="frame" x="9.5" y="211" width="395" height="474"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="474" id="Zio-CG-SaP"/>
@@ -1242,6 +1242,13 @@
                                     <constraint firstAttribute="height" constant="474" id="7T8-vE-KXf"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-1U-2Xv">
+                                <rect key="frame" x="9.5" y="211" width="395" height="474"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="474" id="RX5-vr-gRh"/>
+                                    <constraint firstAttribute="width" constant="395" id="dA6-lc-yeR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gRm-ca-EMk"/>
                         <color key="backgroundColor" red="0.030481757599999999" green="0.29982927440000001" blue="0.74472910169999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1253,11 +1260,14 @@
                             <constraint firstItem="VNG-zV-n5B" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="U5z-xl-crx"/>
                             <constraint firstItem="2Oh-SV-WS4" firstAttribute="centerY" secondItem="s0c-Jr-938" secondAttribute="centerY" id="Zq5-3B-B8w"/>
                             <constraint firstItem="2Oh-SV-WS4" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="cSQ-fE-4o6"/>
+                            <constraint firstItem="Hkc-1U-2Xv" firstAttribute="centerY" secondItem="s0c-Jr-938" secondAttribute="centerY" id="gL0-lw-AaX"/>
+                            <constraint firstItem="Hkc-1U-2Xv" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="qBM-xA-Tdb"/>
                             <constraint firstItem="VNG-zV-n5B" firstAttribute="centerX" secondItem="s0c-Jr-938" secondAttribute="centerX" id="u5K-GJ-ezF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="circleY" destination="9nW-p4-cFw" id="1u4-hv-HBP"/>
+                        <outlet property="fullLogo" destination="Hkc-1U-2Xv" id="rBs-Ip-JqB"/>
                         <segue destination="1Oh-jL-bRA" kind="presentation" identifier="splash" animates="NO" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QwE-k3-zvV"/>
                     </connections>
                 </viewController>
@@ -1271,9 +1281,8 @@
         <image name="backgroundColor.png" width="395" height="474"/>
         <image name="bar" width="395" height="474"/>
         <image name="circle" width="395" height="474"/>
-        <image name="coverImage" width="395" height="474"/>
         <image name="fatButton" width="393" height="109"/>
-        <image name="fullLogo" width="380" height="434"/>
+        <image name="fullLogo" width="395" height="474"/>
         <image name="logoVertical" width="372" height="372"/>
         <image name="name" width="395" height="474"/>
         <image name="overall" width="2308" height="3465"/>
