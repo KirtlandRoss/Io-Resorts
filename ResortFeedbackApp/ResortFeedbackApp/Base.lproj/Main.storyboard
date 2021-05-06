@@ -513,9 +513,7 @@
                         <outlet property="backgroundImage" destination="eoW-q5-XR9" id="l3f-oU-FKa"/>
                         <outlet property="couponButton" destination="Wbv-iK-wMx" id="I67-uu-o7l"/>
                         <outlet property="nameLabel" destination="MTg-zi-oYc" id="VA6-vS-4g7"/>
-                        <outlet property="nameX" destination="ViV-7d-jS2" id="Ifn-Wr-QwE"/>
                         <outlet property="survey" destination="Hm8-qL-DvB" id="J1y-oA-Ypy"/>
-                        <outlet property="welcomeY" destination="OWW-F7-Z9I" id="dE6-Bq-GGH"/>
                         <segue destination="OZF-v0-m7r" kind="show" identifier="CouponSegue" id="ivg-na-dmq"/>
                     </connections>
                 </viewController>
