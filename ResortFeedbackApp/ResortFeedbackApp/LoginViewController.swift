@@ -23,6 +23,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var coverColor: UIImageView!
     @IBOutlet weak var coverLogo: UIImageView!
+    @IBOutlet weak var changePassword: UIButton!
+    @IBOutlet weak var login: UIButton!
+    @IBOutlet weak var signUp: UIButton!
 
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 
@@ -52,9 +55,27 @@ class LoginViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
+        //animate out cover color
         UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions.curveLinear, animations: {
             self.coverColor.alpha = 0
+              self.view.layoutIfNeeded()
+          }, completion: nil)
+
+        //fade out logo
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: UIView.AnimationOptions.curveLinear, animations: {
             self.coverLogo.alpha = 0
+              self.view.layoutIfNeeded()
+          }, completion: nil)
+        
+        //fade in controls
+        UIView.animate(withDuration: 1, delay: 0.5, options: UIView.AnimationOptions.curveLinear, animations: {
+            self.username.alpha = 1
+            self.password.alpha = 1
+            self.rememberMe.alpha = 1
+            self.login.alpha = 1
+            self.signUp.alpha = 1
+            self.changePassword.alpha = 1
               self.view.layoutIfNeeded()
           }, completion: nil)
     }
