@@ -31,7 +31,7 @@ class SpashScreenViewController: UIViewController {
         super.viewDidAppear(animated)
 
         //raise circle
-        UIView.animate(withDuration: 0.7, delay: 0.5, options: UIView.AnimationOptions.curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.6, delay: 0.5, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.circleY.constant -= 200
 
             self.view.layoutIfNeeded()
