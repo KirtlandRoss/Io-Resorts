@@ -61,6 +61,11 @@ class SignUpViewController: UIViewController {
             button.setTitle("User Already Exists", for: .normal)
             button.setTitleColor(.red, for: .normal)
         }
+        else if  password.text!.count < 4 {
+            button.setTitle("Password is too short", for: .normal)
+            button.setTitleColor(.red, for: .normal)
+
+        }
         else{
             button.setTitle("Submit", for: .normal)
             button.setTitleColor(.black, for: .normal)
