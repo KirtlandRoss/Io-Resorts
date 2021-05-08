@@ -11,7 +11,6 @@ class SpashScreenViewController: UIViewController {
 
 
 
-
     @IBOutlet weak var circleY: NSLayoutConstraint!
     @IBOutlet weak var fullLogo: UIImageView!
     @IBOutlet weak var name: UIImageView!

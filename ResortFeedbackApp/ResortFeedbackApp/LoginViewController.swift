@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var changePassword: UIButton!
     @IBOutlet weak var login: UIButton!
     @IBOutlet weak var signUp: UIButton!
+    @IBOutlet weak var rememberLabel: UILabel!
 
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 
@@ -76,6 +77,7 @@ class LoginViewController: UIViewController {
             self.login.alpha = 1
             self.signUp.alpha = 1
             self.changePassword.alpha = 1
+            self.rememberLabel.alpha = 1
               self.view.layoutIfNeeded()
           }, completion: nil)
     }
