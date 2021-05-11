@@ -1,4 +1,7 @@
 # ResortFeedbackApp
 
 
-Recommend adding feedback on the survey menu that tells user if the survey is partially complete.
+Customer Feedback app in the context of a Resort. 
+
+Technologies:
+Swift Programming, XCode IDE, CocoaPods, CoreData, Animate, UserDefaults, UIKit, Interface Builder
