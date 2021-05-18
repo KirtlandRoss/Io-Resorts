@@ -1,4 +1,4 @@
-# ResortFeedbackApp
+# Io Resorts
 
 
 Customer Feedback app in the context of a Resort. 
