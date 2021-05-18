@@ -425,6 +425,7 @@
                         <outlet property="login" destination="VV4-5O-Kv4" id="aSU-E4-ZZA"/>
                         <outlet property="passErr" destination="Lg7-EP-sa1" id="ntn-yW-qjZ"/>
                         <outlet property="password" destination="KM9-78-cYm" id="lOS-gG-yhH"/>
+                        <outlet property="rememberLabel" destination="7fW-uP-7zj" id="T6p-Si-nm0"/>
                         <outlet property="rememberMe" destination="KGV-gg-COB" id="Fyk-ZR-YZf"/>
                         <outlet property="signUp" destination="wur-qM-VcH" id="r06-cG-ltW"/>
                         <outlet property="userErr" destination="qPG-1T-clb" id="QD5-NX-bKO"/>
