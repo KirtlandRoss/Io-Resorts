@@ -28,7 +28,7 @@ Open `ResortFeedbackApp.xcworkspace` in the repository with XCode 12 or later
 In the top right under ResortFeedbackApp scheme and then iPhone 11, then hit the play button or `CMD` + `R`/ `WINDOWS` + `R` on the keyboard
 
 
-[How to run on simulator](images/image4.png)
+![How to run on simulator](images/image4.png)
 
 
 
@@ -38,12 +38,12 @@ In the top right under ResortFeedbackApp scheme and then iPhone 11, then hit the
 
 This project can be used with minor updates to create and record user feedback using a 5 star system. 
 
-[Login Screen](images/image1.png)
-[Survey Menu](images/image2.png)
-[Survey Screen](images/image3.png)
+![Login Screen](images/image1.png)
+![Survey Menu](images/image2.png)
+![Survey Screen](images/image3.png)
 
 
 ## License
 
-This project uses the following license: [<MIT Licence>](https://github.com/KirtlandRoss/Io-Resorts/blob/main/LICENSE).
+This project uses the following license: [MIT Licence](https://github.com/KirtlandRoss/Io-Resorts/blob/main/LICENSE).
 
