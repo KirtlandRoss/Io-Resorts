@@ -22,7 +22,7 @@ To-do list:
 
 ## Getting Started
 
-Use  `git clone https://github.com/libgit2/libgit2` in an initialized git repository
+Use  `git clone https://github.com/KirtlandRoss/Io-Resorts` in an initialized git repository
 Open `ResortFeedbackApp.xcworkspace` in the repository with XCode 12 or later
 
 In the top right under ResortFeedbackApp scheme and then iPhone 11, then hit the play button or `CMD` + `R`/ `WINDOWS` + `R` on the keyboard
