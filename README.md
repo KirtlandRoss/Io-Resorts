@@ -2,7 +2,7 @@
 
 ## Io Resorts Feedback App
 
-This app allows users to sign up and leave feedback for a generic resort. The app stores all data persistanlty and allows users to save partially completed surveys and update their ratings after completion of the surveys. 
+This app allows users to sign up and leave feedback for a generic resort. The app stores all data persistently and allows users to save partially completed surveys and update their ratings after completion of the surveys. 
 
 ## Technologies Used
 
