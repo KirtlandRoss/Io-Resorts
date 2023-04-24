@@ -1,6 +1,0 @@
-framework module Pods_ResortFeedbackApp {
-  umbrella header "Pods-ResortFeedbackApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
